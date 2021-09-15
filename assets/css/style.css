@@ -579,7 +579,7 @@ img{
 }
 
 .footer-link{
-    color: var(--blue-color);
+    color: #000;
     width: 100%;    
 }
 
@@ -1020,9 +1020,9 @@ img{
 /* ======== MEDIA SCREEN 768PX ======== */
 @media screen and (min-width: 320px) and (max-width: 550px){
     /* Base CSS */
-    .section-title{
+    /* .section-title{
         padding: 1rem;
-    }
+    } */
 
     /* Navbar */
     .nav{
