@@ -105,7 +105,124 @@
     </section>
 
     <!--====== REVOLUTIONIZE SECTION ======-->
+    <section class="revolutionize section" id="revolutionize">
+        <div class="revolutionize-section container">
+            <div class="revolutionize-content">
+                <div class="revolutionize-image-container">
+                    <img class="revolutionize-image" src="assets/images/products/IMG_3138.PNG" alt="">
+                </div>
+                <div class="revolutionize-text">
+                    <h1 class="hero-title"><span>Revolution-izing</span> the wireless experience.</h1>
+                    <p class="hero-paragraph">
+                        Gone are the days of a physical SIM Card. With our 
+                        cloudSIM technology, simply log in to your local network
+                        and enjoy a safe, ultra-speed connection.
+                    </p>
+                    <p class="hero-paragraph">
+                        At Unnidata, we do not advocate for wastage. This is why you can forget 
+                        about subscriptions. Pay only when you need mobile data.
+                        Do not pay when you don't.
+                    </p>
+                    <div class="download-buttons">
+                        <a href="">
+                            <div class="download-btn">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <span>Get it on</span><br>
+                                    <h3>Google Play</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="download-btn">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <span>Download on the</span><br>
+                                    <h3>Appstore</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--====== COUNTRIES SECTION ======-->
+    <section class="countries section" id="countries">
+        <h1 class="section-title"><span>Countries</span> Covered</h1>
+        <div class="countries-section container">
+            <img src="assets/images/world-map.png" alt="">
+            <div class="countries-content">
+                <p>
+                    <i class="fas fa-globe-asia countries-icon"></i>
+                    <strong>Asia:</strong> Australia, Bahrain, Bangladesh, Cambodia, China, Fiji, Guam, Hong Kong, India, Indonesia, Japan, Kazakhstan, Korea, Macao, Malaysia, Mongolia, Myanmar, Nepal, New Zealand, Pakistan, Philippines, Saipan, Singapore, Sri Lanka, Taiwan, Thailand, Vietnam
+                </p>
+                <br>
+                <p>
+                    <i class="fas fa-globe-europe countries-icon"></i>
+                    <strong>Europe:</strong> Albania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican
+                </p>
+                <br>
+                <p>
+                    <i class="fas fa-globe-americas countries-icon"></i>
+                    <strong>Americas:</strong> Argentina, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Mexico, Nicaragua, Panama, Peru, Puerto Rico, The Dominican Republic, United States, Uruguay, Venezuela
+                </p>
+                <br>
+                <p>
+                    <i class="fas fa-globe-africa countries-icon"></i>
+                    <strong>Middle East/Africa:</strong> Algeria, Egypt, Ghana, Israel, Jordan , Kenya, Mauritius, Morocco, Nigeria, Qatar, Saudi Arabia, Seychelles, South Africa, Tanzania, Tunisia, UAE, Zambia
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--====== PRODUCT-GALLERY SECTION ======-->
+    <section class="gallery section" id="gallery">
+        <h1 class="section-title"><span>Product</span> Gallery</h1>
+        <div class="gallery-section container">
+            <div class="gallery-content swiper-container">
+                <div class="gallery-wrapper swiper-wrapper">
+                    <div class="gallery-item swiper-slide">
+                        <div class="gallery-image-container">
+                            <img src="assets/images/products/1-5.jpg" alt="">
+                        </div>
+                        <!-- <div class="gallery-text">
+                            <h3 class="gallery-title">Product 1</h3>
+                            <p class="gallery-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, nihil.</p>
+                        </div> -->
+                    </div>
+                    <div class="gallery-item swiper-slide">
+                        <div class="gallery-image-container">
+                            <img src="assets/images/products/2.jpg" alt="">
+                        </div>
+                        <!-- <div class="gallery-text">
+                            <h3 class="gallery-title">Product 2</h3>
+                            <p class="gallery-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, nihil.</p>
+                        </div> -->
+                    </div>
+                    <div class="gallery-item swiper-slide">
+                        <div class="gallery-image-container">
+                            <img src="assets/images/products/1.jpg" alt="">
+                        </div>
+                        <!-- <div class="gallery-text">
+                            <h3 class="gallery-title">Product 3</h3>
+                            <p class="gallery-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, nihil.</p>
+                        </div> -->
+                    </div>
+                    <div class="gallery-item swiper-slide">
+                        <div class="gallery-image-container">
+                            <img src="assets/images/products/1-7.jpg" alt="">
+                        </div>
+                        <!-- <div class="gallery-text">
+                            <h3 class="gallery-title">Product 4</h3>
+                            <p class="gallery-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, nihil.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!--====== FOOTER SECTION ======-->
@@ -175,8 +292,8 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            centeredSlides: true,
+        var swiper = new Swiper(".swiper-container", {
+            centeredSlides: false,
             // slidesPerView: 2,
             loop: true,
             autoplay: {
@@ -192,11 +309,14 @@
                 // when window width is <= 499px
                 320: {
                     slidesPerView: 1,
-                    spaceBetweenSlides: 0,
+                    spaceBetween: 0,
+                    centeredSlides: true,
+
                 },
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 32,
+                    centeredSlides: false,
+                    spaceBetween: 0,
                 },
                 // when window width is <= 999px
                 // 999: {

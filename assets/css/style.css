@@ -200,6 +200,7 @@ img{
 
 .hero-paragraph{
     padding: 1.15rem 0;
+    line-height: 1.5;
 }
 
 .hero-title{
@@ -614,7 +615,7 @@ img{
 .traveler-content{
     padding: 3rem;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 3fr 2fr;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -633,6 +634,7 @@ img{
     height: 350px;
     display: flex;
     align-items: center;
+    margin-left: auto;
     border-radius: 50%;
     box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
 }
@@ -745,6 +747,82 @@ img{
     margin-top: 2rem;
     text-align: center;
     font-style: italic;
+}
+
+/* ======== REVOLUTIONIZE SECTION ======== */
+.revolutionize-content{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--grey-color);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.revolutionize-image-container{
+    position: relative;
+    background-color: var(--green-color);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
+}
+
+.revolutionize-content::after{
+    content: url('../images/working-line-2.png');
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.revolutionize-image{
+    width: 350px;
+    z-index: 5;
+    height: 350px;
+    object-fit: contain;
+}
+
+/* ======== COUNTRIES SECTION ======== */
+.countries-content{
+    padding: 3rem;
+    border-radius: 1rem;
+    background: var(--grey-color);
+    line-height: 1.5;
+    border-left: .5rem solid var(--red-color);
+    position: relative;
+    border-top: .5rem solid var(--red-color);
+    box-shadow: 0 14px 20px rgb(0 0 0 / 0.2);
+}
+
+/* ========= GALLERY SECTION ======== */
+.gallery-content{
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-image-container img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.gallery-title{
+    font-size: 2.5rem;
 }
 
 /* ======== MEDIA SCREEN 550PX TO 768PX ======== */
@@ -1019,11 +1097,6 @@ img{
 
 /* ======== MEDIA SCREEN 768PX ======== */
 @media screen and (min-width: 320px) and (max-width: 550px){
-    /* Base CSS */
-    /* .section-title{
-        padding: 1rem;
-    } */
-
     /* Navbar */
     .nav{
         position: fixed;
@@ -1313,6 +1386,7 @@ img{
     .traveler-image-container{
         width: 250px;
         height: 250px;
+        margin-left: 0;
     }
     
     .traveler-image{
@@ -1328,5 +1402,30 @@ img{
 
     .activate-card:nth-child(2){
         border: none;
+    }
+
+    /* Revolutionize Section */
+    .revolutionize-content{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 3rem 1rem;
+    }
+
+    .revolutionize-image-container{
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+    }
+    
+    .revolutionize-image{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Countries Section */
+    .countries-content{
+        padding: 1rem;
     }
 }
