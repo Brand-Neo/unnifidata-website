@@ -167,26 +167,32 @@
         <h1 class="section-title"><span>Countries</span> Covered</h1>
         <div class="countries-section container">
             <img src="assets/images/world-map-2.png" alt="">
-            <div class="countries-content">
-                <p>
-                    <i class="fas fa-globe-asia countries-icon"></i>
-                    <strong>Asia:</strong> Australia, Bahrain, Bangladesh, Cambodia, China, Fiji, Guam, Hong Kong, India, Indonesia, Japan, Kazakhstan, Korea, Macao, Malaysia, Mongolia, Myanmar, Nepal, New Zealand, Pakistan, Philippines, Saipan, Singapore, Sri Lanka, Taiwan, Thailand, Vietnam
-                </p>
-                <br>
-                <p>
-                    <i class="fas fa-globe-europe countries-icon"></i>
-                    <strong>Europe:</strong> Albania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican
-                </p>
-                <br>
-                <p>
-                    <i class="fas fa-globe-americas countries-icon"></i>
-                    <strong>Americas:</strong> Argentina, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Mexico, Nicaragua, Panama, Peru, Puerto Rico, The Dominican Republic, United States, Uruguay, Venezuela
-                </p>
-                <br>
-                <p>
-                    <i class="fas fa-globe-africa countries-icon"></i>
-                    <strong>Middle East/Africa:</strong> Algeria, Egypt, Ghana, Israel, Jordan , Kenya, Mauritius, Morocco, Nigeria, Qatar, Saudi Arabia, Seychelles, South Africa, Tanzania, Tunisia, UAE, Zambia
-                </p>
+            <div>
+                <button id="countries-btn" class="btn countries-btn">View all countries</button>
+            </div>
+            <div class="countries-modal">
+                <div class="countries-content">
+                    <i class="fas fa-times-circle countries-close" id="countires-close"></i>
+                    <p>
+                        <i class="fas fa-globe-asia countries-icon"></i>
+                        <strong>Asia:</strong> Australia, Bahrain, Bangladesh, Cambodia, China, Fiji, Guam, Hong Kong, India, Indonesia, Japan, Kazakhstan, Korea, Macao, Malaysia, Mongolia, Myanmar, Nepal, New Zealand, Pakistan, Philippines, Saipan, Singapore, Sri Lanka, Taiwan, Thailand, Vietnam
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fas fa-globe-europe countries-icon"></i>
+                        <strong>Europe:</strong> Albania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fas fa-globe-americas countries-icon"></i>
+                        <strong>Americas:</strong> Argentina, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Mexico, Nicaragua, Panama, Peru, Puerto Rico, The Dominican Republic, United States, Uruguay, Venezuela
+                    </p>
+                    <br>
+                    <p>
+                        <i class="fas fa-globe-africa countries-icon"></i>
+                        <strong>Middle East/Africa:</strong> Algeria, Egypt, Ghana, Israel, Jordan , Kenya, Mauritius, Morocco, Nigeria, Qatar, Saudi Arabia, Seychelles, South Africa, Tanzania, Tunisia, UAE, Zambia
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -235,11 +241,11 @@
     <!--====== FAQ SECTION ======-->
     <section class="faq section" id="faq">
         <div class="faq-section container">
-            <div class="faq-content">
+            <div class="faq-contents">
                 <div class="faq-list">
                     <h1 class="faq-section-title">Some <span>frequently asked questions</span></h1>
 
-                    <!-- Skill 1 -->
+                    <!-- FAQ 1 -->
                     <div class="faq-content faq-open">
                         <div class="faq-header">
                             <h3 class="faq-titles">1. Does the Unnifi device come with warranty?</h3>
@@ -251,7 +257,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 2 -->
+                    <!-- FAQ 2 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">2. Can I customize my Unnifi device SSID/ login password according to my preference? </h3>
@@ -263,7 +269,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 3 -->
+                    <!-- FAQ 3 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">3. Do you provide rental service?</h3>
@@ -275,7 +281,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 4 -->
+                    <!-- FAQ 4 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">4. What is the connectivity distance between the Unnifi device and the mobile devices?</h3>
@@ -287,7 +293,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 5 -->
+                    <!-- FAQ 5 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">5. Is there a user guide to guide me on connecting the Unnifi device?</h3>
@@ -299,7 +305,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 6 -->
+                    <!-- FAQ 6 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">6. Can a non-4G mobile device be compatible to use on a Unnifi device?</h3>
@@ -311,7 +317,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 7 -->
+                    <!-- FAQ 7 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">7. How can I troubleshoot if I face any issues with the Unnifi device?</h3>
@@ -330,7 +336,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 8 -->
+                    <!-- FAQ 8 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">8.Can I pick up the Unnifi device instead of having it delivered?</h3>
@@ -342,7 +348,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 9 -->
+                    <!-- FAQ 9 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">9. What does No Expiry mean?</h3>
@@ -354,7 +360,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 10 -->
+                    <!-- FAQ 10 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">10. How fast is the data flow on Unnifi?</h3>
@@ -366,7 +372,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 11 -->
+                    <!-- FAQ 11 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">11. Do you support 5G?</h3>
@@ -378,7 +384,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 12 -->
+                    <!-- FAQ 12 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">12. Why do I need to carry a separate device to my mobile phone?</h3>
@@ -390,7 +396,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 13 -->
+                    <!-- FAQ 13 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">13. What data plans do you provide?</h3>
@@ -402,7 +408,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 14 -->
+                    <!-- FAQ 14 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">14. How can I minimise my rate of data consumption?</h3>
@@ -415,7 +421,7 @@
                         </div>
                     </div>
 
-                    <!-- Skill 15 -->
+                    <!-- FAQ 15 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
                             <h3 class="faq-titles">15. What is the individual price per GB in different countries</h3>
