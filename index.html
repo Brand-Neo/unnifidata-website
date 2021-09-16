@@ -378,12 +378,13 @@
         });
         });
     </script>
-
+  
     <!--====== SHOPIFY JS ======-->
     <script type="text/javascript">
     /*<![CDATA[*/
     (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    // var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    var scriptURL = 'assets/js/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
         if (window.ShopifyBuy.UI) {
         ShopifyBuyInit();
@@ -421,12 +422,12 @@
             }
         },
         "button": {
-            "font-family": "'Inter', sans-serif",
+            "font-family": "Open Sans, sans-serif",
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px",
             "color": "#e7e9ec",
-            "transition": ".3s",
+            "margin-top": "0!important;",
             ":hover": {
             "color": "#e7e9ec",
             "background-color": "#c02c50"
@@ -435,7 +436,7 @@
             ":focus": {
             "background-color": "#c02c50"
             },
-            "border-radius": "5rem"
+            "border-radius": "23px"
         },
         "quantityInput": {
             "font-size": "16px",
@@ -516,7 +517,6 @@
             "font-family": "Open Sans, sans-serif",
             "font-size": "16px",
             "padding-top": "16px",
-            "margin-top": "0px",
             "padding-bottom": "16px",
             "color": "#e7e9ec",
             ":hover": {
@@ -572,8 +572,6 @@
     })();
     /*]]>*/
     </script>
-
-
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
 </body>
