@@ -914,6 +914,171 @@ img{
     transform: rotate(-180deg);
 }
 
+/* -------------------------------- */
+/* ======== ABOUT US PAGE  ======== */
+/* -------------------------------- */
+/* ======== ABOUT SECTION ======== */
+.about{
+    margin-top: 6rem;
+}
+
+.about-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.about-title-container{
+    background-color: var(--green-color);
+    margin: 0rem 4rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+
+.about-image{
+    border-radius: 1rem;
+    height: 327px;
+}
+
+.about-image-container{
+    margin-left: auto;
+    height: 327px;
+    position: relative;
+}
+
+.about-image-bg{
+    background-color: var(--red-color);
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    height: 327px;
+    width: 500px;
+    z-index: -99;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.about-image-container:hover .about-image-bg{
+    top: -1rem;
+    right: -1rem;
+}
+
+.about-image{
+    height: 327px;
+    width: 500px;
+    z-index: 1;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.about-image img{
+    object-fit: cover;
+    height: 327px;
+    width: 500px;
+    position: absolute;
+    border-radius: 1rem;
+    transition: .3s;
+    top: 0;
+    right: 0;
+}
+
+.about-image-container:hover .about-image img{
+    top: -1.5rem;
+    right: -1.5rem;
+}
+
+/* ======== CONTACT US SECTION ======== */
+.contact-content{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    align-items: center;
+}
+
+.contact-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5;
+    margin-left: auto;
+}
+
+.contact-card{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contact-icon{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.contact-image{
+    border-radius: 1rem;
+    height: 327px;
+}
+
+.contact-image-container{
+    margin-right: auto;
+    height: 327px;
+    position: relative;
+}
+
+.contact-image-bg{
+    background-color: var(--red-color);
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    height: 327px;
+    width: 500px;
+    z-index: -99;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.contact-image-container:hover .contact-image-bg{
+    top: -1rem;
+    right: -1rem;
+}
+
+.contact-image{
+    height: 327px;
+    width: 500px;
+    z-index: 1;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.contact-image img{
+    object-fit: cover;
+    height: 327px;
+    width: 500px;
+    position: absolute;
+    border-radius: 1rem;
+    transition: .3s;
+    top: 0;
+    right: 0;
+}
+
+.contact-image-container:hover .contact-image img{
+    top: -1.5rem;
+    right: -1.5rem;
+}
+
 /* ======== MEDIA SCREEN 550PX TO 768PX ======== */
 @media screen and (min-width: 550px) and (max-width: 768px){
     .nav{
@@ -1535,5 +1700,158 @@ img{
     /* Countries Section */
     .countries-content{
         padding: 1rem;
+    }
+
+    /* About Section */
+    .about-title-container{
+        background-color: var(--green-color);
+        margin: 1rem 1rem 0;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .about-image{
+        border-radius: 1rem;
+        height: 250px;
+    }
+    
+    .about-image-container{
+        margin-right: auto;
+        height: 250px;
+        position: relative;
+    }
+    
+    .about-image-bg{
+        background-color: var(--red-color);
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+        height: 250px;
+        width: 260px;
+        z-index: -99;
+        border-radius: 1rem;
+        transition: .3s;
+    }
+    
+    .about-image-container:hover .about-image-bg{
+        top: -1rem;
+        right: -1rem;
+    }
+    
+    .about-image{
+        height: 250px;
+        width: 260px;
+        z-index: 1;
+        border-radius: 1rem;
+        position: relative;
+    }
+    
+    .about-image img{
+        object-fit: cover;
+        height: 250px;
+        width: 260px;
+        position: absolute;
+        border-radius: 1rem;
+        transition: .3s;
+        top: 0;
+        right: 0;
+    }
+    
+    .about-image-container:hover .about-image img{
+        top: -1.5rem;
+        right: -1.5rem;
+    }
+
+    /* Contact Us Section */
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .contact-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 0;
+    }
+    
+    .contact-card{
+        display: flex;
+        gap: .5rem;
+        align-items: flex-start;
+    }
+    
+    .contact-icon{
+        padding: .5rem;
+        border-radius: 50%;
+        background-color: var(--red-color);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 2rem;
+        font-size: 1rem;
+    }
+    
+    .contact-image{
+        border-radius: 1rem;
+        height: 250px;
+    }
+    
+    .contact-image-container{
+        margin-left: auto;
+        height: 250px;
+        position: relative;
+    }
+    
+    .contact-image-bg{
+        background-color: var(--red-color);
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+        height: 250px;
+        width: 260px;
+        z-index: -99;
+        border-radius: 1rem;
+        transition: .3s;
+    }
+    
+    .contact-image-container:hover .contact-image-bg{
+        top: -1rem;
+        right: -1rem;
+    }
+    
+    .contact-image{
+        height: 250px;
+        width: 260px;
+        z-index: 1;
+        border-radius: 1rem;
+        position: relative;
+    }
+    
+    .contact-image img{
+        object-fit: cover;
+        height: 250px;
+        width: 260px;
+        position: absolute;
+        border-radius: 1rem;
+        transition: .3s;
+        top: 0;
+        right: 0;
+    }
+    
+    .contact-image-container:hover .contact-image img{
+        top: -1.5rem;
+        right: -1.5rem;
     }
 }
