@@ -161,6 +161,17 @@ img{
     background-color: #FFF;
 }
 
+.shopify-buy__btn-wrapper{
+    margin-top: 0!important;
+}
+
+.shopify-buy__layout-vertical {
+    text-align: center!important;
+    height: 100%!important;
+    display: flex!important;
+    align-items: center!important;
+}
+
 /* -------------------------------- */
 /* ======== PRODUCTS PAGE  ======== */
 /* -------------------------------- */
