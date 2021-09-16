@@ -23,7 +23,7 @@
 <body>
     <!--====== HEADER ======-->
     <header class="header">
-        <a id=#header-logo href="index.html">
+        <a id="#header-logo" href="index.html">
             <img class="header-logo" src="assets/images/logos/Full Lockup (Horizontal) - Full Colour.png" alt="U-data home">
         </a>
         <i class="fas fa-bars header-toggle" id="header-toggle"></i>
@@ -40,9 +40,11 @@
                             <li><a href="" class="nav-item">Product 2</a></li>
                         </ul>
                     </li>
-                    <li class="nav-list-item"><a href="" class="nav-item">About Us</a></li>
+                    <li class="nav-list-item"><a href="about.html" class="nav-item">About Us</a></li>
                     <li class="nav-list-item"><a href="#faq" class="nav-item">FAQ</a></li>
-                    <li class="nav-list-item"><a href="" class="nav-item"><button class="btn">ORDER NOW</button></a></li>
+                    <li class="nav-list-item">
+                        <div id='product-component-1631724288619'></div>
+                    </li>                
                 </ul>
             </div>
         </nav>
@@ -80,6 +82,7 @@
                         <i class="fas fa-power-off"></i>
                     </div>
                     <div class="activate-card-text">
+                        <h3>Step 1:</h3>
                         <p>Simply press the power button and watch your device switch on.</p>
                     </div>
                 </div>
@@ -88,6 +91,7 @@
                         <i class="far fa-clock"></i>
                     </div>
                     <div class="activate-card-text">
+                        <h3>Step 2:</h3>
                         <p>Sit back & relax for 5 minutes as your Unnifi completes its service connection process.</p>
                     </div>
                 </div>
@@ -96,6 +100,7 @@
                         <i class="fas fa-wifi"></i>
                     </div>
                     <div class="activate-card-text">
+                        <h3>Step 3:</h3>
                         <p>As soon as you're connected, the Wifi indicator will light up.</p>
                     </div>
                 </div>
@@ -152,7 +157,7 @@
     <section class="countries section" id="countries">
         <h1 class="section-title"><span>Countries</span> Covered</h1>
         <div class="countries-section container">
-            <img src="assets/images/world-map.png" alt="">
+            <img src="assets/images/world-map-2.png" alt="">
             <div class="countries-content">
                 <p>
                     <i class="fas fa-globe-asia countries-icon"></i>
@@ -450,7 +455,7 @@
             <div class="footer-links">
                 <h3 class="footer-title">Explore</h3>
                 <ul class="footer-navigation">
-                    <li><a class="footer-link" href="">About</a></li>
+                    <li><a class="footer-link" href="about.html">About</a></li>
                     <li><a class="footer-link" href="index.html#why">Benefits</a></li>
                     <li><a class="footer-link" href="index.html#testimonial">Testimonials</a></li>
                     <li><a class="footer-link" href="#gallery">Products</a></li>
@@ -460,7 +465,7 @@
                 <h3 class="footer-title">Help</h3>
                 <ul class="footer-navigation">
                     <li><a class="footer-link" href="#faq">FAQ</a></li>
-                    <li><a class="footer-link" href="">Contact</a></li>
+                    <li><a class="footer-link" href="about.html#contact">Contact</a></li>
                     <li><a class="footer-link" href="">Order Now</a></li>
                     <li><a class="footer-link" href="#traveler">Top</a></li>
                 </ul>
@@ -493,7 +498,6 @@
 
     <!--====== SWIPER JS ======-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
     <script>
         var swiper = new Swiper(".swiper-container", {
             centeredSlides: false,
@@ -530,7 +534,7 @@
         });
       </script>
 
-
+    <!--====== GETCHAT JS ======-->
     <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -555,6 +559,199 @@
         });
     </script>
 
+    <!--====== SHOPIFY JS ======-->
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+            } else {
+            loadScript();
+            }
+        } else {
+            loadScript();
+        }
+        function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+            domain: 'store-test-mine.myshopify.com',
+            storefrontAccessToken: 'd4670a43060050488d05a59cae3f78c8',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+                id: '6957962723505',
+                node: document.getElementById('product-component-1631724288619'),
+                moneyFormat: 'Rp%20%7B%7Bamount_with_comma_separator%7D%7D',
+                options: {
+        "product": {
+            "styles": {
+            "product": {
+                "@media (min-width: 601px)": {
+                "max-width": "calc(25% - 20px)",
+                "margin-left": "20px",
+                "margin-bottom": "50px"
+                }
+            },
+            "button": {
+                "font-family": "'Inter', sans-serif",
+                "font-size": "16px",
+                "padding-top": "16px",
+                "padding-bottom": "16px",
+                "color": "#e7e9ec",
+                "transition": ".3s",
+                ":hover": {
+                "color": "#e7e9ec",
+                "background-color": "#c02c50"
+                },
+                "background-color": "#711a2f",
+                ":focus": {
+                "background-color": "#c02c50"
+                },
+                "border-radius": "5rem"
+            },
+            "quantityInput": {
+                "font-size": "16px",
+                "padding-top": "16px",
+                "padding-bottom": "16px"
+            }
+            },
+            "buttonDestination": "checkout",
+            "contents": {
+            "img": false,
+            "title": false,
+            "price": false
+            },
+            "text": {
+            "button": "ORDER NOW"
+            },
+            "googleFonts": [
+            "Open Sans"
+            ]
+        },
+        "productSet": {
+            "styles": {
+            "products": {
+                "@media (min-width: 601px)": {
+                "margin-left": "-20px"
+                }
+            }
+            }
+        },
+        "modalProduct": {
+            "contents": {
+            "img": false,
+            "imgWithCarousel": true,
+            "button": false,
+            "buttonWithQuantity": true
+            },
+            "styles": {
+            "product": {
+                "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px"
+                }
+            },
+            "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "16px",
+                "padding-top": "16px",
+                "padding-bottom": "16px",
+                "color": "#e7e9ec",
+                ":hover": {
+                "color": "#e7e9ec",
+                "background-color": "#c02c50"
+                },
+                "background-color": "#711a2f",
+                ":focus": {
+                "background-color": "#c02c50"
+                },
+                "border-radius": "23px"
+            },
+            "quantityInput": {
+                "font-size": "16px",
+                "padding-top": "16px",
+                "padding-bottom": "16px"
+            }
+            },
+            "googleFonts": [
+            "Open Sans"
+            ],
+            "text": {
+            "button": "Add to cart"
+            }
+        },
+        "option": {},
+        "cart": {
+            "styles": {
+            "button": {
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "16px",
+                "padding-top": "16px",
+                "margin-top": "0px",
+                "padding-bottom": "16px",
+                "color": "#e7e9ec",
+                ":hover": {
+                "color": "#e7e9ec",
+                "background-color": "#c02c50"
+                },
+                "background-color": "#711a2f",
+                ":focus": {
+                "background-color": "#c02c50"
+                },
+                "border-radius": "23px"
+            }
+            },
+            "text": {
+            "total": "Subtotal",
+            "button": "Checkout"
+            },
+            "googleFonts": [
+            "Open Sans"
+            ]
+        },
+        "toggle": {
+            "styles": {
+            "toggle": {
+                "font-family": "Open Sans, sans-serif",
+                "background-color": "#711a2f",
+                ":hover": {
+                "background-color": "#c02c50"
+                },
+                ":focus": {
+                "background-color": "#c02c50"
+                }
+            },
+            "count": {
+                "font-size": "16px",
+                "color": "#e7e9ec",
+                ":hover": {
+                "color": "#e7e9ec"
+                }
+            },
+            "iconPath": {
+                "fill": "#e7e9ec"
+            }
+            },
+            "googleFonts": [
+            "Open Sans"
+            ]
+        }
+        },
+            });
+            });
+        }
+        })();
+        /*]]>*/
+    </script>
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
