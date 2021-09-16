@@ -945,6 +945,7 @@ img{
 .faq-answer{
     row-gap: 1.5rem;
     padding-left: 1rem;
+    transition: .3s;
     line-height: 1.5;
 }
 
@@ -1493,6 +1494,11 @@ img{
     .contact-image-container{
         margin: auto;
     }
+
+    /* Countries Section */
+    .countries-content > p:first-of-type{
+        margin-top: 3rem;
+    }
 }
 
 /* ======== MEDIA SCREEN 768PX ======== */
@@ -1997,5 +2003,10 @@ img{
     .contact-image-container:hover .contact-image img{
         top: -1.5rem;
         right: -1.5rem;
+    }
+
+    /* Countries Section */
+    .countries-content > p:first-of-type{
+        margin-top: 2rem;
     }
 }
