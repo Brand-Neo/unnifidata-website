@@ -498,12 +498,9 @@ img{
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgb(0 0 0 / 0.2);
-    background-color: var(--grey-color);
     color: #000;
     width: 50%;
     line-height: 1.5;
-    border-left: .5rem solid var(--blue-color);
-    border-top: .5rem solid var(--blue-color);
 }
 
 .testimonial-card > h4{
