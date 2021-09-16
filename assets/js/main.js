@@ -33,9 +33,26 @@ if(productSubmenu){
     })
 }
 
+/* ======== COUNTRIES MODAL ======== */
+const countryBtn = document.getElementById('countries-btn'),
+      countryModal = document.getElementById('countries-modal'),
+      countryClose = document.getElementById('countires-close')
+
+if(countryBtn){
+    countryBtn.addEventListener('click', () => {
+        countryModal.classList.toggle('show-modal')
+    })
+}
+
+if(countryClose){
+    countryClose.addEventListener('click', () => {
+        countryModal.classList.remove('show-modal')
+    })
+}
+
 /* ======== FAQ ACCORDIAN ======== */
 const faqContent = document.getElementsByClassName('faq-content'),
-    faqHeader = document.querySelectorAll('.faq-header')
+      faqHeader = document.querySelectorAll('.faq-header')
 
 function toggleSkills(){
     // Get the clicked faqHeader's parentnode's class

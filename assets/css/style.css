@@ -874,6 +874,10 @@ img{
     display: none;
 }
 
+.countries-content.show-modal{
+    display: flex;
+}
+
 /* ========= GALLERY SECTION ======== */
 .gallery-content{
     overflow: hidden;
