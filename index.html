@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home - UNNI Tel" />
+	<meta property="og:description" content="Personal WiFi Delivering Data WHERE and WHEN You Need It Global On Arrival Learn More Why Unnitel? GLOBAL Coverage in 90+ countries Plan your trip, not your data plan CONVENIENT Arrive and turn it on Connects up to 5 devices SECURE No more risky public WiFi 128-bit encryption protection of your data Why Unnitel? GLOBAL Coverage in 90+ countries Plan ... Read More" />
+	<meta property="og:url" content="https://unnitel.com/" />
+	<meta property="og:site_name" content="UNNI Tel" />
+	<meta property="og:image" content="assets/images/logos/Iconmark - Full Colour.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="4 minutes">
 
     <!--====== FONTAWESOME ICONS ======-->
     <script src="https://kit.fontawesome.com/bae18c500b.js" crossorigin="anonymous"></script>
@@ -23,7 +33,7 @@
 <body>
     <!--====== HEADER ======-->
     <header class="header">
-        <a id=#header-logo href="index.html">
+        <a id="#header-logo" href="index.html">
             <img class="header-logo" src="assets/images/logos/Full Lockup (Horizontal) - Full Colour.png" alt="U-data home">
         </a>
         <i class="fas fa-bars header-toggle" id="header-toggle"></i>
@@ -40,14 +50,10 @@
                             <li><a href="products.html" class="nav-item">Product 2</a></li>
                         </ul>
                     </li>
-                    <li class="nav-list-item"><a href="" class="nav-item">About Us</a></li>
+                    <li class="nav-list-item"><a href="about.html" class="nav-item">About Us</a></li>
                     <li class="nav-list-item"><a href="products.html#faq" class="nav-item">FAQ</a></li>
                     <li class="nav-list-item">
-                        
-                        <a href="" class="nav-item">
-                            <div id='product-component-1631724288619'></div>
-                            <!-- <button class="btn">ORDER NOW</button> -->
-                        </a>
+                        <div id='product-component-1631724288619'></div>
                     </li>
                 </ul>
             </div>
@@ -112,31 +118,6 @@
         <div class="why-section container">
             <!-- Grid container -->
             <div class="why-content">
-                <!-- Why cards 1 -->
-                <div class="why-cards">
-                    <!-- Card 1 -->
-                    <div class="why-card">
-                        <i class="fas fa-street-view"></i>
-                        <div class="why-card-text">
-                            <h3 class="why-card-title">Mobility</h3>
-                            <p>
-                                A lightweight device to fit in your pocket, 
-                                with a battery life of 8+ hours.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="why-card">
-                        <i class="fas fa-network-wired"></i>
-                        <div class="why-card-text">
-                            <h3 class="why-card-title">Accessibility</h3>
-                            <p>
-                                Works with multiple network operators 
-                                to help you access the best network at all times.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <!-- Why Image -->
                 <div class="why-image-container">
                     <img src="assets/images/products/Unnifi_from_Unnitel_-removebg-preview (1).png" alt="unnidata product">
@@ -163,6 +144,28 @@
                             <p>
                                 Connect your Unnifi and share it with friends
                                 & family around the world.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <i class="fas fa-street-view"></i>
+                        <div class="why-card-text">
+                            <h3 class="why-card-title">Mobility</h3>
+                            <p>
+                                A lightweight device to fit in your pocket, 
+                                with a battery life of 8+ hours.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <i class="fas fa-network-wired"></i>
+                        <div class="why-card-text">
+                            <h3 class="why-card-title">Accessibility</h3>
+                            <p>
+                                Works with multiple network operators 
+                                to help you access the best network at all times.
                             </p>
                         </div>
                     </div>
@@ -285,7 +288,7 @@
             <div class="footer-links">
                 <h3 class="footer-title">Explore</h3>
                 <ul class="footer-navigation">
-                    <li><a class="footer-link" href="">About</a></li>
+                    <li><a class="footer-link" href="about.html">About</a></li>
                     <li><a class="footer-link" href="#why">Benefits</a></li>
                     <li><a class="footer-link" href="#testimonial">Testimonials</a></li>
                     <li><a class="footer-link" href="products.html">Products</a></li>
@@ -295,8 +298,8 @@
                 <h3 class="footer-title">Help</h3>
                 <ul class="footer-navigation">
                     <li><a class="footer-link" href="products.html#faq">FAQ</a></li>
-                    <li><a class="footer-link" href="">Contact</a></li>
-                    <li><a class="footer-link" href="">Order Now</a></li>
+                    <li><a class="footer-link" href="about.html#contact">Contact</a></li>
+                    <li><a class="footer-link" target="_blank" href="https://store-test-mine.myshopify.com/60204384433/checkouts/663da3e43efaa5bc27acb371a45bc2ca?key=6d71fda33c3890a29520abda424c64a7">Order Now</a></li>
                     <li><a class="footer-link" href="#hero-section">Top</a></li>
                 </ul>
             </div>
@@ -328,7 +331,6 @@
 
     <!--====== SWIPER JS ======-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
     <script>
         var swiper = new Swiper(".mySwiper", {
             centeredSlides: true,
@@ -360,9 +362,12 @@
                 // }
             }
         });
+        let index_currentSlide = swiper.realIndex;
+        let currentSlide = swiper.slides[index_currentSlide]
+        currentSlide.style.backgroundColor = 'yellow';
       </script>
 
-
+    <!--====== GETCHAT JS ======-->
     <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -386,7 +391,200 @@
         });
         });
     </script>
-
+  
+    <!--====== SHOPIFY JS ======-->
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    (function () {
+    // var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    var scriptURL = 'assets/js/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
+        } else {
+        loadScript();
+        }
+    } else {
+        loadScript();
+    }
+    function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+    }
+    function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+        domain: 'store-test-mine.myshopify.com',
+        storefrontAccessToken: 'd4670a43060050488d05a59cae3f78c8',
+        });
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('product', {
+            id: '6957962723505',
+            node: document.getElementById('product-component-1631724288619'),
+            moneyFormat: 'Rp%20%7B%7Bamount_with_comma_separator%7D%7D',
+            options: {
+    "product": {
+        "styles": {
+        "product": {
+            "@media (min-width: 601px)": {
+            "max-width": "calc(25% - 20px)",
+            "margin-left": "20px",
+            "margin-bottom": "50px"
+            }
+        },
+        "button": {
+            "font-family": "Open Sans, sans-serif",
+            "font-size": "16px",
+            "padding-top": "16px",
+            "padding-bottom": "16px",
+            "color": "#e7e9ec",
+            "margin-top": "0!important;",
+            ":hover": {
+            "color": "#e7e9ec",
+            "background-color": "#c02c50"
+            },
+            "background-color": "#711a2f",
+            ":focus": {
+            "background-color": "#c02c50"
+            },
+            "border-radius": "23px"
+        },
+        "quantityInput": {
+            "font-size": "16px",
+            "padding-top": "16px",
+            "padding-bottom": "16px"
+        }
+        },
+        "buttonDestination": "checkout",
+        "contents": {
+        "img": false,
+        "title": false,
+        "price": false
+        },
+        "text": {
+        "button": "ORDER NOW"
+        },
+        "googleFonts": [
+        "Open Sans"
+        ]
+    },
+    "productSet": {
+        "styles": {
+        "products": {
+            "@media (min-width: 601px)": {
+            "margin-left": "-20px"
+            }
+        }
+        }
+    },
+    "modalProduct": {
+        "contents": {
+        "img": false,
+        "imgWithCarousel": true,
+        "button": false,
+        "buttonWithQuantity": true
+        },
+        "styles": {
+        "product": {
+            "@media (min-width: 601px)": {
+            "max-width": "100%",
+            "margin-left": "0px",
+            "margin-bottom": "0px"
+            }
+        },
+        "button": {
+            "font-family": "Open Sans, sans-serif",
+            "font-size": "16px",
+            "padding-top": "16px",
+            "padding-bottom": "16px",
+            "color": "#e7e9ec",
+            ":hover": {
+            "color": "#e7e9ec",
+            "background-color": "#c02c50"
+            },
+            "background-color": "#711a2f",
+            ":focus": {
+            "background-color": "#c02c50"
+            },
+            "border-radius": "23px"
+        },
+        "quantityInput": {
+            "font-size": "16px",
+            "padding-top": "16px",
+            "padding-bottom": "16px"
+        }
+        },
+        "googleFonts": [
+        "Open Sans"
+        ],
+        "text": {
+        "button": "Add to cart"
+        }
+    },
+    "option": {},
+    "cart": {
+        "styles": {
+        "button": {
+            "font-family": "Open Sans, sans-serif",
+            "font-size": "16px",
+            "padding-top": "16px",
+            "padding-bottom": "16px",
+            "color": "#e7e9ec",
+            ":hover": {
+            "color": "#e7e9ec",
+            "background-color": "#c02c50"
+            },
+            "background-color": "#711a2f",
+            ":focus": {
+            "background-color": "#c02c50"
+            },
+            "border-radius": "23px"
+        }
+        },
+        "text": {
+        "total": "Subtotal",
+        "button": "Checkout"
+        },
+        "googleFonts": [
+        "Open Sans"
+        ]
+    },
+    "toggle": {
+        "styles": {
+        "toggle": {
+            "font-family": "Open Sans, sans-serif",
+            "background-color": "#711a2f",
+            ":hover": {
+            "background-color": "#c02c50"
+            },
+            ":focus": {
+            "background-color": "#c02c50"
+            }
+        },
+        "count": {
+            "font-size": "16px",
+            "color": "#e7e9ec",
+            ":hover": {
+            "color": "#e7e9ec"
+            }
+        },
+        "iconPath": {
+            "fill": "#e7e9ec"
+        }
+        },
+        "googleFonts": [
+        "Open Sans"
+        ]
+    }
+    },
+        });
+        });
+    }
+    })();
+    /*]]>*/
+    </script>
 
     <!--====== SHOPIFY JS ======-->
     <script type="text/javascript">

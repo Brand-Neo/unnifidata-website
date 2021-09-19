@@ -33,24 +33,41 @@ if(productSubmenu){
     })
 }
 
+/* ======== COUNTRIES MODAL ======== */
+const countryBtn = document.getElementById('countries-btn'),
+      countryModal = document.getElementById('countries-modal'),
+      countryClose = document.getElementById('countires-close')
+
+if(countryBtn){
+    countryBtn.addEventListener('click', () => {
+        countryModal.classList.toggle('show-modal')
+    })
+}
+
+if(countryClose){
+    countryClose.addEventListener('click', () => {
+        countryModal.classList.remove('show-modal')
+    })
+}
+
 /* ======== FAQ ACCORDIAN ======== */
-const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
+const faqContent = document.getElementsByClassName('faq-content'),
+      faqHeader = document.querySelectorAll('.faq-header')
 
 function toggleSkills(){
-    // Get the clicked skillsHeader's parentnode's class
+    // Get the clicked faqHeader's parentnode's class
     let itemClass = this.parentNode.className
 
-    for(i=0; i<skillsContent.length; i++){
-        skillsContent[i].className = 'skills__content skills__close'
+    for(i=0; i<faqContent.length; i++){
+        faqContent[i].className = 'faq-content faq-close'
     }
 
     // If currently closed and is clicked, then open it by toggling the class 
-    if(itemClass === 'skills__content skills__close'){
-        this.parentNode.className = 'skills__content skills__open'
+    if(itemClass === 'faq-content faq-close'){
+        this.parentNode.className = 'faq-content faq-open'
     }
 }
 
-skillsHeader.forEach((el) => {
+faqHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
