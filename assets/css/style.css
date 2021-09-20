@@ -496,6 +496,12 @@ img{
     color: #ccc;
 }
 
+/* .testimonial-cards{
+    display: flex;
+    align-items: center;
+    transition: .3s;
+} */
+
 .testimonial-card{
     display: flex;
     flex-direction: column;
@@ -513,6 +519,14 @@ img{
 .testimonial-card > h4{
     margin-bottom: .5rem;
 }
+
+/* .testimonial-card > p{
+    display: none;
+}
+
+.swiper-slide-active > p{
+    display: block;
+} */
 
 .swiper-slide{
     height: auto;
