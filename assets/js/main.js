@@ -38,15 +38,30 @@ const countryBtn = document.getElementById('countries-btn'),
       countryModal = document.getElementById('countries-modal'),
       countryClose = document.getElementById('countires-close')
 
+let show = false
 if(countryBtn){
     countryBtn.addEventListener('click', () => {
         countryModal.classList.toggle('show-modal')
+        if(show===false){
+            countryBtn.innerText = 'HIDE ALL COUNTRIES'
+            show = true
+        } else{
+            countryBtn.innerText = 'VIEW ALL COUNTRIES'
+            show = false
+        }
     })
 }
 
 if(countryClose){
     countryClose.addEventListener('click', () => {
         countryModal.classList.remove('show-modal')
+        if(show===false){
+            countryBtn.innerText = 'HIDE ALL COUNTRIES'
+            show = true
+        } else{
+            countryBtn.innerText = 'VIEW ALL COUNTRIES'
+            show = false
+        }
     })
 }
 
