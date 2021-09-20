@@ -254,8 +254,8 @@ img{
     position: absolute;
     top: -.5rem;
     right: -.5rem;
-    height: 400px;
-    width: 400px;
+    height: 70vh;
+    width: 70vh;
     z-index: -99;
     border-radius: 1rem;
     transition: .3s;
@@ -267,8 +267,8 @@ img{
 }
 
 .hero-image{
-    height: 400px;
-    width: 400px;
+    height: 70vh;
+    width: 70vh;
     z-index: 1;
     border-radius: 1rem;
     position: relative;
@@ -276,8 +276,8 @@ img{
 
 .hero-image img{
     object-fit: cover;
-    height: 400px;
-    width: 400px;
+    height: 70vh;
+    width: 70vh;
     position: absolute;
     border-radius: 1rem;
     transition: .3s;
@@ -292,7 +292,6 @@ img{
 
 /* ======== GLANCE SECTION ======== */
 .glance{
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -374,7 +373,7 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .why-cards{
@@ -392,7 +391,7 @@ img{
     transition: .3s;
     -webkit-transition: .3s;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
     border-radius: .5rem;
     line-height: 1.5;
@@ -416,14 +415,13 @@ img{
     margin-bottom: .5rem;
 }
 
-
 .why-image-container{
     position: relative;
     background-color: transparent;
 }
 
 .why-image-container > img{
-    height: 450px;
+    height: 650px;
     width: 100%;
     object-fit: contain;
     background-color: transparent;
@@ -437,8 +435,8 @@ img{
 .why-image-container > div{
     position: absolute;
     background-color: var(--green-color);
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     top: 50%;
     border-radius: 50%;
     z-index: -1;
@@ -490,6 +488,7 @@ img{
     height: 100%;
     padding: 2rem 0;
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .testimonial-card{
@@ -517,6 +516,10 @@ img{
     display: flex;
     align-items: center;
     justify-self: center;
+}
+
+.download{
+    position: relative;
 }
 
 .download-text{
@@ -560,6 +563,14 @@ img{
 
 .download-btn i{
     font-size: 2rem;
+}
+
+.downlaod-image{
+    position: absolute;
+    right: 0;
+    height: 430px;
+    top: -9.5rem;
+    z-index: -1;
 }
 
 /* ======== FOOTER SECTION ======== */
@@ -1359,6 +1370,10 @@ img{
         gap: .5rem;
     }
 
+    .downlaod-image{
+        display: none;
+    }
+
     /* Footer Section */
     .footer-section{
         display: grid;
@@ -1727,6 +1742,10 @@ img{
     
     .download-title span{
         color: var(--red-color)
+    }
+
+    .downlaod-image{
+        display: none;
     }
     
     .download-buttons{
