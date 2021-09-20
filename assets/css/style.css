@@ -520,10 +520,16 @@ img{
 }
 
 /* ======== DOWNLOAD SECTION ======== */
+.download-section{
+    height: 100%;
+}
+
 .download-content{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    position: relative;
+    height: 300px;
 }
 
 .download{
@@ -535,6 +541,8 @@ img{
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    position: absolute;
+    top: -.5rem;
 }
 
 .download-text > h3{
@@ -578,6 +586,7 @@ img{
     right: 0;
     height: 500px;
     top: -5.5rem;
+    right: -3rem;
     z-index: -1;
 }
 
@@ -689,8 +698,8 @@ img{
 .traveler-image-container{
     position: relative;
     background-color: var(--green-color);
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 370px;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -705,9 +714,9 @@ img{
 }
 
 .traveler-image{
-    width: 350px;
+    width: 400px;
     z-index: 5;
-    height: 400px;
+    height: 450px;
     object-fit: contain;
 }
 
@@ -835,8 +844,8 @@ img{
 .revolutionize-image-container{
     position: relative;
     background-color: var(--green-color);
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 370px;
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -852,9 +861,9 @@ img{
 }
 
 .revolutionize-image{
-    width: 450px;
+    width: 500px;
     z-index: 5;
-    height: 450px;
+    height: 550px;
     object-fit: contain;
 }
 
@@ -1366,6 +1375,21 @@ img{
         align-items: center;
         justify-self: center;
         flex-direction: column;
+    }
+    .download-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        height: auto;
+    }
+    
+    .download-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        position: relative;
     }
     .download-br{
         display: none;
