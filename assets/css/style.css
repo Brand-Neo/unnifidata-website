@@ -1375,12 +1375,6 @@ img{
         align-items: center;
         justify-self: center;
         flex-direction: column;
-    }
-    .download-content{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        position: relative;
         height: auto;
     }
     
@@ -1391,6 +1385,7 @@ img{
         width: 100%;
         position: relative;
     }
+
     .download-br{
         display: none;
     }
@@ -1830,12 +1825,14 @@ img{
         margin-bottom: 0;
     }
 
+    .download{
+        height: 100%;
+    }
+
     /* Download Section */
     .download-content{
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        flex-direction: column;
+        height: 325px;
+        position: relative;
     }
     .download-br{
         display: none;
