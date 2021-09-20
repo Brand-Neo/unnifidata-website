@@ -488,7 +488,7 @@ img{
     height: 100%;
     padding: 2rem 0;
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 .testimonial-icon{
@@ -523,6 +523,7 @@ img{
 .download-content{
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .download{
@@ -575,8 +576,8 @@ img{
 .downlaod-image{
     position: absolute;
     right: 0;
-    height: 430px;
-    top: -9.5rem;
+    height: 500px;
+    top: -5.5rem;
     z-index: -1;
 }
 
@@ -666,6 +667,7 @@ img{
 /* ======== TRAVELER SECTION ======== */
 .traveler-section{
     padding-top: 6rem;
+    height: 100vh;
 }
 
 .traveler-content{
@@ -678,6 +680,7 @@ img{
     background-color: var(--grey-color);
     border-radius: 1rem;
     margin-top: 2rem;
+    height: 100%;
     overflow: hidden;
     position: relative;
     z-index: 10;
@@ -810,9 +813,13 @@ img{
 }
 
 /* ======== REVOLUTIONIZE SECTION ======== */
+.revolutionize-section{
+    height: 100vh;
+}
 .revolutionize-content{
     padding: 3rem;
     display: grid;
+    height: 100%;
     grid-template-columns: 2fr 3fr;
     width: 100%;
     align-items: center;
@@ -1348,6 +1355,11 @@ img{
         box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
     }
 
+    /* Testimonial Section */
+    .testimonial-content{
+        margin-bottom: 0;
+    }
+
     /* Download Section */
     .download-content{
         display: flex;
@@ -1355,7 +1367,9 @@ img{
         justify-self: center;
         flex-direction: column;
     }
-    
+    .download-br{
+        display: none;
+    }
     .download-text{
         display: flex;
         flex-direction: column;
@@ -1441,10 +1455,14 @@ img{
     }
 
     /* Traveler Section */
+    .traveler-section{
+        height: auto;
+    }
     .traveler-content{
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        height: auto;
         margin-top: 4rem;
         padding: 2rem 1rem;
     }
@@ -1472,10 +1490,14 @@ img{
     }
 
     /* Revolutionize Section */
+    .revolutionize-section{
+        height: auto;
+    }
     .revolutionize-content{
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        height: auto;
         margin-top: 0;
         padding: 3rem 1rem;
     }
@@ -1779,6 +1801,11 @@ img{
         box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
     }
 
+    /* Testimonial Section */
+    .testimonial-content{
+        margin-bottom: 0;
+    }
+
     /* Download Section */
     .download-content{
         display: flex;
@@ -1786,7 +1813,9 @@ img{
         justify-self: center;
         flex-direction: column;
     }
-    
+    .download-br{
+        display: none;
+    }
     .download-text{
         display: flex;
         flex-direction: column;
@@ -1875,6 +1904,10 @@ img{
     }
 
     /* Traveler Section */
+    .traveler-section{
+        height: auto;
+    }
+
     .traveler-content{
         display: flex;
         flex-direction: column;
@@ -1906,10 +1939,14 @@ img{
     }
 
     /* Revolutionize Section */
+    .revolutionize-section{
+        height: auto;
+    }
     .revolutionize-content{
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        height: auto;
         margin-top: 0;
         padding: 3rem 1rem;
     }
