@@ -1490,19 +1490,14 @@ img{
     .download-text{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0rem;
         width: 100%;
         position: relative;
+        margin-left: 0;
     }
 
     .download-br{
         display: none;
-    }
-    .download-text{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 0;
     }
     
     .download-title{
@@ -1969,6 +1964,7 @@ img{
         flex-direction: column;
         width: 100%;
         gap: 0;
+        margin-left: 0;
     }
     
     .download-title{
