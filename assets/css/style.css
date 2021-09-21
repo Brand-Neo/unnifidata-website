@@ -103,6 +103,31 @@ img{
     font-weight: 500;
 }
 
+.btn.btn-green{
+    padding: .85rem 2.5rem;
+    display: inline-flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    outline: none;
+    background-color: var(--green-color);
+    color: #000;
+    border: 2px solid var(--green-color);
+    transition: .3s;
+}
+
+.btn.btn-green:hover{
+    border: 2px solid var(--grey-color);
+    outline: none;
+    color: #000;
+    background-color: var(--grey-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-icon{
+    margin-right: .5rem;
+}
+
 /* ======== MAIN CSS ======== */
 .header{
     position: fixed;
@@ -1190,11 +1215,60 @@ img{
 
 /* ======== 404 SECTION ======== */
 .error{
-    height: 100vh;
-    margin-top: 6rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--blue-color);
+    color: #FFF;
 }
 
+.error-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+
+.error-title{
+    color: var(--green-color);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.error-subtitle{
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.error-buttons{
+    margin-top: 2rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======== TERMS SECTION ======== */
+.terms{
+    padding-top: 6rem;
+}
+
+.terms-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.terms-title{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
 
 /* ======== MEDIA SCREEN 550PX TO 768PX ======== */
 @media screen and (min-width: 550px) and (max-width: 768px){
@@ -1647,6 +1721,11 @@ img{
     /* Countries Section */
     .countries-content > p:first-of-type{
         margin-top: 3rem;
+    }
+
+    /* Error Section */
+    .error-section{
+        padding-top: 6rem;
     }
 }
 
@@ -2192,5 +2271,15 @@ img{
     /* Countries Section */
     .countries-content > p:first-of-type{
         margin-top: 2rem;
+    }
+
+    /* 404 Section */
+    .error-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .error-section{
+        padding-top: 6rem;
     }
 }
