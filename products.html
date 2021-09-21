@@ -52,7 +52,7 @@
                     <li class="nav-list-item"><a href="about.html" class="nav-item">About Us</a></li>
                     <li class="nav-list-item"><a href="#faq" class="nav-item">FAQ</a></li>
                     <li class="nav-list-item">
-                        <div id='product-component-1631724288619'></div>
+                        <div id='product-component-1632057930081'></div>
                     </li>                
                 </ul>
             </div>
@@ -565,7 +565,6 @@
     <script type="text/javascript">
         /*<![CDATA[*/
         (function () {
-        // var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
         var scriptURL = 'assets/js/buy-button-storefront.min.js';
         if (window.ShopifyBuy) {
             if (window.ShopifyBuy.UI) {
@@ -591,7 +590,7 @@
             ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
                 id: '6957962723505',
-                node: document.getElementById('product-component-1631724288619'),
+                node: document.getElementById('product-component-1632057930081'),
                 moneyFormat: 'Rp%20%7B%7Bamount_with_comma_separator%7D%7D',
                 options: {
         "product": {
@@ -609,7 +608,6 @@
                 "padding-top": "16px",
                 "padding-bottom": "16px",
                 "color": "#e7e9ec",
-                "margin-top": "0!important;",
                 ":hover": {
                 "color": "#e7e9ec",
                 "background-color": "#c02c50"
@@ -716,6 +714,7 @@
             "total": "Subtotal",
             "button": "Checkout"
             },
+            "popup": false,
             "googleFonts": [
             "Open Sans"
             ]
@@ -753,7 +752,7 @@
         }
         })();
         /*]]>*/
-        </script>
+    </script>
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
