@@ -43,10 +43,10 @@ if(countryBtn){
     countryBtn.addEventListener('click', () => {
         countryModal.classList.toggle('show-modal')
         if(show===false){
-            countryBtn.innerText = 'HIDE ALL COUNTRIES'
+            countryBtn.innerText = 'Hide all countries'
             show = true
         } else{
-            countryBtn.innerText = 'VIEW ALL COUNTRIES'
+            countryBtn.innerText = 'View all countries'
             show = false
         }
     })
@@ -56,10 +56,10 @@ if(countryClose){
     countryClose.addEventListener('click', () => {
         countryModal.classList.remove('show-modal')
         if(show===false){
-            countryBtn.innerText = 'HIDE ALL COUNTRIES'
+            countryBtn.innerText = 'Hide all countries'
             show = true
         } else{
-            countryBtn.innerText = 'VIEW ALL COUNTRIES'
+            countryBtn.innerText = 'View all countries'
             show = false
         }
     })
@@ -86,3 +86,14 @@ function toggleSkills(){
 faqHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
+
+// // Whatsapp link buttons
+// const linkSpan = document.querySelectorAll('.wa-link-btn'),
+//       whatsappBtn = document.getElementById('gcaMainButton')
+
+// linkSpan.forEach((link) => {
+//     link.addEventListener('click', () => {
+//         console.log(whatsappBtn)
+//         whatsappBtn.click()
+//     })
+// })

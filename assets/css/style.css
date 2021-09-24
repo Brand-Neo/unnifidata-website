@@ -1048,6 +1048,11 @@ img{
     transform: rotate(-180deg);
 }
 
+.wa-link-btn{
+    color: blue;
+    cursor: pointer;
+}
+
 /* -------------------------------- */
 /* ======== ABOUT US PAGE  ======== */
 /* -------------------------------- */
