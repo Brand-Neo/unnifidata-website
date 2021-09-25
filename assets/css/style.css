@@ -2408,7 +2408,7 @@ img{
     .contact-content{
         display: flex;
         flex-direction: column-reverse;
-        gap: 2rem;
+        /* gap: 2rem; */
         align-items: center;
     }
     
@@ -2445,6 +2445,7 @@ img{
     
     .contact-image-container{
         margin-left: auto;
+        margin-top: 2rem;
         height: 250px;
         position: relative;
     }

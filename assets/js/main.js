@@ -87,13 +87,15 @@ faqHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
-// // Whatsapp link buttons
-// const linkSpan = document.querySelectorAll('.wa-link-btn'),
-//       whatsappBtn = document.getElementById('gcaMainButton')
+// Whatsapp link buttons
+const linkSpan = document.querySelectorAll('.wa-link-btn'),
+      whatsappBtn = document.getElementById('gcaMainButton'),
+      whatsappChat = document.getElementById('gcaMainCard')
 
-// linkSpan.forEach((link) => {
-//     link.addEventListener('click', () => {
-//         console.log(whatsappBtn)
-//         whatsappBtn.click()
-//     })
-// })
+console.log(whatsappBtn)
+linkSpan.forEach((link) => {
+    link.addEventListener('click', () => {
+        console.log(whatsappBtn)
+        whatsappChat.classList.toggle('gcaDisplay')
+    })
+})
