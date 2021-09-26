@@ -2482,7 +2482,7 @@ img{
     .contact-content{
         display: flex;
         flex-direction: column-reverse;
-        /* gap: 2rem; */
+        gap: 2rem;
         margin: 0 1rem;
         align-items: center;
     }
@@ -2497,7 +2497,8 @@ img{
     
     .contact-card{
         display: flex;
-        gap: 1.5rem;
+        gap: 2rem;
+        width: 100%;
         align-items: flex-start;
     }
     
@@ -2509,9 +2510,9 @@ img{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 2.5rem;
-        width: 2.5rem;
-        font-size: 1rem;
+        min-height: 3rem;
+        min-width: 3rem!important;
+        font-size: .8rem;
     }
     
     .contact-image{
