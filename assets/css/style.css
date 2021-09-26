@@ -603,6 +603,7 @@ img{
 .download-buttons{
     display: flex;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .download-btn{
@@ -659,7 +660,8 @@ img{
 .footer-socials{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 1.5rem;
 }
 
 .footer-social{
@@ -667,7 +669,13 @@ img{
     background: var(--red-color);
     color: #FFF;
     border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .footer-links{
     display: flex;
@@ -760,6 +768,10 @@ img{
     z-index: 5;
     height: 450px;
     object-fit: contain;
+}
+
+.traveler-btn{
+    margin-top: 1rem;
 }
 
 /* ======== ACTIVATE SECTION ======== */
@@ -1146,6 +1158,22 @@ img{
     right: -1.5rem;
 }
 
+.about-icon{
+    position: absolute;
+    top: 55%;
+    left: -20%;
+    border-radius: 1rem;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.about-icon.ucloud{
+    border: 5px solid var(--green-color);
+    border-radius: 1rem;
+}
+
 /* ======== ABOUT 2 SECTION ======== */
 /* ======== ABOUT SECTION ======== */
 .about-title-2{
@@ -1302,7 +1330,23 @@ img{
     right: 0;
 }
 
+.contact-image iframe{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 1rem;
+    transition: .3s;
+    top: 0;
+    right: 0;
+}
+
 .contact-image-container:hover .contact-image img{
+    top: -1.5rem;
+    right: -1.5rem;
+}
+
+.contact-image-container:hover .contact-image iframe{
     top: -1.5rem;
     right: -1.5rem;
 }
@@ -2356,6 +2400,12 @@ img{
     .about-image-container:hover .about-image img{
         top: -1.5rem;
         right: -1.5rem;
+    }
+
+    .about-icon{
+        left: -10%;
+        height: 100px;
+        width: 100px;
     }
 
     /* About Section 2 */
