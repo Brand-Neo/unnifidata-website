@@ -2348,6 +2348,7 @@ img{
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        margin: 0 1rem;
     }
     
     .about-image{
@@ -2420,6 +2421,7 @@ img{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0 1rem;
         /* gap: 2rem; */
     }
     
@@ -2481,6 +2483,7 @@ img{
         display: flex;
         flex-direction: column-reverse;
         /* gap: 2rem; */
+        margin: 0 1rem;
         align-items: center;
     }
     
@@ -2488,12 +2491,13 @@ img{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        width: 100%;
         margin-left: 0;
     }
     
     .contact-card{
         display: flex;
-        gap: .5rem;
+        gap: 1.5rem;
         align-items: flex-start;
     }
     
@@ -2505,8 +2509,8 @@ img{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 2rem;
-        width: 2rem;
+        height: 2.5rem;
+        width: 2.5rem;
         font-size: 1rem;
     }
     
@@ -2558,6 +2562,17 @@ img{
         right: 0;
     }
     
+    .contact-image iframe{
+        object-fit: cover;
+        height: 250px;
+        width: 260px;
+        position: absolute;
+        border-radius: 1rem;
+        transition: .3s;
+        top: 0;
+        right: 0;
+    }
+
     .contact-image-container:hover .contact-image img{
         top: -1.5rem;
         right: -1.5rem;
