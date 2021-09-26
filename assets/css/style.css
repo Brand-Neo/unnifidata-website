@@ -328,7 +328,7 @@ img{
 
 .glance-section{
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .glance-content{
@@ -952,6 +952,9 @@ img{
 }
 
 /* ========= GALLERY SECTION ======== */
+.gallery{
+    background-color: var(--grey-color);
+}
 .gallery-content{
     overflow: hidden;
     position: relative;
@@ -1059,9 +1062,6 @@ img{
 /* ======== ABOUT US PAGE  ======== */
 /* -------------------------------- */
 /* ======== ABOUT SECTION ======== */
-.about{
-}
-
 .about-title{
     font-size: 2.5rem;
     font-weight: 700;
@@ -1077,19 +1077,31 @@ img{
 
 .about-content{
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    line-height: 1.5;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin: 0 2rem;
+}
+
+.about-text, .about-text-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.about-text > p,
+.about-text-2 > p{
+    line-height: 1.5;
 }
 
 .about-image{
     border-radius: 1rem;
-    height: 327px;
+    height: 400px;
 }
 
 .about-image-container{
     margin-left: auto;
-    height: 327px;
+    height: 400px;
     position: relative;
 }
 
@@ -1098,8 +1110,8 @@ img{
     position: absolute;
     top: -.5rem;
     right: -.5rem;
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     z-index: -99;
     border-radius: 1rem;
     transition: .3s;
@@ -1111,8 +1123,8 @@ img{
 }
 
 .about-image{
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     z-index: 1;
     border-radius: 1rem;
     position: relative;
@@ -1120,8 +1132,8 @@ img{
 
 .about-image img{
     object-fit: cover;
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     position: absolute;
     border-radius: 1rem;
     transition: .3s;
@@ -1136,9 +1148,6 @@ img{
 
 /* ======== ABOUT 2 SECTION ======== */
 /* ======== ABOUT SECTION ======== */
-.about-2{
-}
-
 .about-title-2{
     font-size: 2.5rem;
     font-weight: 700;
@@ -1154,19 +1163,19 @@ img{
 
 .about-content-2{
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    line-height: 1.5;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin: 0 2rem;
 }
 
 .about-image-2{
     border-radius: 1rem;
-    height: 327px;
+    height: 400px;
 }
 
 .about-image-container-2{
     margin-right: auto;
-    height: 327px;
+    height: 400px;
     position: relative;
 }
 
@@ -1175,8 +1184,8 @@ img{
     position: absolute;
     top: -.5rem;
     right: -.5rem;
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     z-index: -99;
     border-radius: 1rem;
     transition: .3s;
@@ -1188,8 +1197,8 @@ img{
 }
 
 .about-image-2{
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     z-index: 1;
     border-radius: 1rem;
     position: relative;
@@ -1197,8 +1206,8 @@ img{
 
 .about-image-2 img{
     object-fit: cover;
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     position: absolute;
     border-radius: 1rem;
     transition: .3s;
@@ -1216,6 +1225,7 @@ img{
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     align-items: center;
+    margin: 0 2rem;
 }
 
 .contact-cards{
@@ -1247,12 +1257,12 @@ img{
 
 .contact-image{
     border-radius: 1rem;
-    height: 327px;
+    height: 400px;
 }
 
 .contact-image-container{
     margin-right: auto;
-    height: 327px;
+    height: 400px;
     position: relative;
 }
 
@@ -1261,8 +1271,8 @@ img{
     position: absolute;
     top: -.5rem;
     right: -.5rem;
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     z-index: -99;
     border-radius: 1rem;
     transition: .3s;
@@ -1274,8 +1284,8 @@ img{
 }
 
 .contact-image{
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     z-index: 1;
     border-radius: 1rem;
     position: relative;
@@ -1283,8 +1293,8 @@ img{
 
 .contact-image img{
     object-fit: cover;
-    height: 327px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     position: absolute;
     border-radius: 1rem;
     transition: .3s;
@@ -1354,9 +1364,17 @@ img{
     font-weight: 700;
 }
 
+.hide-br{
+    display: none;
+}
+
 /* ======== MEDIA SCREEN 550PX TO 768PX ======== */
 @media screen and (min-width: 550px) and (max-width: 768px){
     .header-br{
+        display: none;
+    }
+
+    .hide-br{
         display: none;
     }
 
@@ -1734,18 +1752,18 @@ img{
     .about-title-container {
         background-color: var(--green-color);
         margin: 0rem 1rem;
-        padding: 3rem 1rem;
+        padding: 3rem 2rem;
         border-radius: 1rem;
     }
     
     .about-image{
         border-radius: 1rem;
-        height: 327px;
+        height: 400px;
     }
     
     .about-image-container{
         margin-right: auto;
-        height: 327px;
+        height: 400px;
         position: relative;
     }
     
@@ -1754,8 +1772,8 @@ img{
         position: absolute;
         top: -.5rem;
         right: -.5rem;
-        height: 327px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         z-index: -99;
         border-radius: 1rem;
         transition: .3s;
@@ -1767,8 +1785,8 @@ img{
     }
     
     .about-image{
-        height: 327px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         z-index: 1;
         border-radius: 1rem;
         position: relative;
@@ -1776,8 +1794,8 @@ img{
     
     .about-image img{
         object-fit: cover;
-        height: 327px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         position: absolute;
         border-radius: 1rem;
         transition: .3s;
@@ -1806,12 +1824,12 @@ img{
     
     .about-image-2{
         border-radius: 1rem;
-        height: 327px;
+        height: 400px;
     }
     
     .about-image-container-2{
         margin-left: auto;
-        height: 327px;
+        height: 400px;
         position: relative;
     }
     
@@ -1820,8 +1838,8 @@ img{
         position: absolute;
         top: -.5rem;
         right: -.5rem;
-        height: 327px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         z-index: -99;
         border-radius: 1rem;
         transition: .3s;
@@ -1833,8 +1851,8 @@ img{
     }
     
     .about-image-2{
-        height: 327px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         z-index: 1;
         border-radius: 1rem;
         position: relative;
@@ -1842,8 +1860,8 @@ img{
     
     .about-image-2 img{
         object-fit: cover;
-        height: 327px;
-        width: 500px;
+        height: 400px;
+        width: 400px;
         position: absolute;
         border-radius: 1rem;
         transition: .3s;
@@ -1882,6 +1900,10 @@ img{
 @media screen and (min-width: 320px) and (max-width: 550px){
     .header-br{
         display: none;
+    }
+
+    .hide-br{
+        display: block;
     }
 
     /* Navbar */

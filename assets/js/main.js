@@ -43,10 +43,10 @@ if(countryBtn){
     countryBtn.addEventListener('click', () => {
         countryModal.classList.toggle('show-modal')
         if(show===false){
-            countryBtn.innerText = 'Hide all countries'
+            countryBtn.innerText = 'HIDE ALL COUNTRIES'
             show = true
         } else{
-            countryBtn.innerText = 'View all countries'
+            countryBtn.innerText = 'VIEW ALL COUNTRIES'
             show = false
         }
     })
@@ -56,10 +56,10 @@ if(countryClose){
     countryClose.addEventListener('click', () => {
         countryModal.classList.remove('show-modal')
         if(show===false){
-            countryBtn.innerText = 'Hide all countries'
+            countryBtn.innerText = 'HIDE ALL COUNTRIES'
             show = true
         } else{
-            countryBtn.innerText = 'View all countries'
+            countryBtn.innerText = 'VIEW ALL COUNTRIES'
             show = false
         }
     })
@@ -90,12 +90,16 @@ faqHeader.forEach((el) => {
 // Whatsapp link buttons
 const linkSpan = document.querySelectorAll('.wa-link-btn'),
       whatsappBtn = document.getElementById('gcaMainButton'),
-      whatsappChat = document.getElementById('gcaMainCard')
+      whatsappChat = document.getElementById('gcaMainCard'),
+      contactBtn = document.getElementById('contact-us-btn')
 
 console.log(whatsappBtn)
 linkSpan.forEach((link) => {
     link.addEventListener('click', () => {
-        console.log(whatsappBtn)
         whatsappChat.classList.toggle('gcaDisplay')
     })
+})
+
+contactBtn.addEventListener('click', () => {
+    whatsappChat.classList.toggle('gcaDisplay')
 })
