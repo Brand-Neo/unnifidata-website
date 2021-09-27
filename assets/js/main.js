@@ -93,7 +93,6 @@ const linkSpan = document.querySelectorAll('.wa-link-btn'),
       whatsappChat = document.getElementById('gcaMainCard'),
       contactBtn = document.getElementById('contact-us-btn')
 
-console.log(whatsappBtn)
 linkSpan.forEach((link) => {
     link.addEventListener('click', () => {
         whatsappChat.classList.toggle('gcaDisplay')

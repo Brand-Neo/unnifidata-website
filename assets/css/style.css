@@ -1249,6 +1249,9 @@ img{
 }
 
 /* ======== CONTACT US SECTION ======== */
+.contact{
+    background-color: var(--grey-color);
+}
 .contact-content{
     display: grid;
     grid-template-columns: 2fr 1.5fr;
@@ -1291,6 +1294,7 @@ img{
 .contact-image-container{
     margin-right: auto;
     height: 400px;
+    width: 530px;
     position: relative;
 }
 
@@ -1300,8 +1304,8 @@ img{
     top: -.5rem;
     right: -.5rem;
     height: 400px;
-    width: 400px;
-    z-index: -99;
+    width: 530px;
+    z-index: 1;
     border-radius: 1rem;
     transition: .3s;
 }
@@ -1313,13 +1317,13 @@ img{
 
 .contact-image{
     height: 400px;
-    width: 400px;
+    width: 530px;
     z-index: 1;
     border-radius: 1rem;
     position: relative;
 }
 
-.contact-image img{
+/* .contact-image img{
     object-fit: cover;
     height: 400px;
     width: 400px;
@@ -1328,12 +1332,12 @@ img{
     transition: .3s;
     top: 0;
     right: 0;
-}
+} */
 
 .contact-image iframe{
     object-fit: cover;
     height: 400px;
-    width: 400px;
+    width: 530px;
     position: absolute;
     border-radius: 1rem;
     transition: .3s;
@@ -2518,12 +2522,14 @@ img{
     .contact-image{
         border-radius: 1rem;
         height: 250px;
+        width: 260px;
     }
     
     .contact-image-container{
         margin-left: auto;
         margin-top: 2rem;
         height: 250px;
+        width: 260px;
         position: relative;
     }
     
@@ -2534,7 +2540,7 @@ img{
         right: -.5rem;
         height: 250px;
         width: 260px;
-        z-index: -99;
+        z-index: 1;
         border-radius: 1rem;
         transition: .3s;
     }
@@ -2564,7 +2570,6 @@ img{
     }
     
     .contact-image iframe{
-        object-fit: cover;
         height: 250px;
         width: 260px;
         position: absolute;
