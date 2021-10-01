@@ -36,7 +36,8 @@ if(productSubmenu){
 /* ======== COUNTRIES MODAL ======== */
 const countryBtn = document.getElementById('countries-btn'),
       countryModal = document.getElementById('countries-modal'),
-      countryClose = document.getElementById('countires-close')
+      countryClose = document.getElementById('countires-close'),
+      openCountry = document.getElementById('open-country')
 
 let show = false
 if(countryBtn){
@@ -55,6 +56,19 @@ if(countryBtn){
 if(countryClose){
     countryClose.addEventListener('click', () => {
         countryModal.classList.remove('show-modal')
+        if(show===false){
+            countryBtn.innerText = 'HIDE ALL COUNTRIES'
+            show = true
+        } else{
+            countryBtn.innerText = 'VIEW ALL COUNTRIES'
+            show = false
+        }
+    })
+}
+
+if(openCountry){
+    openCountry.addEventListener('click', () => {
+        countryModal.classList.toggle('show-modal')
         if(show===false){
             countryBtn.innerText = 'HIDE ALL COUNTRIES'
             show = true
