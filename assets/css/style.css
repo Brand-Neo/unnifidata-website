@@ -2137,7 +2137,7 @@ img{
     }
     
     .hero-content{
-        margin-top: 1rem;
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -2356,7 +2356,7 @@ img{
 
     .traveler-content{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 3rem;
         margin-top: 4rem;
         padding: 2rem 1rem;
@@ -2392,6 +2392,7 @@ img{
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        align-items: center;
         height: auto;
         margin-top: 0;
         padding: 3rem 1rem;
