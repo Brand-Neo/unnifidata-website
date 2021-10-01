@@ -1200,7 +1200,7 @@ img{
 
 .about-icon-2{
     position: absolute;
-    top: 55%;
+    top: 65%;
     right: -20%;
     border-radius: 1rem;
     height: 130px;
@@ -2137,6 +2137,7 @@ img{
     }
     
     .hero-content{
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
     }
