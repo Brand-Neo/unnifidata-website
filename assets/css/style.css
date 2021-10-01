@@ -262,8 +262,17 @@ img{
     line-height: 1.5;
 }
 
-.hero-title{
+.landing-title{
     font-size: 3rem;
+    font-weight: 700;
+}
+
+.landing-title span{
+    color: var(--red-color);
+}
+
+.hero-title{
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -2006,7 +2015,8 @@ img{
 
 /* ======== MEDIA SCREEN 768PX ======== */
 @media screen and (min-width: 320px) and (max-width: 550px){
-    .hero-title{
+    .hero-title,
+    .landing-title{
         font-size: 2.5rem;
     }
     .header-br{
