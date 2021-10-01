@@ -2389,6 +2389,7 @@ img{
     .revolutionize-section{
         height: auto;
     }
+    
     .revolutionize-content{
         display: flex;
         flex-direction: column;
@@ -2402,7 +2403,7 @@ img{
     .revolutionize-image-container{
         width: 250px;
         height: 250px;
-        margin-left: 0;
+        margin-left: auto;
     }
     
     .revolutionize-image{
