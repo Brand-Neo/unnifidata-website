@@ -50,7 +50,7 @@
                     <li class="nav-list-item"><a href="#" class="nav-item">About Us</a></li>
                     <li class="nav-list-item"><a href="products.html#faq" class="nav-item">FAQ</a></li>
                     <li class="nav-list-item">
-                        <div id='product-component-1632057930081'></div>
+                        <div id='product-component-1633531980465'></div>
                     </li>             
                 </ul>
             </div>
@@ -263,7 +263,7 @@
                 <ul class="footer-navigation">
                     <li><a class="footer-link" href="products.html#faq">FAQ</a></li>
                     <li><a class="footer-link" href="#contact">Contact</a></li>
-                    <li><a class="footer-link" target="_blank" href="https://store-test-mine.myshopify.com/60204384433/checkouts/663da3e43efaa5bc27acb371a45bc2ca?key=6d71fda33c3890a29520abda424c64a7">Order Now</a></li>
+                    <li><a class="footer-link" target="_blank" href="https://unnifidata.myshopify.com/60163096808/checkouts/10f30870f4a9ad6d535ba3336737fe47">Order Now</a></li>
                     <li><a class="footer-link" href="#about">Top</a></li>
                 </ul>
             </div>
@@ -322,6 +322,7 @@
     </script>
 
     <!--====== SHOPIFY JS ======-->
+    <!--====== SHOPIFY JS ======-->
     <script type="text/javascript">
         /*<![CDATA[*/
         (function () {
@@ -344,14 +345,14 @@
         }
         function ShopifyBuyInit() {
             var client = ShopifyBuy.buildClient({
-            domain: 'store-test-mine.myshopify.com',
-            storefrontAccessToken: 'd4670a43060050488d05a59cae3f78c8',
+            domain: 'unnifidata.myshopify.com',
+            storefrontAccessToken: '3fef4814645741074a7affafd28934ad',
             });
             ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
-                id: '6957962723505',
-                node: document.getElementById('product-component-1632057930081'),
-                moneyFormat: 'Rp%20%7B%7Bamount_with_comma_separator%7D%7D',
+                id: '7198016930024',
+                node: document.getElementById('product-component-1633531980465'),
+                moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: {
         "product": {
             "styles": {
@@ -363,20 +364,19 @@
                 }
             },
             "button": {
-                "font-family": "Open Sans, sans-serif",
                 "font-size": "16px",
                 "padding-top": "16px",
                 "padding-bottom": "16px",
-                "color": "#e7e9ec",
                 ":hover": {
-                "color": "#e7e9ec",
                 "background-color": "#c02c50"
                 },
                 "background-color": "#711a2f",
                 ":focus": {
                 "background-color": "#c02c50"
                 },
-                "border-radius": "23px"
+                "border-radius": "40px",
+                "padding-left": "65px",
+                "padding-right": "65px"
             },
             "quantityInput": {
                 "font-size": "16px",
@@ -391,11 +391,8 @@
             "price": false
             },
             "text": {
-            "button": "ORDER NOW"
-            },
-            "googleFonts": [
-            "Open Sans"
-            ]
+            "button": "BUY NOW"
+            }
         },
         "productSet": {
             "styles": {
@@ -422,20 +419,19 @@
                 }
             },
             "button": {
-                "font-family": "Open Sans, sans-serif",
                 "font-size": "16px",
                 "padding-top": "16px",
                 "padding-bottom": "16px",
-                "color": "#e7e9ec",
                 ":hover": {
-                "color": "#e7e9ec",
                 "background-color": "#c02c50"
                 },
                 "background-color": "#711a2f",
                 ":focus": {
                 "background-color": "#c02c50"
                 },
-                "border-radius": "23px"
+                "border-radius": "40px",
+                "padding-left": "65px",
+                "padding-right": "65px"
             },
             "quantityInput": {
                 "font-size": "16px",
@@ -443,9 +439,6 @@
                 "padding-bottom": "16px"
             }
             },
-            "googleFonts": [
-            "Open Sans"
-            ],
             "text": {
             "button": "Add to cart"
             }
@@ -454,35 +447,28 @@
         "cart": {
             "styles": {
             "button": {
-                "font-family": "Open Sans, sans-serif",
                 "font-size": "16px",
                 "padding-top": "16px",
                 "padding-bottom": "16px",
-                "color": "#e7e9ec",
                 ":hover": {
-                "color": "#e7e9ec",
                 "background-color": "#c02c50"
                 },
                 "background-color": "#711a2f",
                 ":focus": {
                 "background-color": "#c02c50"
                 },
-                "border-radius": "23px"
+                "border-radius": "40px"
             }
             },
             "text": {
             "total": "Subtotal",
             "button": "Checkout"
             },
-            "popup": false,
-            "googleFonts": [
-            "Open Sans"
-            ]
+            "popup": false
         },
         "toggle": {
             "styles": {
             "toggle": {
-                "font-family": "Open Sans, sans-serif",
                 "background-color": "#711a2f",
                 ":hover": {
                 "background-color": "#c02c50"
@@ -492,19 +478,9 @@
                 }
             },
             "count": {
-                "font-size": "16px",
-                "color": "#e7e9ec",
-                ":hover": {
-                "color": "#e7e9ec"
-                }
-            },
-            "iconPath": {
-                "fill": "#e7e9ec"
+                "font-size": "16px"
             }
-            },
-            "googleFonts": [
-            "Open Sans"
-            ]
+            }
         }
         },
             });
@@ -512,7 +488,7 @@
         }
         })();
         /*]]>*/
-    </script>
+        </script>
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
