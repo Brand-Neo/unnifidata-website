@@ -183,9 +183,17 @@ img{
 }
 
 li.nav-list-item.shopify-nav-item {
-    width: 280px;
+    width: 260px;
     animation: bounce;
+    animation-duration: 2s;
+    border: none;
+    /* animation-iteration-count: 100; */
+}
+
+li.nav-list-item.shopify-nav-item:hover {
+    animation: tada;
     animation-duration: 1s;
+    border: none;
 }
 
 .nav-item{
