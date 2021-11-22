@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/
+    - export DEPLOYPATH=/home/user/public_html/unnifidata.com
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp products.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
