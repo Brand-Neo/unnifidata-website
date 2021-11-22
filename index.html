@@ -1,238 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./public/images/udata-logo-iconmark.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="stylesheet" href="./public/css/style.css">
-    <title>U-data</title>
-  </head>
-  <body>
 
-    <div class="container-fluid ud-header-bar">
-      <div class="row" style="align-items: center;">
-        <div class="col-sm-6">
-          <a href="/">
-              <img id="ud-header-logo" src="./public/images/udata-logo.svg">
-          </a>
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home - Unnifi Data" />
+    <meta property="og:description"
+        content="Personal WiFi Delivering Data WHERE and WHEN You Need It Global On Arrival Learn More Why Unnitel? GLOBAL Coverage in 90+ countries Plan your trip, not your data plan CONVENIENT Arrive and turn it on Connects up to 5 devices SECURE No more risky public WiFi 128-bit encryption protection of your data Why Unnitel? GLOBAL Coverage in 90+ countries Plan ... Read More" />
+    <meta property="og:url" content="https://unnitel.com/" />
+    <meta property="og:site_name" content="Unnifi Data" />
+    <meta property="og:image" content="assets/images/logos/Iconmark - Full Colour.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:label1" content="Est. reading time">
+    <meta name="twitter:data1" content="4 minutes">
+
+    <!--====== FONTAWESOME ICONS ======-->
+    <script src="https://kit.fontawesome.com/bae18c500b.js" crossorigin="anonymous"></script>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/logos/Iconmark - Full Colour.png" type="image/png">
+
+    <!--====== TITLE ======-->
+    <title>U-data | Home</title>
+
+    <!--====== SWIPER CSS ======-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- ======== CSS ======== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hello-bar.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="hellobar-wrapper">
+        <div class="hellobar-container">
+            <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="1" scrolldelay="26" truespeed="truespeed" direction="left" loop="">Order now to get free delivery and free 3GB global data!</marquee>
         </div>
-        <div class="col-sm-5">
-          <ul class="ud-header-menu-bar">
-            <li><a class="ud-header-menu-link">Product 
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-caret-down fa-w-10 fa-3x ud-more-icon"><path fill=#23355e d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" class=""></path></svg>
-                </a></li>
-            <li><a class="ud-header-menu-link">About us
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-caret-down fa-w-10 fa-3x ud-more-icon"><path fill=#23355e d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" class=""></path></svg>
-                </a></li>
-            <li><a class="ud-header-menu-link">FAQ 
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-caret-down fa-w-10 fa-3x ud-more-icon"><path fill=#23355e d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" class=""></path></svg>
-              </a></li>
-          </ul>
-        </div>
-        <div class="col-sm-1">
-          <a><p>Order Now</p></a>
-        </div>
-      </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="container ud-main-banner">
-        <div class="col-xl-6">
-          <h1>
-            <span style="color: #2c2b2b">The World in </span>
-            <span style="color: #711a2f">Your</span>
-            <span style="color: #2c2b2b"> Pocket</span></h1>
-          <p><span style="color: #2c2b2b">With <b>fast</b> and <b>secure</b> mobile data that <b>never expires</b>. Anytime, and anywhere you need it.</span></p>
-          <button>Learn more</button>
-        </div>
-        <div class="col-xl-6 ud-main-product-photo"></div>
-      </div>
-    </div>
+    <!--====== HEADER ======-->
+    <header class="header">
+        <a id="#header-logo" href="index.html">
+            <img class="header-logo" src="assets/images/logos/Full Lockup (Horizontal) - Full Colour.png"
+                alt="U-data home">
+        </a>
+        <i class="fas fa-bars header-toggle" id="header-toggle"></i>
 
-    <div class="container-fluid">
-      <div class="container" style="max-width: 1200px;">
-          <h1 class="ud-informatics-title"><span style="color: #711a2f">U-Data</span><span style="color: #2c2b2b"> at a Glance</span></h1>
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                      <span style="font-size: 30px;"><b>10,000</b></span>
-                      <br>
-                      <span style="font-size: 25px;">customers</span>
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                      <span style="font-size: 30px;"><b>100+</b></span>
-                      <br>
-                      <span style="font-size: 25px;">countries</span>
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                      <span style="font-size: 30px;"><b>5</b></span>
-                      <br>
-                      <span style="font-size: 25px;">continents</span>
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6 d-flex justify-content-end">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                      <span style="font-size: 30px;"><b>98%</b></span>
-                      <br>
-                      <span style="font-size: 25px;">ratings</span>
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-        </div><!-- /.row -->
-      </div>
-    </div>
+        <nav class="nav" id="nav-menu">
+            <i class="fas fa-times-circle nav-close" id="nav-close"></i>
 
-    <div class="ud-funfact-one container">
-        <div class="ud-block_title" style="text-align: center;">
-            <h2 class="ud-block_title__title">Over 2200 happy <br> customers</h2><!-- /.block-title__title -->
-        </div><!-- /.block-title -->
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                        <h3 class="ud-funfact-one__title" id="projects-counter">4789</h3><!-- /.funfact-one__title -->
-                        <p class="ud-funfact-one__text">projects</p><!-- /.funfact-one__text -->
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                        <h3 class="ud-funfact-one__title" id="customer-counter">6400</h3><!-- /.funfact-one__title -->
-                        <p class="ud-funfact-one__text">customers</p><!-- /.funfact-one__text -->
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                        <h3 class="ud-funfact-one__title" id="success-counter">960</h3><!-- /.funfact-one__title -->
-                        <p class="ud-funfact-one__text">success</p><!-- /.funfact-one__text -->
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-            <div class="col-lg-3 col-md-6 d-flex justify-content-end">
-                <div class="ud-funfact-one__single">
-                    <div class="inner">
-                        <h3 class="ud-funfact-one__title" id="awards-counter">448</h3><!-- /.funfact-one__title -->
-                        <p class="ud-funfact-one__text">awards</p><!-- /.funfact-one__text -->
-                    </div><!-- /.inner -->
-                </div><!-- /.funfact-one__single -->
-            </div><!-- /.col-lg-3 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-
-  <div class="container">
-      <h1 class="ud-benefit-title" style="color: #2c2b2b">Why Choose U-data</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="ud-benefit-blob">
-            <svg class="ud-benefit-map-marker-logo" width="120" height="200" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 150 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
-            <div>
-              <p class="ud-benefit-blob-title"><b>Mobility</b></p>
-              <p>A lightweight device to fit in your pocket, with a battery life of 8+ hours.</p>
+            <div class="nav-content">
+                <ul class="nav-menu">
+                    <li class="nav-list-item" id="product-list">
+                        <a href="#!" class="nav-item">Products <i class="fas fa-chevron-down" id="nav-chevron"></i></a>
+                        <ul class="sub-menu" id="product-submenu">
+                            <li><a href="products.html" class="nav-item">Unnifi Device</a></li>
+                            <li><a href="products.html#revolutionize" class="nav-item">Unnifi App</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list-item"><a href="about.html" class="nav-item">About Us</a></li>
+                    <li class="nav-list-item"><a href="products.html#faq" class="nav-item">FAQ</a></li>
+                    <li class="nav-list-item shopify-nav-item">
+                        <div id='product-component-1633531980465'></div>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="ud-benefit-blob">
-            <svg class="ud-benefit-map-marker-logo" width="120" height="200" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 150 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
-            <div>
-              <p class="ud-benefit-blob-title"><b>Accessibility</b></p>
-              <p>Works with multiple network operators to help you access the best network at all times.</p>
+        </nav>
+    </header>
+
+    <main>
+        <!--====== HERO SECTION ======-->
+        <section class="hero section" id="hero-section">
+            <div class="hero-section container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="landing-title">Global, high-speed, secure data <br class="header-br">that <span>never
+                                expires</span></h1>
+                        <p class="hero-paragraph">
+                            Powering safer, smarter and more magical mobile data experiences for you
+                            and everyone around you whenever and wherever you are!
+                        </p>
+                        <a href="products.html" class="btn traveler-btn">LEARN MORE</a>
+                    </div>
+                    <div class="hero-image-container">
+                        <div class="hero-image-bg"></div>
+                        <div class="hero-image">
+                            <img src="assets/images/products/66.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ud-benefit-circle-bg">
-            <img class="ud-benefit-product-photo" src="./public/images/benefit-product-photo.png">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ud-benefit-blob">
-            <svg class="ud-benefit-map-marker-logo" width="120" height="200" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 150 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
-            <div>
-              <p class="ud-benefit-blob-title"><b>Privacy</b></p>
-              <p>With embedded 128-bit encryption, the Unnifi presents a safer method of getting online.</p>
-            </div>  
-          </div>
-          <div class="ud-benefit-blob">
-            <svg class="ud-benefit-map-marker-logo" width="120" height="200" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 150 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-3x"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg>
-            <div>
-              <p class="ud-benefit-blob-title"><b>Share on 5 devices</b></p>
-              <p>Connect your Unnifi and share it with friends & family around the world.</p>
+        </section>
+
+        <!--====== GLANCE SECTION ======-->
+        <section class="glance section" id="glance">
+            <h1 class="section-title"><span>U-Data</span> at a glance</h1>
+            <div class="glance-section container">
+                <div class="glance-content">
+                    <div class="glance-circle">
+                        <h2 class="glance-title"><span class="counter">10000</span>+</h2>
+                        <span>customers</span>
+                        <div></div>
+                    </div>
+                    <div class="glance-circle">
+                        <h2 class="glance-title"><span class="counter">100</span>+</h2>
+                        <span>countries</span>
+                        <div></div>
+                    </div>
+                    <div class="glance-circle">
+                        <h2 class="glance-title"><span class="counter">5</span>+</h2>
+                        <span>continents</span>
+                        <div></div>
+                    </div>
+                    <div class="glance-circle">
+                        <h2 class="glance-title"><span class="counter">250</span>+</h2>
+                        <span>telco partners</span>
+                        <div></div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <!--====== WHY SECTION ======-->
+        <section class="why section" id="why">
+            <h1 class="section-title"><span>Everything</span> <br class="header-br">you need with Unnifi</h1>
+            <div class="why-section container">
+                <!-- Grid container -->
+                <div class="why-content">
+                    <!-- Why Image -->
+                    <div class="why-image-container">
+                        <img src="assets/images/products/1.svg" alt="unnidata product">
+                        <div></div>
+                    </div>
+                    <!-- Why cards 1 -->
+                    <div class="why-cards">
+                        <!-- Card 1 -->
+                        <div class="why-card">
+                            <i class="fas fa-street-view"></i>
+                            <div class="why-card-text">
+                                <h3 class="why-card-title">Mobility</h3>
+                                <p>
+                                    A lightweight device to fit in your pocket, with a battery life of 8+ hours.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="why-card">
+                            <i class="fas fa-network-wired"></i>
+                            <div class="why-card-text">
+                                <h3 class="why-card-title">Accessibility</h3>
+                                <p>
+                                    Works with multiple operators to help you access the best network at all times.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 1 -->
+                        <div class="why-card">
+                            <i class="fas fa-lock"></i>
+                            <div class="why-card-text">
+                                <h3 class="why-card-title">Privacy</h3>
+                                <p>
+                                    With embedded 128-bit encryption, the Unnifi presents a safer method of getting
+                                    online.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="why-card">
+                            <i class="fas fa-users"></i>
+                            <div class="why-card-text">
+                                <h3 class="why-card-title">Share on 5 Devices</h3>
+                                <p>
+                                    Connect your Unnifi and share it with friends & family around the world.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====== VIDEO SECTION ======-->
+        <section class="video section" id="video">
+            <h1 class="section-title"><span>Easy</span> to set up. <br><span>Easy</span> to use.</h1>
+            <div class="video-section container">
+                <div class="video-content">
+                    <div class="video-container">
+                        <div class="video-background"></div>
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/UpKtFSwQzAw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====== TESTIMONIAL SECTION ======-->
+        <section class="testimonial section" id="testimonial">
+            <h1 class="section-title">Hear from what <br> <span>others have to say</span></h1>
+            <div class="testimonial section container">
+                <div class="testimonial-content mySwiper">
+                    <div class="testimonial-cards swiper-wrapper">
+                        <div class="testimonial-card swiper-slide">
+                            <i class="fas fa-quote-left testimonial-icon"></i>
+                            <p>
+                                The UNNIfi is a lovely little device that helped me save
+                                the day when my work space did not have internet. Had a
+                                conference call and it worked without a single glitch all day!
+                                Have used it in several countries in both Asia and Europe so
+                                far and internet has always been super fast. Easy top-up and
+                                same data balance can be used all over the world. Recommended
+                                for travelers and business users alike!
+                            </p>
+                            <div>
+                                <h4>Anita Ghosal</h4>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <i class="fas fa-quote-left testimonial-icon"></i>
+                            <p>
+                                Good reception and very handy. Beats looking for SIM card sellers
+                                all the time. Strongly recommend it.
+                            </p>
+                            <div>
+                                <h4>Trey Ng</h4>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <i class="fas fa-quote-left testimonial-icon"></i>
+                            <p>
+                                Great device for travel and great customer service experience.
+                                Had queries when I first received the device and customer service
+                                promptly answered my questions. Have used the device in Columbia
+                                and Peru. Works well and hassle free. Don't need to keep changing
+                                SIM cards. Was pleasantly surprised when Unnitel contacted me to check
+                                of device was working well? Great follow through.
+                            </p>
+                            <div>
+                                <h4>Alvin Er</h4>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <i class="fas fa-quote-left testimonial-icon"></i>
+                            <p>
+                                During these pandemic times when is so hard to plan for any travel,
+                                Unnifi service comes particularly handy. Having no expiration on
+                                its data plans, it allows to rest assure that if a trip got
+                                cancelled and pushed back a month, you won't be losing money on
+                                other data plans that are paid by the month.
+                            </p>
+                            <div>
+                                <h4>Nelson Hernández</h4>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card swiper-slide">
+                            <i class="fas fa-quote-left testimonial-icon"></i>
+                            <p>
+                                Unnifi devices have been a heaven-sent solution for my team
+                                across the Asia Pacific region. Easy to set up, even for the less
+                                techy users, with fantastic customer support, and plans that are
+                                overly easy to understand Unnifi, have given us one thing less to
+                                worry about to stay connected.
+
+                            </p>
+                            <div>
+                                <h4>Alfonso Castillo</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====== DOWNLOAD SECTION ======-->
+        <section class="download section" id="download">
+            <div class="download-section container">
+                <div class="download-content">
+                    <div class="download-text">
+                        <h3>Get access to key information &<br class="download-br"> Top-Up your data at any time.</h3>
+                        <h1 class="download-title">Download the <br class="header-br"><span>Unnifi Mobile App</span> now
+                        </h1>
+                        <div class="download-buttons">
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unnitel.mobile">
+                                <div class="download-btn">
+                                    <i class="fab fa-google-play"></i>
+                                    <div>
+                                        <span>Get it on</span><br>
+                                        <h3>Google Play</h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://apps.apple.com/my/app/unnifi/id1554037198">
+                                <div class="download-btn">
+                                    <i class="fab fa-apple"></i>
+                                    <div>
+                                        <span>Download on the</span><br>
+                                        <h3>Appstore</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <img class="download-image" src="assets/images/Unnitel App download.png" alt="unnitel app">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--====== FOOTER SECTION ======-->
+    <footer class="footer section">
+        <div class="footer-section container">
+            <div class="footer-info">
+                <a href="index.html">
+                    <img class="header-logo" src="assets/images/logos/Full Lockup (Horizontal) - Full Colour.png"
+                        alt="">
+                </a>
+                <div class="footer-info-content">
+                    <p>
+                        With fast and secure mobile data that never expires. Anytime, and anywhere you need it.
+                    </p>
+                </div>
+                <div class="footer-socials">
+                    <a href=""><i class="fab fa-facebook footer-social"></i></a>
+                    <a href="https://www.linkedin.com/company/u-data-pte-ltd/"><i
+                            class="fab fa-linkedin footer-social"></i></a>
+                    <a href="https://www.youtube.com/channel/UCj_gjsos0lTgYGHwOSdldLQ"><i
+                            class="fab fa-youtube footer-social"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Explore</h3>
+                <ul class="footer-navigation">
+                    <li><a class="footer-link" href="about.html">About</a></li>
+                    <li><a class="footer-link" href="#testimonial">Testimonials</a></li>
+                    <li><a class="footer-link" href="products.html">Products</a></li>
+                    <li><a class="footer-link" href="t&c.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Help</h3>
+                <ul class="footer-navigation">
+                    <li><a class="footer-link" href="products.html#faq">FAQ</a></li>
+                    <li><a class="footer-link" href="about.html#contact">Contact</a></li>
+                    <!-- <li><a class="footer-link" target="_blank"
+                            href="https://unnifidata.myshopify.com/60163096808/checkouts/2e7d567a318f979e9f03e8669bb5ad25">Order
+                            Now</a></li> -->
+                    <li><a class="footer-link" href="#hero-section">Top</a></li>
+                </ul>
+            </div>
+            <div class="footer-download">
+                <h3 class="footer-title">Download</h3>
+                <div class="download-buttons-footer">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unnitel.mobile">
+                        <div class="download-btn">
+                            <i class="fab fa-google-play"></i>
+                            <div>
+                                <span>Get it on</span><br>
+                                <h3>Google Play</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://apps.apple.com/my/app/unnifi/id1554037198">
+                        <div class="download-btn">
+                            <i class="fab fa-apple"></i>
+                            <div>
+                                <span>Download on the</span><br>
+                                <h3>Appstore</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
+    </footer>
 
-  <div class="container">
-    <h1 class="ud-benefit-title" style="color: #2c2b2b">Get the most out of your Unnifi</h1>
-    <div class="row">
-      <div class="col-lg-12 ud-youtube-video-frame">
-        <iframe class="ud-youtube-video"
-          src="https://www.youtube.com/embed/ZKCB-O4pylk">
-          </iframe>
-      </div>
-    </div>
-  </div>
+    <!--====== SWIPER JS ======-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            // slidesPerView: 2,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            disableOnInteraction: true,
+            // spaceBetween: 32,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is <= 499px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetweenSlides: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                    spaceBetween: 32,
+                },
+                // when window width is <= 999px
+                // 999: {
+                //     slidesPerView: 2,
+                //     spaceBetweenSlides: 40
+                // }
+            }
+        });
 
-  <div class="container">
-    <h1 class="ud-review-title" style="color: #2c2b2b">Hears from what other have to say</h1>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="ud-review-blob-sides">
-          <p class="ud-review-paragraph-sides">"One hath. Second. Kind them you forth, fly brought. Give very let. Dominion wherein after can't fill, unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring sixth tree she'd open."</p>
-          <p class="ud-review-quoter-sides">- DAVID SPADE</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="ud-review-blob-center">
-          <p class="ud-review-paragraph-center">"One hath. Second. Kind them you forth, fly brought. Give very let. Dominion wherein after can't fill, unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring sixth tree she'd open."</p>
-          <p class="ud-review-quoter-center">- DAVID SPADE</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="ud-review-blob-sides">
-          <p class="ud-review-paragraph-sides">"One hath. Second. Kind them you forth, fly brought. Give very let. Dominion wherein after can't fill, unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring sixth tree she'd open."</p>
-          <p class="ud-review-quoter-sides">- DAVID SPADE</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </script>
 
-  <div class="container-fluid ud-download-section">
-    <div class="row">
-      <div class="col-lg-5 ud-download-description">
-          <p class="ud-download-description-paragraph"><b>Get access to key information & Top-up your data <span style="color: #711a2f">at any time</span></b></p>
-          <h1 class="ud-download-title">Download the <span style="color: #d3dc1b">Unnitel</span> App now</h1>
-          <div class="ud-download-links-section">
-            <img class="ud-download-button" src="./public/images/download-google.png">
-            <img class="ud-download-button" src="./public/images/download-apple.png" style="padding-top: 5px;">
-          </div>
-      </div>
-      <div class="col-lg-7" style="text-align: right;">
-        <img class="ud-download-product-photo" src="./public/images/download-product-photo.png">
-      </div>
-    </div>
-  </div>
+    <!--====== GETCHAT JS ======-->
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var gcaMain = new GetChatApp({
+                'mobileNumber': '+6587986824',
+                'titleMessage': '👋 Chat with us on WhatsApp!',
+                'welcomeMessage': 'Hi there 👋 <br><br>We are here to help! Ask us any questions and we’ll reply you as soon as we can.',
+                'position': 'right',
+                'platforms': {
+                    'whatsapp': true,
+                    'facebook': false,
+                    'email': false,
+                    'instagram': false,
+                    'telegram': false,
+                },
+                'facebookPageId': '',
+                'gcaEmailAddress': '',
+                'gcaEmailSubject': '',
+                'gcaInstagramUsername': '',
+                'gcaTelegramUsername': '',
+            });
+        });
+    </script>
 
-  <script src="./public/js/number_counter.js"></script>
+    <!--====== SHOPIFY JS ======-->
+    <script src="assets/js/shopify-button.js"></script>
 
+    <!--====== MAIN JS ======-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/counter.js"></script>
 </body>
+
 </html>

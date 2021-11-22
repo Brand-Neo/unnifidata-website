@@ -8,13 +8,12 @@ Link: https://unnifidata-website.netlify.app/
 
 
 ## Prod environment
-Link: {{ coming soon }}
+Link: https://unnifidata.com
 
 ## TODO
 - [x] Design
 - [x] Development
 - [x] Deploy to test env
-- [ ] Add email capability to contact form
-- [ ] Chatbot/support plugin
-- [ ] Shopify "Buy Now" button
-- [ ] Deploy to prod env
+- [x] Chatbot/support plugin
+- [x] Shopify "Buy Now" button
+- [x] Deploy to prod env
