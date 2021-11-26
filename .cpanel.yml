@@ -7,6 +7,6 @@ deployment:
     - /bin/cp products.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp 404page.html $DEPLOYPATH
-    - /bin/cp t&c.html $DEPLOYPATH
+    - /bin/cp termsandconditions.html $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
