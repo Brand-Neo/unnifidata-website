@@ -660,6 +660,17 @@ li.nav-list-item.shopify-nav-item:hover {
     z-index: -1;
 }
 
+/* Event banner: Christmas etc */
+
+.christmas-banner {
+    width: 100vw;
+    padding-top: 1em;
+}
+
+.christmas-banner img {
+    width: 100vw;
+}
+
 /* ======== FOOTER SECTION ======== */
 .footer{
     background: var(--green-color);
