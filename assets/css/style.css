@@ -660,15 +660,22 @@ li.nav-list-item.shopify-nav-item:hover {
     z-index: -1;
 }
 
-/* Event banner: Christmas etc */
+/* Holiday banner */
 
-.christmas-banner {
+.holiday-banner {
     width: 100vw;
     padding-top: 1em;
 }
 
-.christmas-banner img {
+.holiday-banner .image-container {
     width: 100vw;
+    background-image: url('../../public/images/U-Data_Christmas_Banner.png');
+    background-color: white;
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* ======== FOOTER SECTION ======== */
@@ -2103,6 +2110,18 @@ li.nav-list-item.shopify-nav-item:hover {
     .error-section{
         padding-top: 6rem;
     }
+
+    /* Holiday banner before footer */
+    .holiday-banner .image-container {
+        width: 100vw;
+        background-image: url('../../public/images/U-Data_Holiday_Banner_mobile.png');
+        background-color: white;
+        height: 30em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 }
 
 /* ======== MEDIA SCREEN 768PX ======== */
@@ -2848,5 +2867,17 @@ li.nav-list-item.shopify-nav-item:hover {
 
     .error-section{
         padding-top: 6rem;
+    }
+
+    /* Holiday banner before footer */
+    .holiday-banner .image-container {
+        width: 100vw;
+        background-image: url('../../public/images/U-Data_Holiday_Banner_mobile.png');
+        background-color: white;
+        height: 20em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
 }
