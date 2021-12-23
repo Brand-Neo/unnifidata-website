@@ -1551,6 +1551,20 @@ li.nav-list-item.shopify-nav-item:hover {
     display: none;
 }
 
+/* ======== LARGE LAPTOPS ======== */
+@media screen and (min-width: 875px) and (max-width: 1440px){
+    .holiday-banner .image-container {
+        height: 17em;
+    }
+}
+
+/* ======== MEDIUM LATOPS ======== */
+@media screen and (min-width: 770px) and (max-width: 874px){
+    .holiday-banner .image-container {
+        height: 15em;
+    }
+}
+
 /* ======== MEDIA SCREEN 550PX TO 768PX ======== */
 @media screen and (min-width: 550px) and (max-width: 768px){
     .header-br{
