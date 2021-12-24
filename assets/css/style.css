@@ -660,6 +660,24 @@ li.nav-list-item.shopify-nav-item:hover {
     z-index: -1;
 }
 
+/* Holiday banner */
+
+.holiday-banner {
+    width: 100vw;
+    padding-top: 1em;
+}
+
+.holiday-banner .image-container {
+    width: 100vw;
+    background-image: url('../../public/images/U-Data_Christmas_Banner.png');
+    background-color: white;
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* ======== FOOTER SECTION ======== */
 .footer{
     background: var(--green-color);
@@ -1533,6 +1551,20 @@ li.nav-list-item.shopify-nav-item:hover {
     display: none;
 }
 
+/* ======== LARGE LAPTOPS ======== */
+@media screen and (min-width: 875px) and (max-width: 1440px){
+    .holiday-banner .image-container {
+        height: 17em;
+    }
+}
+
+/* ======== MEDIUM LATOPS ======== */
+@media screen and (min-width: 770px) and (max-width: 874px){
+    .holiday-banner .image-container {
+        height: 15em;
+    }
+}
+
 /* ======== MEDIA SCREEN 550PX TO 768PX ======== */
 @media screen and (min-width: 550px) and (max-width: 768px){
     .header-br{
@@ -2091,6 +2123,18 @@ li.nav-list-item.shopify-nav-item:hover {
     /* Error Section */
     .error-section{
         padding-top: 6rem;
+    }
+
+    /* Holiday banner before footer */
+    .holiday-banner .image-container {
+        width: 100vw;
+        background-image: url('../../public/images/U-Data_Holiday_Banner_mobile.png');
+        background-color: white;
+        height: 30em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
 }
 
@@ -2837,5 +2881,17 @@ li.nav-list-item.shopify-nav-item:hover {
 
     .error-section{
         padding-top: 6rem;
+    }
+
+    /* Holiday banner before footer */
+    .holiday-banner .image-container {
+        width: 100vw;
+        background-image: url('../../public/images/U-Data_Holiday_Banner_mobile.png');
+        background-color: white;
+        height: 20em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
 }
