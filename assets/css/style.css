@@ -721,6 +721,9 @@ li.nav-list-item.shopify-nav-item:hover {
     justify-content: center;
 }
 
+.godaddy-trust-seal {
+    width: fit-content;
+}
 
 .footer-links{
     display: flex;
