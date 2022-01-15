@@ -529,7 +529,7 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .video-frame{
-    height: 420px;
+    height: 700 px;
     width: 100%;
     border-radius: 1rem;
     z-index: 99;
@@ -1773,7 +1773,7 @@ li.nav-list-item.shopify-nav-item:hover {
     }
     
     .video-frame{
-        height: 220px;
+        height: 700px;
         width: 100%;
         border-radius: 1rem;
         box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
@@ -2366,7 +2366,7 @@ li.nav-list-item.shopify-nav-item:hover {
     }
     
     .video-frame{
-        height: 220px;
+        height: 700 px;
         width: 100%;
         border-radius: 1rem;
         box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
