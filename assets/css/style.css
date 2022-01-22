@@ -379,15 +379,19 @@ li.nav-list-item.shopify-nav-item:hover {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    transition: .5s;
+    transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
     -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
+    perspective: none;
+    /* perspective: 220px;
     -webkit-perspective: 220px;
-    perspective: 220px;
-    -webkit-transform-style: preserve-3d;
+    -moz-perspective: 220px;
+    -ms-perspective: 220px;
+    -o-perspective: 220px; */
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     box-shadow: 0 2px 20px rgb(0 0 0 / 0.2);
 }
 
@@ -529,7 +533,7 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .video-frame{
-    height: 420px;
+    height: 700px;
     width: 100%;
     border-radius: 1rem;
     z-index: 99;
@@ -880,7 +884,8 @@ li.nav-list-item.shopify-nav-item:hover {
     -o-transition: opacity .5s ease-in-out;
     transition: opacity .5s ease-in-out;
     -webkit-perspective: 220px;
-    perspective: 220px;
+    /* perspective: 220px; */
+    perspective: none;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     box-shadow: 0 2px 20px rgb(0 0 0 / 0.2);
@@ -1773,7 +1778,7 @@ li.nav-list-item.shopify-nav-item:hover {
     }
     
     .video-frame{
-        height: 220px;
+        height: 420px;
         width: 100%;
         border-radius: 1rem;
         box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
@@ -2366,7 +2371,7 @@ li.nav-list-item.shopify-nav-item:hover {
     }
     
     .video-frame{
-        height: 220px;
+        height: 370px;
         width: 100%;
         border-radius: 1rem;
         box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
