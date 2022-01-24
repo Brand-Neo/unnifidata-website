@@ -673,12 +673,12 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .holiday-banner .image-container {
     width: 100vw;
-    background-image: url('../../public/images/U-Data_Christmas_Banner.png');
-    background-color: white;
+    background-image: url('../../public/images/chinese_new_year_2022_web_banner_2.png');
+    background-color: #9d1010;
     height: 20em;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 
@@ -2135,14 +2135,7 @@ li.nav-list-item.shopify-nav-item:hover {
 
     /* Holiday banner before footer */
     .holiday-banner .image-container {
-        width: 100vw;
-        background-image: url('../../public/images/U-Data_Holiday_Banner_mobile.png');
-        background-color: white;
         height: 30em;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
     }
 }
 
@@ -2892,14 +2885,10 @@ li.nav-list-item.shopify-nav-item:hover {
     }
 
     /* Holiday banner before footer */
+    .holiday-banner {
+        margin-top: 3em;
+    }
     .holiday-banner .image-container {
-        width: 100vw;
-        background-image: url('../../public/images/U-Data_Holiday_Banner_mobile.png');
-        background-color: white;
         height: 20em;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
     }
 }
