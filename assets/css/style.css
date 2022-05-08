@@ -673,8 +673,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .holiday-banner .image-container {
     width: 100vw;
-    background-image: url('../../public/images/chinese_new_year_2022_web_banner_2.png');
-    background-color: #9d1010;
+    background-image: url('../../assets/images/popup/horizontal.png');
+    background-color: #000;
     height: 20em;
     background-position: center;
     background-repeat: no-repeat;
@@ -2891,4 +2891,48 @@ li.nav-list-item.shopify-nav-item:hover {
     .holiday-banner .image-container {
         height: 20em;
     }
+}
+
+/* modal related */
+.modal.buy-now-modal {
+    background-image: url('../images/popup/vertical.png');
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    background-color: black;
+    width: 425px;
+}
+
+.modal.buy-now-modal div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 475px;
+    /* background: red; */
+}
+
+.modal.buy-now-modal div button {
+    grid-row-start: 5;
+    padding: 4px;
+    background-color: #e0fc00;
+    background-color: #d2ed07;
+    border-radius: 6px;
+    width: 162px;
+    color: #432e2e;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+}
+.modal.buy-now-modal div div {
+    grid-row-start: 5;
+}
+
+.modal.buy-now-modal div button:hover {
+    cursor: pointer;
+}
+
+*:focus {
+    outline: 0 !important;
 }

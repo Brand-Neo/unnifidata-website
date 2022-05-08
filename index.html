@@ -6,15 +6,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries.">
+    <meta name="description"
+        content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries.">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Unnifi by U-Data | The Best Portable Wifi for Business Travellers" />
-    <meta property="og:description" content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries." />
+    <meta property="og:description"
+        content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries." />
     <meta property="og:url" content="https://unnifidata.com" />
     <meta property="og:site_name" content="Unnifi Data" />
     <meta property="og:image" content="assets/images/logos/Iconmark - Full Colour.png" />
-    <meta property="keywords" content="data, data plan, unnifi data, unnifidata, udata, wifi, travel, Singapore, Asia" />
+    <meta property="keywords"
+        content="data, data plan, unnifi data, unnifidata, udata, wifi, travel, Singapore, Asia, Portable wifi, Phone wifi, Roaming, Wifi roaming international" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Est. reading time">
     <meta name="twitter:data1" content="1 minutes">
@@ -41,21 +44,26 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R706WXQQ6" defer></script>
     <script defer>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-5R706WXQQ6');
+        gtag('config', 'G-5R706WXQQ6');
     </script>
+
+    <!-- jQuery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 </head>
 
-<body>
+<body onload="checkCookie()">
 
     <!-- Banner -->
     <div class="hellobar-wrapper">
         <div class="hellobar-container">
-            <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="1" scrolldelay="26" truespeed="truespeed" direction="left" loop="">Order now to get free delivery and free 3GB global data!</marquee>
+            <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="1" scrolldelay="26"
+                truespeed="truespeed" direction="left" loop="">Order now to get free delivery and free 3GB global data!
+            </marquee>
         </div>
     </div>
 
@@ -90,6 +98,17 @@
     </header>
 
     <main>
+        <!-- popup -->
+        <section>
+            <!-- Modal HTML embedded directly into document -->
+            <div id="buyNowPopUp" class="modal buy-now-modal">
+                <div>
+                    <!-- <button id="buyNowPopUpBtn">Buy Now</button> -->
+                    <div id='product-component-123'></div>
+                </div>
+            </div>
+        </section>
+
         <!--====== HERO SECTION ======-->
         <section class="hero section" id="hero-section">
             <div class="hero-section container">
@@ -207,7 +226,8 @@
             <div class="video-section container">
                 <div class="video-content">
                     <div class="video-container">
-                        <iframe class="video-frame" width="640" height="860" src="https://www.youtube.com/embed/UpKtFSwQzAw?autoplay=1&mute=1"
+                        <iframe class="video-frame" width="640" height="860"
+                            src="https://www.youtube.com/embed/UpKtFSwQzAw?autoplay=1&mute=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen loading="lazy"></iframe>
@@ -326,15 +346,16 @@
                             </a>
                         </div>
                     </div>
-                    <img class="download-image" src="assets/images/Unnitel App download.png" alt="unnitel app" loading="lazy">
+                    <img class="download-image" src="assets/images/Unnitel App download.png" alt="unnitel app"
+                        loading="lazy">
                 </div>
             </div>
         </section>
-        <!-- <section class="holiday-banner">
+        <section class="holiday-banner">
             <div class="image-container"></div>
-        </section> -->
+        </section>
     </main>
-    
+
     <!--====== FOOTER SECTION ======-->
     <footer class="footer section">
         <div class="footer-section container">
@@ -357,7 +378,9 @@
                 </div>
                 <div class="godaddy-trust-seal">
                     <!-- trust seal from GoDaddy -->
-                    <script id="godaddy-security-s" src="https://cdn.sucuri.net/badge/badge.js" data-s="2018" data-i="cb2a144d9e3e4e2eed5a9bcfba84cc29a2aeb2949b" data-p="o" data-c="l" data-t="g" defer></script>
+                    <script id="godaddy-security-s" src="https://cdn.sucuri.net/badge/badge.js" data-s="2018"
+                        data-i="cb2a144d9e3e4e2eed5a9bcfba84cc29a2aeb2949b" data-p="o" data-c="l" data-t="g"
+                        defer></script>
                 </div>
             </div>
             <div class="footer-links">
@@ -470,6 +493,7 @@
 
     <!--====== SHOPIFY JS ======-->
     <script src="assets/js/shopify-button.js"></script>
+    <script src="assets/js/yellow-shopify-button.js"></script>
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
@@ -477,6 +501,9 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/counter.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </body>
 
 </html>
