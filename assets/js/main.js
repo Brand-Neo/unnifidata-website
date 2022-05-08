@@ -1,19 +1,12 @@
 /* ======== pop-up related ======== */
 // check in cookies that user has not closed popup, else open the "Buy Now" popUp, then set cookie accordingly
 function checkCookie() {
-    $('#buyNowPopUp').modal();
-    // let popUpClosed = getCookie("popUpClosed");
-    // if (popUpClosed != "true") {
-    //     $('#buyNowPopUp').modal();
-    //     setCookie("popUpClosed", true, 10);
-    // }
-
-    $('#buyNowPopUpBtn').on('click', (e) => {
-        e.preventDefault();
-        console.log('Buy now clicked');
-        console.log(document.getElementsByClassName("shopify-buy__btn"));
-        document.getElementsByClassName("shopify-buy__btn  ")[0].click();
-    })
+    // $('#buyNowPopUp').modal();
+    let popUpClosed = getCookie("popUpClosed");
+    if (popUpClosed != "true") {
+        $('#buyNowPopUp').modal();
+        setCookie("popUpClosed", true, 10);
+    }
 }
 
 
