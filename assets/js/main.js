@@ -1,11 +1,11 @@
 /* ======== pop-up related ======== */
 // check in cookies that user has not closed popup, else open the "Buy Now" popUp, then set cookie accordingly
 function checkCookie() {
-    // $('#buyNowPopUp').modal();
+    // $('#buyNowPopUp').modal(); // for local testing only
     let popUpClosed = getCookie("popUpClosed");
     if (popUpClosed != "true") {
         $('#buyNowPopUp').modal();
-        setCookie("popUpClosed", true, 10);
+        setCookie("popUpClosed", true, 10); // cookie expires in 10 days
     }
 }
 
