@@ -30,6 +30,7 @@
                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: {
                     "product": {
+                        "iframe": false,
                         "styles": {
                             "product": {
                                 "@media (min-width: 601px)": {
@@ -60,6 +61,10 @@
                                 "font-size": "16px",
                                 "padding-top": "16px",
                                 "padding-bottom": "16px"
+                            },
+                            "wrapper": {
+                                "text-align": "left",
+                                "border": "0px"
                             }
                         },
                         "buttonDestination": "checkout",

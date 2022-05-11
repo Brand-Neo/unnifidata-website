@@ -692,7 +692,7 @@ li.nav-list-item.shopify-nav-item:hover {
     background-size: contain;
 }
 
-.holiday-banner .button-wrapper {
+/* .holiday-banner .button-wrapper {
     display: grid;
     height: 100%;
     grid-template-rows: 5em 2fr 1fr;
@@ -711,9 +711,45 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .holiday-banner .button-wrapper #product-component-456 {
     grid-row-start: 3;
+} */
+
+.bottom-promo-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    padding-top: 1em;
+    overflow: hidden;
+    background-color: black;
 }
 
-.shopify-buy__layout-vertical {
+.promo-text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 27vw;
+    top: 68%;
+    width: 80%;
+    color: white;
+    margin-left: 6px;
+}
+
+.shopify-buy__btn-wrapper {
+    text-align: left !important;
+}
+
+.promo-text .shopify-buy__btn {
+    width: 162px;
+    color: #432e2e;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    padding: 4px;
+    line-height: normal;
+    background-color: #e0fc00;
+    border-radius: 6px;
+}
+
+.promo-text .shopify-buy__layout-vertical {
     text-align: left !important;
 }
 
@@ -2934,7 +2970,7 @@ li.nav-list-item.shopify-nav-item:hover {
     height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-color: black;
     width: 425px;
 }
