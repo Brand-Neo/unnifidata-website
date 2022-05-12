@@ -1,11 +1,6 @@
 /* ======== GOOGLE FONTS ======== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
-@font-face {
-    font-family: 'Horizon';
-    src: url('../fonts/horizon-font/Horizon/Horizon.ttf');
-}
-
 /* ======== ROOT CSS ======== */
 :root{
     --red-color: #711A2F;
@@ -691,27 +686,6 @@ li.nav-list-item.shopify-nav-item:hover {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/* .holiday-banner .button-wrapper {
-    display: grid;
-    height: 100%;
-    grid-template-rows: 5em 2fr 1fr;
-}
-
-.holiday-banner .button-wrapper .text-wrapper {
-    color: #fff;
-    grid-row-start: 2;
-    z-index: 100;
-}
-
-.holiday-banner .button-wrapper .text-wrapper .main-promo-text { 
-    font-family: 'Horizon';
-    font-size: 200%;
-}
-
-.holiday-banner .button-wrapper #product-component-456 {
-    grid-row-start: 3;
-} */
 
 .bottom-promo-wrapper {
     position: relative;
