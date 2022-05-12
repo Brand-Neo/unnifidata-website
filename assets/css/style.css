@@ -1,6 +1,11 @@
 /* ======== GOOGLE FONTS ======== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+@font-face {
+    font-family: 'Horizon';
+    src: url('../fonts/horizon-font/Horizon/Horizon.ttf');
+}
+
 /* ======== ROOT CSS ======== */
 :root{
     --red-color: #711A2F;
@@ -665,21 +670,87 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 /* Holiday banner */
+.holiday-banner-wrapper {
+    width: 100vw;
+    background-color: #000;
+}
 
 .holiday-banner {
-    width: 100vw;
+    width: 90vw;
     padding-top: 1em;
+    display: grid;
+    grid-template-columns: 35vw 70vw;
 }
 
 .holiday-banner .image-container {
-    width: 100vw;
-    background-image: url('../../public/images/chinese_new_year_2022_web_banner_2.png');
-    background-color: #9d1010;
-    height: 20em;
+    width: inherit;
+    background-image: url(../../assets/images/popup/horizontal.png);
+    background-color: #000;
+    height: 22em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* .holiday-banner .button-wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 5em 2fr 1fr;
+}
+
+.holiday-banner .button-wrapper .text-wrapper {
+    color: #fff;
+    grid-row-start: 2;
+    z-index: 100;
+}
+
+.holiday-banner .button-wrapper .text-wrapper .main-promo-text { 
+    font-family: 'Horizon';
+    font-size: 200%;
+}
+
+.holiday-banner .button-wrapper #product-component-456 {
+    grid-row-start: 3;
+} */
+
+.bottom-promo-wrapper {
     position: relative;
+    display: inline-block;
+    width: 100vw;
+    padding-top: 1em;
+    overflow: hidden;
+    background-color: black;
+}
+
+.promo-text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 27vw;
+    top: 68%;
+    width: 80%;
+    color: white;
+    margin-left: 6px;
+}
+
+.shopify-buy__btn-wrapper {
+    text-align: left !important;
+}
+
+.promo-text .shopify-buy__btn {
+    width: 162px;
+    color: #432e2e;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    padding: 4px;
+    line-height: normal;
+    background-color: #e0fc00;
+    border-radius: 6px;
+}
+
+.promo-text .shopify-buy__layout-vertical {
+    text-align: left !important;
 }
 
 /* ======== FOOTER SECTION ======== */
@@ -1559,21 +1630,21 @@ li.nav-list-item.shopify-nav-item:hover {
     display: none;
 }
 
-/* ======== LARGE LAPTOPS ======== */
+/* ======== Monitor-ish ======== */
 @media screen and (min-width: 875px) and (max-width: 1440px){
     .holiday-banner .image-container {
-        height: 17em;
+        /* height: 17em; */
     }
 }
 
-/* ======== MEDIUM LATOPS ======== */
+/* ======== Laptop-ish ======== */
 @media screen and (min-width: 770px) and (max-width: 874px){
     .holiday-banner .image-container {
-        height: 15em;
+        /* height: 15em; */
     }
 }
 
-/* ======== MEDIA SCREEN 550PX TO 768PX ======== */
+/* ======== Tablet-ish ======== */
 @media screen and (min-width: 550px) and (max-width: 768px){
     .header-br{
         display: none;
@@ -2135,11 +2206,28 @@ li.nav-list-item.shopify-nav-item:hover {
 
     /* Holiday banner before footer */
     .holiday-banner .image-container {
-        height: 30em;
+        /* height: 30em; */
+    }
+
+    .promo-text {
+        left: 27vw;
+        margin-left: 3px;
+    }
+
+    .promo-text .shopify-buy__btn {
+        width: 100px;
+        color: #432e2e;
+        font-size: 16px;
+        font-weight: 900;
+        border: none;
+        padding: 2px;
+        line-height: normal;
+        background-color: #e0fc00;
+        border-radius: 4px;
     }
 }
 
-/* ======== MEDIA SCREEN 768PX ======== */
+/* ======== Phone-ish ======== */
 @media screen and (min-width: 320px) and (max-width: 550px){
     .hero-title,
     .landing-title{
@@ -2886,9 +2974,65 @@ li.nav-list-item.shopify-nav-item:hover {
 
     /* Holiday banner before footer */
     .holiday-banner {
-        margin-top: 3em;
+        /* margin-top: 3em; */
     }
     .holiday-banner .image-container {
-        height: 20em;
+        /* height: 20em; */
     }
+
+
+    .promo-text {
+        left: 27vw;
+        margin-left: 2px;
+    }
+
+    .promo-text .shopify-buy__btn {
+        width: 100px;
+        color: #432e2e;
+        font-size: 16px;
+        font-weight: 900;
+        border: none;
+        padding: 2px;
+        line-height: normal;
+        background-color: #e0fc00;
+        border-radius: 4px;
+    }
+}
+
+/* modal related */
+.modal.buy-now-modal {
+    background-image: url('../images/popup/vertical.png');
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 425px;
+}
+
+.modal.buy-now-modal div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 475px;
+}
+
+.modal.buy-now-modal div div {
+    grid-row-start: 5;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.--promo-yellow {
+    color: #e0fc00;
+}
+
+.--pb-1 {
+    padding-bottom: 0.8em;
+}
+
+.--bold-text {
+    font-weight: 900;
 }
