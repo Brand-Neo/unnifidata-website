@@ -227,7 +227,7 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .shopify-buy__btn-wrapper{
-    margin-top: 0!important;
+    margin-top: 10px !important;
 }
 
 .shopify-buy__layout-vertical {
@@ -235,6 +235,10 @@ li.nav-list-item.shopify-nav-item:hover {
     height: 100%!important;
     display: flex!important;
     align-items: center!important;
+}
+
+#product-component-1633531980465, #product-component-1633531980465-2 {
+    margin-top: -20px;
 }
 
 /* -------------------------------- */

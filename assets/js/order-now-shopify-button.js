@@ -1,4 +1,3 @@
-
 /*<![CDATA[*/
 (function () {
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -26,11 +25,10 @@
         ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('product', {
                 id: '7198016930024',
-                node: document.getElementById('product-component-456'),
+                node: document.getElementById('product-component-1633531980465-2'),
                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: {
                     "product": {
-                        "iframe": false,
                         "styles": {
                             "product": {
                                 "@media (min-width: 601px)": {
@@ -40,31 +38,25 @@
                                 }
                             },
                             "button": {
-                                "width": "162px",
-                                "color": "#432e2e",
                                 "font-size": "16px",
-                                "font-weight": "900",
-                                "border": "none",
-                                "padding": "4px",
-                                "line-height": "normal",
-                                "font-size": "18px",
+                                "padding-top": "16px",
+                                "padding-bottom": "16px",
                                 ":hover": {
-                                    "background-color": "yellow"
+                                    "background-color": "#c02c50"
                                 },
-                                "background-color": "#e0fc00",
+                                "background-color": "#711a2f",
                                 ":focus": {
-                                    "background-color": "#d2ed07"
+                                    "background-color": "#c02c50"
                                 },
-                                "border-radius": "6px",
+                                "float": "left",
+                                "border-radius": "40px",
+                                "padding-left": "65px",
+                                "padding-right": "65px"
                             },
                             "quantityInput": {
                                 "font-size": "16px",
                                 "padding-top": "16px",
                                 "padding-bottom": "16px"
-                            },
-                            "wrapper": {
-                                "text-align": "left",
-                                "border": "0px"
                             }
                         },
                         "buttonDestination": "checkout",
@@ -74,7 +66,7 @@
                             "price": false
                         },
                         "text": {
-                            "button": "Buy Now"
+                            "button": "ORDER NOW"
                         }
                     },
                     "productSet": {

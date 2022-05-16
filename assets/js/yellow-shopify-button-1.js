@@ -1,7 +1,7 @@
 
 /*<![CDATA[*/
 (function () {
-    var scriptURL = 'assets/js/buy-button-storefront.min.js';
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
         if (window.ShopifyBuy.UI) {
             ShopifyBuyInit();
