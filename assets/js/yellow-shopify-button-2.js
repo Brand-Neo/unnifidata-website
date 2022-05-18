@@ -61,10 +61,6 @@
                                 "font-size": "16px",
                                 "padding-top": "16px",
                                 "padding-bottom": "16px"
-                            },
-                            "wrapper": {
-                                "text-align": "left",
-                                "border": "0px"
                             }
                         },
                         "buttonDestination": "checkout",
@@ -75,6 +71,17 @@
                         },
                         "text": {
                             "button": "Buy Now"
+                        },
+                        "openCheckout": (product) => {
+                            console.log('product checked out:: ', product);
+                        },
+                        "DOMEvents": {
+                            'click .button': (event) => {
+                                console.log('DOMEvent _buy now_ button clicked');
+                            }
+                        },
+                        'beforeInit': (component) => {
+                            console.log('before init..');
                         }
                     },
                     "productSet": {
@@ -146,8 +153,7 @@
                         "text": {
                             "total": "Subtotal",
                             "button": "Checkout"
-                        },
-                        "popup": false
+                        }
                     },
                     "toggle": {
                         "styles": {

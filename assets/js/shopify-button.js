@@ -65,7 +65,21 @@
                         },
                         "text": {
                             "button": "Add to cart"
-                        }
+                        },
+                        "openCheckout": function (product) {
+                            console.log('product checked out:: ', product);
+                        },
+                        "DOMEvents": {
+                            'click .button': function (event) {
+                                console.log('DOMEvent _buy now_ button clicked');
+                            }
+                        },
+                        "beforeInit": function (component) {
+                            console.log('before init..');
+                        },
+                        "updateQuantity": function (product) {
+                            console.log('updateQuantity..');
+                        },
                     },
                     "productSet": {
                         "styles": {

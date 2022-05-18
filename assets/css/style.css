@@ -725,6 +725,7 @@ li.nav-list-item.shopify-nav-item:hover {
     line-height: normal;
     background-color: #e0fc00;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .promo-text .shopify-buy__layout-vertical {
