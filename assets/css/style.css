@@ -668,6 +668,17 @@ li.nav-list-item.shopify-nav-item:hover {
     z-index: -1;
 }
 
+/* auto slider */
+.slider_section {
+    margin: 8em 0em;
+    width: 100%;
+}
+
+.slider_section .flexslider {
+    background-color: inherit;
+    border: none;
+}
+
 /* Holiday banner */
 .holiday-banner-wrapper {
     width: 100vw;

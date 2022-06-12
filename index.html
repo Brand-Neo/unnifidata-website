@@ -98,14 +98,28 @@
     </header>
 
     <main>
-        <!-- popup -->
-        <section>
-            <!-- Modal HTML embedded directly into document -->
+        <!-- popup. Removed on 11/6/2022 -->
+        <!-- Modal HTML embedded directly into document -->
+        <!-- <section>
             <div id="buyNowPopUp" class="modal buy-now-modal">
                 <div>
                     <div id='product-component-123'></div>
                 </div>
             </div>
+        </section> -->
+
+        <!--====== Auto Slider ======-->
+        <section class="slider_section" id="sliderSection">
+            <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="./assets/images/slider_banner_1.png" loading="lazy"/>
+                  </li>
+                  <li>
+                    <img src="./assets/images/slider_banner_2.png" loading="lazy"/>
+                  </li>
+                </ul>
+              </div>
         </section>
 
         <!--====== HERO SECTION ======-->
@@ -351,12 +365,13 @@
             </div>
         </section>
 
-        <section class="bottom-promo-wrapper">
+        <!-- removed on 11/6/2022 -->
+        <!-- <section class="bottom-promo-wrapper">
             <img src="./assets/images/popup/horizontal.png" loading="lazy" alt="Udata device">
             <div class="promo-text">
                 <div id='product-component-456'></div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!--====== FOOTER SECTION ======-->
@@ -502,6 +517,9 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.js" integrity="sha512-/LtMywMLXZ29TJbETec4e6ndSWPxQDTdsqCud+8Q4IFnKQ1WVlr87r0D5oo9QNO9zuqQNJDmvQxQmvqe8DRYLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.css" integrity="sha512-HWY8i77pPLL23sU4pHj+5iuZEmmmu2YaiTUcWrBXqBRTpn6yUdDvlFGNmG0qyjDg/vpt+YWNMASjg9M0eOU9DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/js/flexslider.js" loading="lazy"></script>
 
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
