@@ -252,7 +252,7 @@ li.nav-list-item.shopify-nav-item:hover {
 /* ======== HERO SECTION ======== */
 .hero{
     /* padding-top: 6rem; */
-    background-color: var(--green-color);
+    /* background-color: var(--green-color); */
 }
 
 .hero::before{
@@ -264,7 +264,7 @@ li.nav-list-item.shopify-nav-item:hover {
     left: 0;
     width: 100%;
     z-index: -99;
-    margin-top: 40em; /* For only when there is another section above it */ 
+    margin-top: 33em; /* For only when there is another section above it */ 
 }
 
 .hero-content{
@@ -1625,22 +1625,29 @@ li.nav-list-item.shopify-nav-item:hover {
     display: none;
 }
 
-/* ======== Monitor-ish ======== */
-@media screen and (min-width: 875px) and (max-width: 1440px){
-    .holiday-banner .image-container {
-        /* height: 17em; */
+/* ======== Large Monitor-ish ======== */
+@media screen and (min-width: 1041px) and (max-width: 1440px){
+    .hero::before {
+        margin-top: 20em;
+    }
+}
+
+/* ======== Normal Monitor-ish ======== */
+@media screen and (min-width: 875px) and (max-width: 1040px){
+    .hero::before {
+        margin-top: 15em;
     }
 }
 
 /* ======== Laptop-ish ======== */
 @media screen and (min-width: 770px) and (max-width: 874px){
-    .holiday-banner .image-container {
-        /* height: 15em; */
+    .hero::before {
+        margin-top: 15em;
     }
 }
 
 /* ======== Tablet-ish ======== */
-@media screen and (min-width: 550px) and (max-width: 768px){
+@media screen and (min-width: 550px) and (max-width: 769px){
 
     .slider_section {
         margin-top: 6em;
@@ -1761,6 +1768,7 @@ li.nav-list-item.shopify-nav-item:hover {
     /* Hero Section */
     .hero{
         /* padding: 4rem 2rem; */
+        background-color: var(--green-color);
     }
 
     .hero::before{
@@ -1771,6 +1779,7 @@ li.nav-list-item.shopify-nav-item:hover {
         left: 0;
         width: 100%;
         z-index: -99;
+        margin-top: 18em;
     }
 
     .hero-text{
@@ -2342,6 +2351,7 @@ li.nav-list-item.shopify-nav-item:hover {
     /* Hero Section */
     .hero{
         padding-top: 0;
+        background-color: var(--green-color);
     }
 
     .hero::before{
@@ -2352,6 +2362,7 @@ li.nav-list-item.shopify-nav-item:hover {
         left: 0;
         width: 100%;
         z-index: -99;
+        margin-top: 20em;
     }
     
     .hero-content{
