@@ -1630,6 +1630,13 @@ li.nav-list-item.shopify-nav-item:hover {
     .hero::before {
         margin-top: 20em;
     }
+    /* Slider section */
+    #sliderSection > div > div > ul > li.flex-active-slide.first > img {
+        content: url('../images/slider_banner_1.png');
+    }
+    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
+        content: url('../images/slider_banner_2.png');
+    }
 }
 
 /* ======== Normal Monitor-ish ======== */
@@ -1637,12 +1644,26 @@ li.nav-list-item.shopify-nav-item:hover {
     .hero::before {
         margin-top: 15em;
     }
+    /* Slider section */
+    #sliderSection > div > div > ul > li.flex-active-slide.first > img {
+        content: url('../images/slider_banner_1.png');
+    }
+    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
+        content: url('../images/slider_banner_2.png');
+    }
 }
 
 /* ======== Laptop-ish ======== */
 @media screen and (min-width: 770px) and (max-width: 874px){
     .hero::before {
         margin-top: 15em;
+    }
+    /* Slider section */
+    #sliderSection > div > div > ul > li.flex-active-slide.first > img {
+        content: url('../images/slider_banner_1.png');
+    }
+    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
+        content: url('../images/slider_banner_2.png');
     }
 }
 
@@ -1653,8 +1674,12 @@ li.nav-list-item.shopify-nav-item:hover {
         margin-top: 6em;
     }
 
-    .slider_section .flexslider .slides img {
-        height: 180px;
+    /* Slider section */
+    #sliderSection > div > div > ul > li.flex-active-slide.first > img {
+        content: url('../images/slider_banner_1.png');
+    }
+    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
+        content: url('../images/slider_banner_2.png');
     }
 
     .header-br{
@@ -2348,6 +2373,14 @@ li.nav-list-item.shopify-nav-item:hover {
         font-size: 1.5rem
     }
 
+    /* Slider section */
+    #sliderSection > div > div > ul > li.flex-active-slide.first > img {
+        content: url('../images/mobile_slider_banner_1.png');
+    }
+    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
+        content: url('../images/mobile_slider_banner_2.png');
+    }
+
     /* Hero Section */
     .hero{
         padding-top: 0;
@@ -2424,10 +2457,6 @@ li.nav-list-item.shopify-nav-item:hover {
 
     .slider_section {
         margin-top: 6em;
-    }
-
-    .slider_section .flexslider .slides img {
-        height: 200px;
     }
 
     /* Glance Section */
