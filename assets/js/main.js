@@ -4,11 +4,11 @@ function checkCookie() {
     $('#buyNowPopUp').modal();
 
     // Enable if you want to show pop up base on cookies
-//     let popUpClosed = getCookie("popUpClosed");
-//     if (popUpClosed != "true") {
-//         $('#buyNowPopUp').modal();
-//         setCookie("popUpClosed", true, 10); // cookie expires in 10 days
-//     }
+    //     let popUpClosed = getCookie("popUpClosed");
+    //     if (popUpClosed != "true") {
+    //         $('#buyNowPopUp').modal();
+    //         setCookie("popUpClosed", true, 10); // cookie expires in 10 days
+    //     }
 }
 
 
@@ -32,10 +32,15 @@ if (navClose) {
 /* ======== NAVBAR SUBMENU ======== */
 const productList = document.getElementById('product-list'),
     productSubmenu = document.getElementById('product-submenu'),
-    navChevron = document.getElementById('nav-chevron')
+    navChevron = document.getElementById('nav-chevron'),
+    productsMenuText = document.getElementById('productsMenuText');
+
+productsMenuText.addEventListener('click', () => {
+    location.href = '../../products.html';
+});
 
 if (productList) {
-    productList.addEventListener('click', () => {
+    navChevron.addEventListener('click', () => {
         productSubmenu.classList.toggle('active')
         navChevron.classList.toggle('fa-chevron-up')
     })

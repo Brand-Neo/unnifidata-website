@@ -1187,6 +1187,37 @@ li.nav-list-item.shopify-nav-item:hover {
     color: var(--red-color);
 }
 
+/* ======== UNNIFIDATA ADVANTAGE SECTION ======= */
+.advantage-section {
+    padding-bottom: 2.5em;
+}
+.advantage-section .container .data-row {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+.advantage-section .container .data-row .cell {
+    padding: 1em;
+    background-color: var(--grey-color);
+    text-align: center;
+    border-radius: .5rem;
+}
+.advantage-section .container .data-row .question {
+    text-align: left;
+}
+.advantage-section .container .data-row:nth-child(1) .question {
+    background-color: white;
+}
+.advantage-section .container .data-row:nth-child(1) .cell {
+    font-weight: bold;
+}
+.advantage-section .container .data-row .cell-coloured {
+    color: white;
+    background-color: var(--red-color);
+}
+
 /* ======== FAQ SECTION ======== */
 .faq-section-title{
     font-weight: 700;
