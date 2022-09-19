@@ -159,7 +159,7 @@ main {
 }
 
 .header-logo{
-    height: 2rem;
+    height: 5rem;
     cursor: pointer;
 }
 
@@ -1811,7 +1811,7 @@ li.nav-list-item.shopify-nav-item:hover {
     }
 
     .header-logo{
-        height: 1.5rem;
+        height: 5rem;
     }
 
     .header-toggle, 
@@ -2394,7 +2394,7 @@ li.nav-list-item.shopify-nav-item:hover {
     }
 
     .header-logo{
-        height: 1.5rem;
+        height: 5rem;
     }
 
     .header-toggle, 
