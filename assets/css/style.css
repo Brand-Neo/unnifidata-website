@@ -687,7 +687,7 @@ li.nav-list-item.shopify-nav-item:hover {
 /* Holiday banner */
 .holiday-banner-wrapper {
     width: 100vw;
-    background-color: #000;
+    background-color: #0f130d;
 }
 
 .holiday-banner {
@@ -699,8 +699,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .holiday-banner .image-container {
     width: inherit;
-    background-image: url(../../assets/images/popup/horizontal.png);
-    background-color: #000;
+    background-image: url('../../assets/images/popup/christmas_web_banner.png');
+    background-color: #0f130d;
     height: 22em;
     background-position: center;
     background-repeat: no-repeat;
@@ -713,14 +713,14 @@ li.nav-list-item.shopify-nav-item:hover {
     width: 100vw;
     padding-top: 1em;
     overflow: hidden;
-    background-color: black;
+    background-color: #0f130d;
 }
 
 .promo-text {
     position: absolute;
     z-index: 999;
     margin: 0 auto;
-    left: 27vw;
+    left: 34vw;
     top: 68%;
     width: 80%;
     color: white;
@@ -3065,7 +3065,7 @@ li.nav-list-item.shopify-nav-item:hover {
 
 
     .promo-text {
-        left: 27vw;
+        left: 34vw;
         margin-left: 2px;
     }
 
@@ -3084,7 +3084,7 @@ li.nav-list-item.shopify-nav-item:hover {
 
 /* modal related */
 .modal.buy-now-modal {
-    background-image: url('../images/popup/vertical.png');
+    background-image: url('../images/popup/christmas_popup.png');
     height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3096,12 +3096,13 @@ li.nav-list-item.shopify-nav-item:hover {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 475px;
 }
 
 .modal.buy-now-modal div div {
-    grid-row-start: 5;
+    grid-row-start: 7;
+    margin-top: 4em;
 }
 
 *:focus {
