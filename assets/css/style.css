@@ -1665,9 +1665,6 @@ li.nav-list-item.shopify-nav-item:hover {
     #sliderSection > div > div > ul > li.flex-active-slide.first > img {
         content: url('../images/slider_banner_1.png');
     }
-    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
-        content: url('../images/slider_banner_2.png');
-    }
 }
 
 /* ======== Normal Monitor-ish ======== */
@@ -1679,9 +1676,6 @@ li.nav-list-item.shopify-nav-item:hover {
     #sliderSection > div > div > ul > li.flex-active-slide.first > img {
         content: url('../images/slider_banner_1.png');
     }
-    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
-        content: url('../images/slider_banner_2.png');
-    }
 }
 
 /* ======== Laptop-ish ======== */
@@ -1692,9 +1686,6 @@ li.nav-list-item.shopify-nav-item:hover {
     /* Slider section */
     #sliderSection > div > div > ul > li.flex-active-slide.first > img {
         content: url('../images/slider_banner_1.png');
-    }
-    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
-        content: url('../images/slider_banner_2.png');
     }
 }
 
@@ -1708,9 +1699,6 @@ li.nav-list-item.shopify-nav-item:hover {
     /* Slider section */
     #sliderSection > div > div > ul > li.flex-active-slide.first > img {
         content: url('../images/slider_banner_1.png');
-    }
-    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
-        content: url('../images/slider_banner_2.png');
     }
 
     .header-br{
@@ -2407,9 +2395,6 @@ li.nav-list-item.shopify-nav-item:hover {
     /* Slider section */
     #sliderSection > div > div > ul > li.flex-active-slide.first > img {
         content: url('../images/mobile_slider_banner_1.png');
-    }
-    #sliderSection > div > div > ul > li.flex-active-slide.second > img {
-        content: url('../images/mobile_slider_banner_2.png');
     }
 
     /* Hero Section */
