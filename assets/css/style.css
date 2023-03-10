@@ -2392,11 +2392,6 @@ li.nav-list-item.shopify-nav-item:hover {
         font-size: 1.5rem
     }
 
-    /* Slider section */
-    #sliderSection > div > div > ul > li.flex-active-slide.first > img {
-        content: url('../images/mobile_slider_banner_1.png');
-    }
-
     /* Hero Section */
     .hero{
         padding-top: 0;
