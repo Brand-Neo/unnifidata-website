@@ -1,0 +1,82 @@
+:root {
+   --green: #c2d75f;
+   --light-grey: #f6f6f6;
+}
+
+section {
+    height: 75vh;
+}
+
+.container {
+    margin-top: 5em;
+}
+
+.section-title {
+    color: black;
+    text-align: left;
+    height: 160px;
+}
+
+.section-title::after {
+    content: '';
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--green);
+    display: block;
+    top: -80px;
+    left: -29px;
+    z-index: -10;
+}
+
+.section-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.section-body .small-card {
+    background-color: var(--light-grey);
+    border-radius: 20px;
+    padding: 2em;
+    text-align: center;
+}
+.section-body .small-card h3 {
+    padding-bottom: 0.5em;
+    font-weight: 700;
+}
+.section-body .small-card span {
+    font-weight: 100;
+    line-height: 30px;
+}
+
+section.guide-about .container .section-body .hardware-indicators-wrapper {
+    display: flex;
+    align-items: center;
+}
+section.guide-about .container .section-body .hardware-indicators-wrapper ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+section.guide-about .container .section-body .hardware-indicators-wrapper ol li {
+    padding: 0.5em 1.1em;
+}
+section.guide-about .container .section-body .hardware-indicators-wrapper ol li::after {
+    /* content: '';
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--green);
+    display: block;
+    top: -80px;
+    left: -29px;
+    z-index: -10; */
+}
+
+.footer.section {
+    margin-top: 15em;
+}
