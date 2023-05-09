@@ -1,6 +1,6 @@
 :root {
-   --green: #c2d75f;
-   --light-grey: #f6f6f6;
+    --green: #c2d75f;
+    --light-grey: #f6f6f6;
 }
 
 section {
@@ -43,40 +43,168 @@ section {
     padding: 2em;
     text-align: center;
 }
+
 .section-body .small-card h3 {
     padding-bottom: 0.5em;
     font-weight: 700;
 }
+
 .section-body .small-card span {
     font-weight: 100;
     line-height: 30px;
 }
 
-section.guide-about .container .section-body .hardware-indicators-wrapper {
+section .container .section-body .hardware-indicators-wrapper {
     display: flex;
     align-items: center;
 }
-section.guide-about .container .section-body .hardware-indicators-wrapper ol {
+
+section .container .section-body .hardware-indicators-wrapper ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
-section.guide-about .container .section-body .hardware-indicators-wrapper ol li {
+
+section .container .section-body .hardware-indicators-wrapper ol li {
     padding: 0.5em 1.1em;
 }
-section.guide-about .container .section-body .hardware-indicators-wrapper ol li::after {
-    /* content: '';
-    position: relative;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+
+section .container .image-wrapper img.tall-image-mockup {
+    height: 480px;
+    width: auto;
+}
+
+section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul li {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+section.activating-device-section .container .section-body .card-wrappers {
+    display: flex;
+    width: 90vw;
+    gap: 1em;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card .image-wrapper {
+    border: 5px solid var(--green);
+    border-radius: 10px;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card .description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+section .container .image-wrapper img.activating-device-image {
+    height: 300px;
+    width: 500px;
+}
+
+table.status-indicators {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border: 2px var(--green) solid;
+    color: black;
+    height: 400px;
+    margin-top: 1em;
+}
+
+table.status-indicators th {
+    height: 50px;
+}
+
+table.status-indicators td,
+table.status-indicators th {
+    border: 2px black solid;
+    padding: 0.7em;
+}
+
+table.status-indicators thead {
     background-color: var(--green);
-    display: block;
-    top: -80px;
-    left: -29px;
-    z-index: -10; */
+}
+
+section.connecting-section .container .section-body .connecting-guide-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    /* padding: 1em; */
+}
+
+section.connecting-section .container .section-body .connecting-guide-wrapper .list-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+section.connecting-section .container .section-body {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+section.connecting-section .container .section-body {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+section.contact-section .container .section-body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+}
+
+section.contact-section .container .section-body .contact-wrapper .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    line-height: 2em;
+    color: black;
+}
+
+section .container .image-wrapper img.contact-image-mockup {
+    height: 550px;
+    width: auto;
+    border-radius: 30px;
 }
 
 .footer.section {
     margin-top: 15em;
 }
+
+/* UTILITIES */
+.--green-circle-wrap {
+    height: 50px;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--green);
+    font-weight: 900;
+}
+
+/* TODO: Add mobile responssive views */
+/* Gap between each section */
+/* Wrap image and labels in device functionality section */
