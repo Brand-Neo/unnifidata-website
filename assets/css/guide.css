@@ -2,9 +2,12 @@
     --green: #c2d75f;
     --light-grey: #f6f6f6;
 }
+ main {
+    gap: 1em;
+ }
 
 .about-section .container {
-    margin-top: 5em;
+    margin-top: 8em;
 }
 
 .container {
@@ -100,7 +103,7 @@ section.activating-device-section .container .section-body .card-wrappers {
 section.activating-device-section .container .section-body .card-wrappers .image-card {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 section.activating-device-section .container .section-body .card-wrappers .image-card .image-wrapper {
@@ -209,23 +212,30 @@ section .container .image-wrapper img.contact-image-mockup {
 }
 
 /* RESPONSIVE-NESS */
-/* grid gap for .container */
-/* Gap between each section */
-/* Wrap image and labels in device functionality section */
 
 @media screen and (min-width: 320px) and (max-width: 550px) {
     main {
-        overflow: hidden;
         font-size: small;
-    }
-    .container {
         gap: 3em;
     }
+    .about-section .section-title {
+        height: 120px;
+    }
+    .section-title {
+        height: auto;
+        padding-top: 0;
+        position: relative;
+        font-size: 40px;
+    }
+    .section-title::before {
+        content: attr(data-highlightword);
+        color: var(--green);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .section-title::after {
-        height: 80px;
-        width: 80px;
-        top: -130px;
-        left: -8px;
+        display: none;
     }
     .section-body {
         display: grid;
@@ -247,21 +257,17 @@ section .container .image-wrapper img.contact-image-mockup {
         height: 70px;
     }
     section.activating-device-section .container .section-body {
-        margin-top: 3em;
+        margin-top: 1em;
     }
     section.activating-device-section .container .section-body .card-wrappers {
         flex-wrap: wrap;
     }
     section.connecting-section .container .section-body {
-        height: 72vh;
         grid-template-columns: 1fr;
     }
     section.connecting-section .container .section-body .connecting-guide-wrapper {
         justify-content: start;
         gap: 1em;
-    }
-    section.contact-section .container {
-        gap: 2em;
     }
     section.contact-section .container .section-body {
         grid-template-columns: 1fr;
@@ -279,8 +285,8 @@ section .container .image-wrapper img.contact-image-mockup {
     }
 
     .--green-circle-wrap {
-        height: 30px;
-        padding: 0.5em;
+        height: 27px;
+        padding: 0.6em;
         font-weight: 500;
     }
 }
