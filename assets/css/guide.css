@@ -1,0 +1,292 @@
+:root {
+    --green: #c2d75f;
+    --light-grey: #f6f6f6;
+}
+ main {
+    gap: 1em;
+ }
+
+.about-section .container {
+    margin-top: 8em;
+}
+
+.container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    color: black;
+    text-align: left;
+    height: 160px;
+}
+
+.section-title::after {
+    content: '';
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--green);
+    display: block;
+    top: -80px;
+    left: -29px;
+    z-index: -10;
+}
+
+.section-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+}
+
+.section-body .small-card {
+    background-color: var(--light-grey);
+    border-radius: 20px;
+    padding: 2em;
+    text-align: center;
+}
+
+.section-body .small-card h3 {
+    padding-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.section-body .small-card span {
+    font-weight: 100;
+    line-height: 30px;
+}
+
+section .container .section-body .hardware-indicators-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+section .container .section-body .hardware-indicators-wrapper ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+section .container .section-body .hardware-indicators-wrapper ol li {
+    padding: 0.5em 1.1em;
+}
+
+section .container .image-wrapper img.tall-image-mockup {
+    height: 480px;
+    width: auto;
+}
+
+section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul li {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+section.activating-device-section .container .section-body .card-wrappers {
+    display: flex;
+    width: 90vw;
+    gap: 1em;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card .image-wrapper {
+    border: 5px solid var(--green);
+    border-radius: 10px;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card .description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+section .container .image-wrapper img.activating-device-image {
+    height: 300px;
+    width: 500px;
+}
+
+table.status-indicators {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border: 2px var(--green) solid;
+    color: black;
+    height: 400px;
+    margin-top: 1em;
+}
+
+table.status-indicators th {
+    height: 50px;
+}
+
+table.status-indicators td,
+table.status-indicators th {
+    border: 2px black solid;
+    padding: 0.7em;
+}
+
+table.status-indicators thead {
+    background-color: var(--green);
+}
+
+section.connecting-section .container .section-body .connecting-guide-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    /* padding: 1em; */
+}
+
+section.connecting-section .container .section-body .connecting-guide-wrapper .list-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+section.connecting-section .container .section-body {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+}
+
+section.contact-section .container .section-body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+}
+
+section.contact-section .container .section-body .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+section.contact-section .container .section-body .contact-wrapper .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    line-height: 2em;
+    color: black;
+}
+
+section .container .image-wrapper img.contact-image-mockup {
+    height: 550px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.footer.section {
+    margin-top: 5em;
+}
+
+/* UTILITIES */
+.--green-circle-wrap {
+    height: 50px;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--green);
+    font-weight: 900;
+}
+
+/* RESPONSIVE-NESS */
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+    main {
+        font-size: small;
+        gap: 3em;
+    }
+    .about-section .section-title {
+        height: 120px;
+    }
+    .section-title {
+        height: auto;
+        padding-top: 0;
+        position: relative;
+        font-size: 40px;
+    }
+    .section-title::before {
+        content: attr(data-highlightword);
+        color: var(--green);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .section-title::after {
+        display: none;
+    }
+    .section-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1em;
+        justify-items: center;
+    }
+    .section-body .small-card {
+        padding: 1em;
+        text-align: center;
+        width: 310px;
+    }
+    section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul {
+        grid-gap: 0.5em;
+    }
+    section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul li {
+        grid-gap: 5px;
+        height: 70px;
+    }
+    section.activating-device-section .container .section-body {
+        margin-top: 1em;
+    }
+    section.activating-device-section .container .section-body .card-wrappers {
+        flex-wrap: wrap;
+    }
+    section.connecting-section .container .section-body {
+        grid-template-columns: 1fr;
+    }
+    section.connecting-section .container .section-body .connecting-guide-wrapper {
+        justify-content: start;
+        gap: 1em;
+    }
+    section.contact-section .container .section-body {
+        grid-template-columns: 1fr;
+    }
+    section.contact-section .container .section-body .image-wrapper {
+        display: none;
+    }
+    section.contact-section .container .section-title::after { 
+        top: -70px;
+        left: -11px;
+    }
+
+    .footer.section {
+        margin-top: 3em;
+    }
+
+    .--green-circle-wrap {
+        height: 27px;
+        padding: 0.6em;
+        font-weight: 500;
+    }
+}

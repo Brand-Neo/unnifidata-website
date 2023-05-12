@@ -120,22 +120,6 @@ faqHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
-// Whatsapp link buttons
-const linkSpan = document.querySelectorAll('.wa-link-btn'),
-    whatsappBtn = document.getElementById('gcaMainButton'),
-    whatsappChat = document.getElementById('gcaMainCard'),
-    contactBtn = document.getElementById('contact-us-btn')
-
-linkSpan.forEach((link) => {
-    link.addEventListener('click', () => {
-        whatsappChat.classList.toggle('gcaDisplay')
-    })
-})
-
-contactBtn.addEventListener('click', () => {
-    whatsappChat.classList.toggle('gcaDisplay')
-})
-
 // Helper functions
 
 function setCookie(cname, cvalue, exdays) {
