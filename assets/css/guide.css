@@ -10,14 +10,6 @@
     margin-top: 8em;
 }
 
-.container {
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
 .section-title {
     color: black;
     text-align: left;
