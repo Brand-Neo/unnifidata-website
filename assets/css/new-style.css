@@ -1,27 +1,16 @@
-.banner.carousel .carousel-item div {
-    /* Full height */
-  height: 100%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.carousel-header {
+    margin-top: 5em;
 }
 
-.banner.carousel .carousel-item.first div {
-    background-image: url('../images/redesign/website_view/unnfidata_5_1.jpg');
-}
-
-.banner.carousel .carousel-item.second div {
-    background-image: url('../images/redesign/website_view/unnfidata_5_2.jpg');
-}
-
-.banner.carousel .carousel-item.third div {
-    background-image: url('../images/redesign/website_view/unnfidata_5_3.jpg');
-}
-
-.banner.carousel .carousel-item.fourth div {
-    background-image: url('../images/redesign/website_view/unnfidata_5_4.jpg');
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .glance-content {
