@@ -651,7 +651,6 @@ li.nav-list-item.shopify-nav-item:hover {
 .download-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .download-btn {
@@ -675,9 +674,9 @@ li.nav-list-item.shopify-nav-item:hover {
 .download-image {
     position: absolute;
     right: 0;
-    height: 470px;
+    height: 505px;
     top: -5.5rem;
-    right: -18rem;
+    right: -13rem;
     z-index: -1;
 }
 
@@ -1666,6 +1665,10 @@ li.nav-list-item.shopify-nav-item:hover {
     gap: 1rem;
 }
 
+.terms-content .privacy-items {
+    line-height: 2.5em; /* 30px; */
+}
+
 .terms-title {
     text-align: center;
     font-size: 2rem;
@@ -2565,6 +2568,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
     .download {
         height: 100%;
+        margin-bottom: 7em;
+        padding: 1em;
     }
 
     /* Download Section */
