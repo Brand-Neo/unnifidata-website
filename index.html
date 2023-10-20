@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Unnifi Data" />
     <meta property="og:image" content="assets/images/logos/Iconmark - Full Colour.png" />
     <meta property="keywords"
-        content="data, data plan, unnifi data, unnifidata, udata, wifi, travel, Singapore, Asia, Portable wifi, Phone wifi, Roaming, Wifi roaming international" />
+        content="data, data plan, unnifi data, unnifidata, udata, wifi, travel, Singapore, Asia, Portable wifi, Phone wifi, Roaming, Wifi roaming international, expire, unlimited" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Est. reading time">
     <meta name="twitter:data1" content="1 minutes">
@@ -35,8 +35,17 @@
     <!--====== FONTAWESOME ICONS ======-->
     <script src="https://kit.fontawesome.com/bae18c500b.js" crossorigin="anonymous" defer></script>
 
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
     <!-- ======== CSS ======== -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/new-style.css">
     <link rel="stylesheet" href="./assets/css/hello-bar.css">
 
     <!-- Animate.css -->
@@ -52,31 +61,29 @@
         gtag('config', 'G-5R706WXQQ6');
     </script>
 
-    <!-- jQuery Modal -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '540012561330928');
-      fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '540012561330928');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=540012561330928&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=540012561330928&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
 </head>
 
 <body onload="checkCookie()">
-
     <!-- Banner -->
     <div class="hellobar-wrapper">
         <div class="hellobar-container">
@@ -89,8 +96,7 @@
     <!--====== HEADER ======-->
     <header class="header">
         <a id="#header-logo" href="./index.html">
-            <img class="header-logo" src="assets/images/logos/udata_logo_2022.png"
-                alt="U-data home" loading="lazy">
+            <img class="header-logo" src="assets/images/logos/udata_logo_2022.png" alt="U-data home" loading="lazy">
         </a>
         <i class="fas fa-bars header-toggle" id="header-toggle"></i>
 
@@ -100,7 +106,8 @@
             <div class="nav-content">
                 <ul class="nav-menu">
                     <li class="nav-list-item" id="product-list">
-                        <a href="#" class="nav-item"><span id="productsMenuText">Products</span> <i class="fas fa-chevron-down" id="nav-chevron"></i></a>
+                        <a href="#" class="nav-item"><span id="productsMenuText">Products</span> <i
+                                class="fas fa-chevron-down" id="nav-chevron"></i></a>
                         <ul class="sub-menu" id="product-submenu">
                             <li><a href="./products.html" class="nav-item">Unnifi Device</a></li>
                             <li><a href="./products.html#revolutionize" class="nav-item">Unnifi App</a></li>
@@ -119,82 +126,200 @@
     </header>
 
     <main>
-        <!-- Christmas promo -->
-        <!-- Modal HTML embedded directly into document -->
-        <!-- <section>
-            <div id="buyNowPopUp" class="modal buy-now-modal">
-                <div style="height: 95%;">
-                    <div id='product-component-123'></div>
-                </div>
-            </div>
-        </section> -->
 
-        <!--====== Auto Slider ======-->
-        <section class="slider_section" id="sliderSection">
-            <div class="flexslider">
-                <ul class="slides">
-                  <li class="first">
-                    <img src="./assets/images/slider_banner_1.png" loading="lazy" alt="promo" />
-                  </li>
-                </ul>
-              </div>
-        </section>
+        <!--====== CAROUSEL SECTION ======-->
+        <section>
+            <header class="carousel-header">
 
-        <!--====== HERO SECTION ======-->
-        <section class="hero section" id="hero-section">
-            <div class="hero-section container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="landing-title">Global, high-speed, secure data <br class="header-br">that <span>never
-                                expires</span></h1>
-                        <p class="hero-paragraph">
-                            Powering safer, smarter and more magical mobile data experiences for you
-                            and everyone around you whenever and wherever you are!
-                        </p>
-                        <a href="./products.html" class="btn traveler-btn">LEARN MORE</a>
+                <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
                     </div>
-                    <div class="hero-image-container">
-                        <div class="hero-image-bg"></div>
-                        <div class="hero-image">
-                            <img src="assets/images/products/66.jpg" alt="Unnifidata device" loading="lazy">
+                    <div class="carousel-inner">
+                        <div class="carousel-item one active" data-bs-interval="4500">
+                        </div>
+                        <div class="carousel-item two" data-bs-interval="4500">
+                        </div>
+                        <div class="carousel-item  three" data-bs-interval="4500">
+                        </div>
+                        <div class="carousel-item four" data-bs-interval="4500">
+                        </div>
+                        <div class="carousel-item five" data-bs-interval="4500">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
+            </header>
         </section>
 
         <!--====== GLANCE SECTION ======-->
         <section class="glance section" id="glance">
             <h1 class="section-title"><span>UnnifiData</span> at a glance</h1>
             <div class="glance-section container">
-                <div class="glance-content">
+                <div class="glance-content" style="grid-template-columns: repeat(5, 1fr);">
                     <div class="glance-circle">
                         <h2 class="glance-title"><span class="counter">10000</span>+</h2>
-                        <span>customers</span>
+                        <span>Customers served</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
                         <h2 class="glance-title"><span class="counter">100</span>+</h2>
-                        <span>countries</span>
+                        <span>Countries connected</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
-                        <h2 class="glance-title"><span class="counter">5</span>+</h2>
-                        <span>continents</span>
+                        <h2 class="glance-title"><span class="counter">5/5</span></h2>
+                        <span>Satisfaction rating</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
                         <h2 class="glance-title"><span class="counter">250</span>+</h2>
-                        <span>telco partners</span>
+                        <span>Telco partners</span>
+                        <div></div>
+                    </div>
+                    <div class="glance-circle">
+                        <h2 class="glance-title"><span class="counter">4G</span></h2>
+                        <span>Average network speed</span>
                         <div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--====== WHY SECTION ======-->
+        <!--====== ULTIMATE CHOICE SECTION ======-->
+        <section class="ultimate-choice section --green-background" id="ultimate-choice">
+            <h1 class="section-title">The Ultimate Choice for <br> Frequent Travelers</h1>
+            <div class="card-wrapper">
+                <div class="cards">
+                    <div class="card">
+                        <div class="top">
+                            <img src="./assets/images/icons/mobile_phone.svg" alt="Mobile Phone icon" width="50px">
+                            <h4>Other Roaming Plans</h4>
+                        </div>
+                        <div class="bottom">
+                            <ul class="p-2">
+                                <li class="--list-style-red-no">Data expires after the specified
+                                    period, leading to potential waste.</li>
+                                <li class="--list-style-red-no">Requires changing roaming plans
+                                    for each trip, involving queues and
+                                    setup time.</li>
+                                <li class="--list-style-red-no">Internet strength may vary
+                                    depending on the location.</li>
+                                <li class="--list-style-red-no">Offers a level of security but may
+                                    not be as robust as Unnifi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="top">
+                            <img src="./assets/images/logos/Iconmark - Full Colour.png" alt="Udata logo" width="50px">
+                            <h4>Unnifi Device</h4>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li class="--list-style-green-tick">No expiry data, worry-free usage.</li>
+                                <li class="--list-style-green-tick">Ideal for frequent flyers, saving money and planning
+                                    hassle.</li>
+                                <li class="--list-style-green-tick">Always offers the strongest internet connection.
+                                </li>
+                                <li class="--list-style-green-tick">Provides a secure network for your peace of mind.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="top">
+                            <img src="./assets/images/icons/wifi_signal.svg" alt="wifi signal icon" width="50px">
+                            <h4>Public WiFi</h4>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li class="--list-style-red-no">Free to use, but limited to specific locations.</li>
+                                <li class="--list-style-red-no">Can be inconvenient when switching places, causing
+                                    hassle.</li>
+                                <li class="--list-style-red-no">Internet strength varies depending on the provider.</li>
+                                <li class="--list-style-red-no">Lacks security, putting your data at risk of potential
+                                    theft or hacking.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--====== COUNTRIES SECTION ======-->
+        <section class="countries section" id="countries">
+            <div class="container">
+                <h1 class="section-title">Say Goodbye to Internet Roaming</h1>
+                <p class="text-center">With Unnifidata, you can finally say goodbye to roaming worries. Our innovative
+                    data
+                    plan allows you to
+                    purchase data once and use it seamlessly in multiple countries, all with no expiry date.</p>
+            </div>
+            <div class="countries-section">
+                <img src="assets/images/world-map-4.png" alt="" loading="lazy">
+                <div>
+                    <button id="countries-btn" class="btn countries-btn">VIEW ALL COUNTRIES</button>
+                </div>
+                <div class="countries-modal">
+                    <div class="countries-content" id="countries-modal">
+                        <i class="fas fa-times-circle countries-close" id="countires-close"></i>
+                        <p>
+                            <i class="fas fa-globe-asia countries-icon"></i>
+                            <strong>Asia:</strong> Australia, Bangladesh, Cambodia, China, Fiji, Hong
+                            Kong, India, Indonesia, Japan, Kazakhstan, Laos, Macao, Malaysia, Myanmar, New
+                            Zealand, Pakistan, Philippines, Singapore, South Korea, Sri Lanka, Taiwan, Thailand, Vietnam
+                        </p>
+                        <br>
+                        <p>
+                            <i class="fas fa-globe-europe countries-icon"></i>
+                            <strong>Europe:</strong> Aland Islands, Albania, Austria, Belgium, Bulgaria, Croatia,
+                            Cyprus, Czech
+                            Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland,
+                            Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway,
+                            Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden,
+                            Switzerland,
+                            Turkey, Ukraine, United Kingdom, Vatican
+                        </p>
+                        <br>
+                        <p>
+                            <i class="fas fa-globe-americas countries-icon"></i>
+                            <strong>Americas:</strong> Brazil, Canada, Mexico, Panama, United States
+                        </p>
+                        <br>
+                        <p>
+                            <i class="fas fa-globe-africa countries-icon"></i>
+                            <strong>Middle East/Africa:</strong> Egypt, Israel, Kenya, Morocco, Nigeria,
+                            Qatar, Saudi Arabia, Seychelles, South Africa, Western Sahara, UAE
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="why section" id="why">
             <h1 class="section-title"><span>Everything</span> <br class="header-br">you need with Unnifi</h1>
+            <br>
             <div class="why-section container">
                 <!-- Grid container -->
                 <div class="why-content">
@@ -205,44 +330,60 @@
                     </div>
                     <!-- Why cards 1 -->
                     <div class="why-cards">
-                        <!-- Card 1 -->
-                        <div class="why-card">
-                            <i class="fas fa-street-view"></i>
+                        <!-- Card R1 -->
+                        <div class="why-card one">
                             <div class="why-card-text">
-                                <h3 class="why-card-title">Mobility</h3>
-                                <p data-nosnippet>
-                                    A lightweight device to fit in your pocket, with a battery life of 8+ hours.
+                                <h5 class="why-card-title fw-bold">Easy to Use</h5>
+                                <p class="m-0">
+                                    Accessing the internet is as easy as plugging in your Unnifi device. Enjoy up to 10
+                                    hours of connectivity on a single charge.
                                 </p>
                             </div>
                         </div>
-                        <!-- Card 2 -->
-                        <div class="why-card">
-                            <i class="fas fa-network-wired"></i>
+                        <!-- Card R2 -->
+                        <div class="why-card two">
                             <div class="why-card-text">
-                                <h3 class="why-card-title">Accessibility</h3>
-                                <p>
-                                    Works with multiple operators to help you access the best network at all times.
+                                <h5 class="why-card-title fw-bold">Secure Data Access</h5>
+                                <p class="m-0">
+                                    With our 128-bit encryption, protect your online activities from making financial
+                                    transactions to joining business meetings.
                                 </p>
                             </div>
                         </div>
-                        <!-- Card 1 -->
-                        <div class="why-card">
-                            <i class="fas fa-lock"></i>
+                        <!-- Card R3 -->
+                        <div class="why-card three">
                             <div class="why-card-text">
-                                <h3 class="why-card-title">Privacy</h3>
-                                <p>
-                                    With embedded 128-bit encryption, the Unnifi presents a safer method of getting
-                                    online.
+                                <h5 class="why-card-title fw-bold">Timeless Internet Connectivity</h5>
+                                <p class="m-0">
+                                    Unlike other telco companies, we believe your data should never expire. We're here
+                                    to put an end to data wastage.
                                 </p>
                             </div>
                         </div>
-                        <!-- Card 2 -->
-                        <div class="why-card">
-                            <i class="fas fa-users"></i>
+
+                        <div class="why-card four">
                             <div class="why-card-text">
-                                <h3 class="why-card-title">Share on 5 Devices</h3>
-                                <p>
-                                    Connect your Unnifi and share it with friends & family around the world.
+                                <h5 class="why-card-title fw-bold">Global Coverage</h5>
+                                <p class="m-0">
+                                    Our data plan works in numerous countries around the world, making it the ideal choice for international travelers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-card five">
+                            <div class="why-card-text">
+                                <h5 class="why-card-title fw-bold">Multi-user Connection</h5>
+                                <p class="m-0">
+                                    Share the joy of staying connected with your friends and family around the world.
+                                    You can connect up to 5 devices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-card six">
+                            <div class="why-card-text">
+                                <h5 class="why-card-title fw-bold">High Speed Network</h5>
+                                <p class="m-0">
+                                    Unnifi automatically connects you to the fastest network wherever you go. No need to
+                                    worry about slow connections.
                                 </p>
                             </div>
                         </div>
@@ -267,81 +408,115 @@
             </div>
         </section>
 
+        <!--====== ACTIVATE SECTION ======-->
+        <section class="activate section" id="activate">
+            <h1 class="section-title activate-title">Activate your <span>Unnifi</span> <br class="header-br">in 3 simple
+                steps</h1>
+            <div class="activate-section container">
+                <div class="activate-content">
+                    <div class="activate-card">
+                        <div class="activate-icon">
+                            <i class="fas fa-power-off"></i>
+                        </div>
+                        <div class="activate-card-text">
+                            <h3>Step 1:</h3>
+                            <p>Simply press the power <br>button and watch your device switch on.</p>
+                        </div>
+                    </div>
+                    <div class="activate-card">
+                        <div class="activate-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="activate-card-text">
+                            <h3>Step 2:</h3>
+                            <p>Sit back & relax as your Unnifi completes its service connection process.</p>
+                        </div>
+                    </div>
+                    <div class="activate-card">
+                        <div class="activate-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="activate-card-text">
+                            <h3>Step 3:</h3>
+                            <p>As soon as you're <br>connected, the Wifi indicator will light up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--====== TESTIMONIAL SECTION ======-->
-        <section class="testimonial section" id="testimonial">
-            <h1 class="section-title">Hear from what <br> <span>others have to say</span></h1>
-            <div class="testimonial section container">
-                <div class="testimonial-content mySwiper">
-                    <div class="testimonial-cards swiper-wrapper">
-                        <div class="testimonial-card swiper-slide">
-                            <i class="fas fa-quote-left testimonial-icon"></i>
-                            <p>
-                                The UNNIfi is a lovely little device that helped me save
-                                the day when my work space did not have internet. Had a
-                                conference call and it worked without a single glitch all day!
-                                Have used it in several countries in both Asia and Europe so
-                                far and internet has always been super fast. Easy top-up and
-                                same data balance can be used all over the world. Recommended
-                                for travelers and business users alike!
-                            </p>
-                            <div>
-                                <h4>Anita Ghosal</h4>
-                            </div>
+        <section class="testimonial section --red-background my-5" id="testimonial">
+            <h1 class="section-title text-white">Hear from what <br> <span class="--green-text">others have to
+                    say</span></h1>
+            <div class="testimonial section">
+                <!-- WIP: Add testimonial cards -->
+                <div class="review-cards">
+                    <div class="review-card">
+                        <div class="top">
+                            <span class="stars">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                            </span>
                         </div>
-
-                        <div class="testimonial-card swiper-slide">
-                            <i class="fas fa-quote-left testimonial-icon"></i>
-                            <p>
-                                Good reception and very handy. Beats looking for SIM card sellers
-                                all the time. Strongly recommend it.
-                            </p>
-                            <div>
-                                <h4>Trey Ng</h4>
-                            </div>
+                        <div class="bottom">
+                            <h4>Save my business day!</h4>
+                            <p>The UNNIfi is a lovely little device that helped me save the day when my work space did
+                                not have
+                                internet. Had a conference call and it worked without a single glitch all day! Have used
+                                it in
+                                several countries in both Asia and Europe so far and internet has always been super
+                                fast.</p>
                         </div>
-
-                        <div class="testimonial-card swiper-slide">
-                            <i class="fas fa-quote-left testimonial-icon"></i>
-                            <p>
-                                Great device for travel and great customer service experience.
-                                Had queries when I first received the device and customer service
-                                promptly answered my questions. Have used the device in Columbia
-                                and Peru. Works well and hassle free. Don't need to keep changing
-                                SIM cards. Was pleasantly surprised when Unnitel contacted me to check
-                                of device was working well? Great follow through.
-                            </p>
-                            <div>
-                                <h4>Alvin Er</h4>
-                            </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="top">
+                            <span class="stars">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                            </span>
                         </div>
-
-                        <div class="testimonial-card swiper-slide">
-                            <i class="fas fa-quote-left testimonial-icon"></i>
-                            <p>
-                                During these pandemic times when is so hard to plan for any travel,
-                                Unnifi service comes particularly handy. Having no expiration on
-                                its data plans, it allows to rest assure that if a trip got
-                                cancelled and pushed back a month, you won't be losing money on
-                                other data plans that are paid by the month.
-                            </p>
-                            <div>
-                                <h4>Nelson Hernández</h4>
-                            </div>
+                        <div class="bottom">
+                            <h4>Easy to use</h4>
+                            <p>Good reception and very handy. Beats looking for SIM card sellers all the time. Strongly
+                                recommend it.</p>
                         </div>
-
-                        <div class="testimonial-card swiper-slide">
-                            <i class="fas fa-quote-left testimonial-icon"></i>
-                            <p>
-                                Unnifi devices have been a heaven-sent solution for my team
-                                across the Asia Pacific region. Easy to set up, even for the less
-                                techy users, with fantastic customer support, and plans that are
-                                overly easy to understand Unnifi, have given us one thing less to
-                                worry about to stay connected.
-
-                            </p>
-                            <div>
-                                <h4>Alfonso Castillo</h4>
-                            </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="top">
+                            <span class="stars">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
+                                    width="40px">
+                            </span>
+                        </div>
+                        <div class="bottom">
+                            <h4>Easy to use</h4>
+                            <p>Good reception and very handy. Beats looking for SIM card sellers all the time. Strongly
+                                recommend it.</p>
                         </div>
                     </div>
                 </div>
@@ -349,13 +524,14 @@
         </section>
 
         <!--====== DOWNLOAD SECTION ======-->
-        <section class="download section" id="download">
-            <div class="download-section container">
+        <section class="download section mt-5" id="download">
+            <div class="download-section container px-0">
                 <div class="download-content">
                     <div class="download-text">
-                        <h3>Get access to key information &<br class="download-br"> Top-Up your data at any time.</h3>
-                        <h1 class="download-title">Download the <br class="header-br"><span>Unnifi Mobile App</span> now
-                        </h1>
+                        <p class="fw-medium fs-5">Get access to key information &<br class="download-br"> Top-Up your
+                            data at any time.</p>
+                        <h4 class="download-title">Download the <br class="header-br"><span>Unnifi Mobile App</span> now
+                        </h4>
                         <div class="download-buttons">
                             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unnitel.mobile">
                                 <div class="download-btn">
@@ -382,14 +558,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- removed on 11/6/2022 -->
-        <!-- <section class="bottom-promo-wrapper">
-            <img src="./assets/images/popup/christmas_web_banner.png" loading="lazy" alt="Udata christmas banner">
-            <div class="promo-text">
-                <div id='product-component-456'></div>
-            </div>
-        </section> -->
     </main>
 
     <!--====== FOOTER SECTION ======-->
@@ -397,18 +565,18 @@
         <div class="footer-section container">
             <div class="footer-info">
                 <a href="./index.html">
-                    <img class="header-logo" src="assets/images/logos/udata_logo_2022.png"
-                        alt="Unnifidata logo" loading="lazy">
+                    <img class="header-logo" src="assets/images/logos/udata_logo_2022.png" alt="Unnifidata logo"
+                        loading="lazy">
                 </a>
                 <div class="footer-info-content">
                     <p>
-                        With fast and secure mobile data that never expires. Anytime, and anywhere you need it.
+                        Global, high-speed, secure data that never expires. Powering safer, smarter and more magical
+                        mobile data experiences for you and everyone around you whenever and wherever you are!
                     </p>
                 </div>
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/unnifidata"><i class="fab fa-facebook footer-social"></i></a>
-                    <a href="https://instagram.com/unnifidata"><i
-                        class="fab fa-instagram footer-social"></i></a>
+                    <a href="https://instagram.com/unnifidata"><i class="fab fa-instagram footer-social"></i></a>
                     <a href="https://www.linkedin.com/company/u-data-pte-ltd/"><i
                             class="fab fa-linkedin footer-social"></i></a>
                     <a href="https://www.youtube.com/channel/UCj_gjsos0lTgYGHwOSdldLQ"><i
@@ -423,16 +591,17 @@
             </div>
             <div class="footer-links">
                 <h3 class="footer-title">Explore</h3>
-                <ul class="footer-navigation">
+                <ul class="footer-navigation px-0">
                     <li><a class="footer-link" href="about.html">About</a></li>
                     <li><a class="footer-link" href="#testimonial">Testimonials</a></li>
                     <li><a class="footer-link" href="products.html">Products</a></li>
                     <li><a class="footer-link" href="termsandconditions.html">Terms and Conditions</a></li>
+                    <li><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h3 class="footer-title">Help</h3>
-                <ul class="footer-navigation">
+                <ul class="footer-navigation px-0">
                     <li><a class="footer-link" href="products.html#faq">FAQ</a></li>
                     <li><a class="footer-link" href="about.html#contact">Contact</a></li>
                     <li><a class="footer-link" href="#hero-section">Top</a></li>
@@ -446,7 +615,7 @@
                             <i class="fab fa-google-play"></i>
                             <div>
                                 <span>Get it on</span><br>
-                                <h3>Google Play</h3>
+                                <h5>Google Play</h5>
                             </div>
                         </div>
                     </a>
@@ -455,7 +624,7 @@
                             <i class="fab fa-apple"></i>
                             <div>
                                 <span>Download on the</span><br>
-                                <h3>Appstore</h3>
+                                <h5>Appstore</h5>
                             </div>
                         </div>
                     </a>
@@ -509,16 +678,25 @@
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.js"></script>
+    <!-- <script src="assets/js/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/counter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.js" integrity="sha512-/LtMywMLXZ29TJbETec4e6ndSWPxQDTdsqCud+8Q4IFnKQ1WVlr87r0D5oo9QNO9zuqQNJDmvQxQmvqe8DRYLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.css" integrity="sha512-HWY8i77pPLL23sU4pHj+5iuZEmmmu2YaiTUcWrBXqBRTpn6yUdDvlFGNmG0qyjDg/vpt+YWNMASjg9M0eOU9DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.js"
+        integrity="sha512-/LtMywMLXZ29TJbETec4e6ndSWPxQDTdsqCud+8Q4IFnKQ1WVlr87r0D5oo9QNO9zuqQNJDmvQxQmvqe8DRYLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.css"
+        integrity="sha512-HWY8i77pPLL23sU4pHj+5iuZEmmmu2YaiTUcWrBXqBRTpn6yUdDvlFGNmG0qyjDg/vpt+YWNMASjg9M0eOU9DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/js/flexslider.js" loading="lazy"></script>
 
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
