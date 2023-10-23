@@ -63,9 +63,8 @@
     display: grid;
     grid-template-rows: 20% auto;
     width: 20em;
-    /* height: 30em; */
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid var(--red-color);
     padding: 1em;
 }
 
@@ -78,7 +77,12 @@
     border-bottom: 2px solid black;
 }
 
+.section.ultimate-choice .card-wrapper .cards .card ul {
+    padding-left: 0;
+}
+
 .section.ultimate-choice .card-wrapper .cards .card ul li {
+    height: 5em;
     list-style: none;
     padding: 10px 30px;
     background-repeat: no-repeat;
@@ -95,6 +99,20 @@
 }
 
 /* COUNTRIES SECTION */
+
+.section.countries .container {
+    position: relative;
+}
+
+.section.countries .container .section-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 238px;
+    height: 114px;
+    content: url('../images/pattern.png');
+}
 
 .section.countries .countries-section>div.countries-modal {
     margin: 2em;
@@ -152,8 +170,8 @@
 }
 
 .why-card {
-    width: 430px;
-    height: 240px;
+    width: 460px;
+    height: 220px;
     background-color: #FFF;
     color: var(--red-color);
     padding: 1em;
@@ -223,7 +241,7 @@
 #testimonial .review-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.5em;
     justify-content: center;
 }
 
@@ -232,6 +250,9 @@
     background-color: white;
     border-radius: 30px;
     padding: 1em;
+    /* box-shadow: 0 5px 10px var(--green-color); */
+    box-shadow: 0 0 40px 2px var(--green-color);
+    border: 1px solid var(--green-color);
 }
 
 #testimonial .review-cards .review-card .bottom {
@@ -252,6 +273,25 @@
 .--red-background {
     background-color: var(--red-color);
 }
+
+.--dashboard-number {
+    font-family: 'Dela Gothic One', sans-serif !important;
+    /* color: #711a2f; */
+    color: var(--red-color);
+}
+
+.--neon-text {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
 
 /* RESPONSIVENESS */
 
@@ -291,5 +331,12 @@
 
     .why-cards .why-card {
         text-align: center !important;
+        height: 80%;
+        width: 85vw;
     }
+
+    .glance-circle .glance-text {
+        padding: 0 20px;
+    }
+
 }

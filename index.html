@@ -176,28 +176,28 @@
             <div class="glance-section container">
                 <div class="glance-content" style="grid-template-columns: repeat(5, 1fr);">
                     <div class="glance-circle">
-                        <h2 class="glance-title"><span class="counter">10000</span>+</h2>
-                        <span>Customers served</span>
+                        <h3 class="glance-title --dashboard-number"><span class="counter">10</span>k</h3>
+                        <span class="glance-text">Customers served</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
-                        <h2 class="glance-title"><span class="counter">100</span>+</h2>
-                        <span>Countries connected</span>
+                        <h2 class="glance-title --dashboard-number"><span class="counter">80</span>+</h2>
+                        <span class="glance-text">Countries connected</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
-                        <h2 class="glance-title"><span class="counter">5/5</span></h2>
-                        <span>Satisfaction rating</span>
+                        <h2 class="glance-title --dashboard-number"><span>5/5</span></h2>
+                        <span class="glance-text">Satisfaction rating</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
-                        <h2 class="glance-title"><span class="counter">250</span>+</h2>
-                        <span>Telco partners</span>
+                        <h2 class="glance-title --dashboard-number"><span class="counter">125</span>+</h2>
+                        <span class="glance-text">Telco partners</span>
                         <div></div>
                     </div>
                     <div class="glance-circle">
-                        <h2 class="glance-title"><span class="counter">4G</span></h2>
-                        <span>Average network speed</span>
+                        <h2 class="glance-title --dashboard-number"><span>4G</span></h2>
+                        <span class="glance-text">Reliable network</span>
                         <div></div>
                     </div>
                 </div>
@@ -207,15 +207,15 @@
         <!--====== ULTIMATE CHOICE SECTION ======-->
         <section class="ultimate-choice section --green-background" id="ultimate-choice">
             <h1 class="section-title">The Ultimate Choice for <br> Frequent Travelers</h1>
-            <div class="card-wrapper">
+            <div class="card-wrapper mt-4">
                 <div class="cards">
                     <div class="card">
                         <div class="top">
-                            <img src="./assets/images/icons/mobile_phone.svg" alt="Mobile Phone icon" width="50px">
+                            <img src="./assets/images/icons/mobile_phone.svg" loading="lazy" alt="Mobile Phone icon" width="50px">
                             <h4>Other Roaming Plans</h4>
                         </div>
                         <div class="bottom">
-                            <ul class="p-2">
+                            <ul class="px-0">
                                 <li class="--list-style-red-no">Data expires after the specified
                                     period, leading to potential waste.</li>
                                 <li class="--list-style-red-no">Requires changing roaming plans
@@ -231,7 +231,7 @@
 
                     <div class="card">
                         <div class="top">
-                            <img src="./assets/images/logos/Iconmark - Full Colour.png" alt="Udata logo" width="50px">
+                            <img src="./assets/images/logos/Iconmark - Full Colour.png" alt="Udata logo" width="50px" loading="lazy">
                             <h4>Unnifi Device</h4>
                         </div>
                         <div class="bottom">
@@ -249,7 +249,7 @@
 
                     <div class="card">
                         <div class="top">
-                            <img src="./assets/images/icons/wifi_signal.svg" alt="wifi signal icon" width="50px">
+                            <img src="./assets/images/icons/wifi_signal.svg" alt="wifi signal icon" width="50px" loading="lazy">
                             <h4>Public WiFi</h4>
                         </div>
                         <div class="bottom">
@@ -268,7 +268,7 @@
         </section>
 
         <!--====== COUNTRIES SECTION ======-->
-        <section class="countries section" id="countries">
+        <section class="countries section py-0" id="countries">
             <div class="container">
                 <h1 class="section-title">Say Goodbye to Internet Roaming</h1>
                 <p class="text-center">With Unnifidata, you can finally say goodbye to roaming worries. Our innovative
@@ -285,21 +285,23 @@
                     <div class="countries-content" id="countries-modal">
                         <i class="fas fa-times-circle countries-close" id="countires-close"></i>
                         <p>
-                            <i class="fas fa-globe-asia countries-icon"></i>
-                            <strong>Asia:</strong> Australia, Bangladesh, Cambodia, China, Fiji, Hong
-                            Kong, India, Indonesia, Japan, Kazakhstan, Laos, Macao, Malaysia, Myanmar, New
-                            Zealand, Pakistan, Philippines, Singapore, South Korea, Sri Lanka, Taiwan, Thailand, Vietnam
+                        <h4 class="py-1"></i><span class="badge text-black --neon-text" style="background-color: #d73027;">ASIA</span> plan</h4>
+                        <i class="fas fa-globe-asia countries-icon"></i>
+                        <strong>Asia:</strong> Australia, Bangladesh, Cambodia, China, Fiji, Hong
+                        Kong, India, Indonesia, Japan, Kazakhstan, Laos, Macao, Malaysia, Myanmar, New
+                        Zealand, Pakistan, Philippines, Singapore, South Korea, Sri Lanka, Taiwan, Thailand, Vietnam
                         </p>
-                        <br>
+                        
                         <p>
-                            <i class="fas fa-globe-europe countries-icon"></i>
-                            <strong>Europe:</strong> Aland Islands, Albania, Austria, Belgium, Bulgaria, Croatia,
-                            Cyprus, Czech
-                            Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland,
-                            Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway,
-                            Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden,
-                            Switzerland,
-                            Turkey, Ukraine, United Kingdom, Vatican
+                        <h4 class="py-1"><span class="badge text-black --neon-text" style="background-color: #d3dc07;">GLOBAL</span> plan <span class="fs-5 text-black-50">(includes ASIA plan)</span></h4>
+                        <i class="fas fa-globe-europe countries-icon"></i>
+                        <strong>Europe:</strong> Aland Islands, Albania, Austria, Belgium, Bulgaria, Croatia,
+                        Cyprus, Czech
+                        Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland,
+                        Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway,
+                        Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden,
+                        Switzerland,
+                        Turkey, Ukraine, United Kingdom, Vatican
                         </p>
                         <br>
                         <p>
@@ -317,6 +319,8 @@
             </div>
         </section>
 
+        <hr class="w-50 align-self-center text-black-50">
+    
         <section class="why section" id="why">
             <h1 class="section-title"><span>Everything</span> <br class="header-br">you need with Unnifi</h1>
             <br>
@@ -453,18 +457,18 @@
                 <!-- WIP: Add testimonial cards -->
                 <div class="review-cards">
                     <div class="review-card">
-                        <div class="top">
+                        <div class="top mt-3">
                             <span class="stars">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
                             </span>
                         </div>
                         <div class="bottom">
@@ -478,18 +482,18 @@
                         </div>
                     </div>
                     <div class="review-card">
-                        <div class="top">
+                        <div class="top mt-3">
                             <span class="stars">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
                             </span>
                         </div>
                         <div class="bottom">
@@ -499,18 +503,18 @@
                         </div>
                     </div>
                     <div class="review-card">
-                        <div class="top">
+                        <div class="top mt-3">
                             <span class="stars">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
-                                <img src="./assets/images/icons/yellow_star.png" alt="yellow star for review rating"
-                                    width="40px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
+                                <img src="./assets/images/icons/yellow_star.png" loading="lazy" alt="yellow star for review rating"
+                                    width="45px">
                             </span>
                         </div>
                         <div class="bottom">
@@ -553,7 +557,7 @@
                             </a>
                         </div>
                     </div>
-                    <img class="download-image" src="assets/images/Unnitel App download.png" alt="unnitel app"
+                    <img class="download-image" src="assets/images/Unnitel App download.png" alt="Unnifidata app"
                         loading="lazy">
                 </div>
             </div>
@@ -678,11 +682,10 @@
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
-    <!-- <script src="assets/js/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.js"
         integrity="sha512-/LtMywMLXZ29TJbETec4e6ndSWPxQDTdsqCud+8Q4IFnKQ1WVlr87r0D5oo9QNO9zuqQNJDmvQxQmvqe8DRYLA=="
