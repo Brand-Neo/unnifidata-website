@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries.">
+        content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in 80 countries.">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Unnifi by U-Data | The Best Portable Wifi for Business Travelers" />
     <meta property="og:description"
-        content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries." />
+        content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in 80 countries." />
     <meta property="og:url" content="https://unnifidata.com" />
     <meta property="og:site_name" content="Unnifi Data" />
     <meta property="og:image" content="assets/images/logos/Iconmark - Full Colour.png" />
@@ -56,49 +56,62 @@
         gtag('config', 'G-5R706WXQQ6');
     </script>
     <style>
-        .about-content a h3 {
+        .about-content a {
+            padding: 1em;
+            height: 25em;
+        }
+
+        .about-content a h5 {
             color: #000;
         }
 
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            /* display: flex !important; */
             align-items: center;
             gap: 1em;
-            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .about-image-container {
             margin-left: 0 !important;
-            height: 300px !important;
-            width: 300px !important;
+            height: 350px !important;
+            width: 350px !important;
         }
 
         .about-image {
-            height: 300px;
-            width: 300px !important;
+            height: 350px;
+            width: 350px !important;
         }
 
         .about-image-bg {
             right: 0 !important;
             left: -0.5rem;
-            height: 300px !important;
-            width: 300px !important;
+            height: 350px !important;
+            width: 350px !important;
         }
 
         .about-image img {
-            height: 300px !important;
-            width: 300px !important;
+            height: 350px !important;
+            width: 350px !important;
         }
 
         .hero-title {
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
 
         a .about-text {
             align-items: center;
-            gap: 1rem;
+            gap: 15px;
+        }
+
+        /* ======== Phone-ish ======== */
+        @media screen and (min-width: 320px) and (max-width: 550px) {
+
+        .about-content {
+            margin-top: 2em;
+            display: flex;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -163,8 +176,8 @@
                                     <img src="assets/images/blogs/What-is-an-international-SIM-card.png" alt="">
                                 </div>
                             </div>
-                            <h3 class="hero-title">What is an <span>international SIM card?</span></h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title">What is an <span>international SIM card?</span></h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -176,8 +189,8 @@
                                     <img src="assets/images/blogs/International-data-roaming.png" alt="">
                                 </div>
                             </div>
-                            <h3 class="hero-title">International <span>data roaming</span></h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title">International <span>data roaming</span></h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -189,8 +202,8 @@
                                     <img src="assets/images/blogs/What-is-a-Travel-router-and-How-to-uses.png" alt="">
                                 </div>
                             </div>
-                            <h3 class="hero-title">What is a <span>Travel router</span> and How to use</h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title">What is a <span>Travel router</span> and How to use</h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -202,8 +215,8 @@
                                     <img src="assets/images/blogs/what-is-cloud-sim.png" alt="">
                                 </div>
                             </div>
-                            <h3 class="hero-title">What is <span>Cloud SIM?</span></h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title">What is <span>Cloud SIM?</span></h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -216,8 +229,8 @@
                                         alt="stay secure from public wifi">
                                 </div>
                             </div>
-                            <h3 class="hero-title"><span>Stay Secure</span> using Public Wi-Fi</h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title"><span>Stay Secure</span> using Public Wi-Fi</h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -230,8 +243,8 @@
                                         alt="stay secure from public wifi">
                                 </div>
                             </div>
-                            <h3 class="hero-title"><span>Responsible Traveler</span> Tour Guidelines</h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title"><span>Responsible Traveler</span> Tour Guidelines</h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -243,8 +256,8 @@
                                     <img src="assets/images/blogs/unnifi-vs-e-sim-blog.png" alt="">
                                 </div>
                             </div>
-                            <h3 class="hero-title">Benefits of U-Data <span>Unnifi vs. eSIM</span> ?</h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title">Benefits of U-Data <span>Unnifi vs. eSIM</span> ?</h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -256,9 +269,9 @@
                                     <img src="assets/images/blogs/best-travel-router1.png" alt="">
                                 </div>
                             </div>
-                            <h3 class="hero-title">Best <span>Portable Wi-Fi Router</span> to <br>Carry on your Travels
-                            </h3>
-                            <button class="btn btn-sm"" id="contact-us-btn">CLICK HERE</button>
+                            <h5 class="hero-title">Best <span>Portable Wi-Fi Router</span> for <br>travels
+                            </h5>
+                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
                         </div>
                     </a>
 
@@ -284,7 +297,7 @@
                         <div class="contact-card">
                             <i class="fas fa-map-marker-alt contact-icon"></i>
                             <div class="contact-card-text">
-                                <h3 class="contact-card-title">Address</h3>
+                                <h5 class="contact-card-title">Address</h5>
                                 <span>Corporate Office: 1 Raffles Place, #39-01, One Raffles Place, Singapore,
                                     048616</span>
                                 <br>
@@ -296,7 +309,7 @@
                         <div class="contact-card">
                             <i class="fas fa-phone contact-icon"></i>
                             <div class="contact-card-text">
-                                <h3 class="contact-card-title">Phone</h3>
+                                <h5 class="contact-card-title">Phone</h5>
                                 <span>+6587986824</span>
                                 <br>
                                 <span><small><i><strong>(Available business hours (UTC+8) Monday-Friday 09:30hrs to
@@ -307,7 +320,7 @@
                         <div class="contact-card">
                             <i class="fas fa-envelope contact-icon"></i>
                             <div class="contact-card-text">
-                                <h3 class="contact-card-title">Email</h3>
+                                <h5 class="contact-card-title">Email</h5>
                                 <span>ask@unnifidata.com</span>
                                 <br>
                                 <span><small><i><strong>(For out of business hours support)</strong></i></small></span>
@@ -341,7 +354,7 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h3 class="footer-title">Explore</h3>
+                <h5 class="footer-title">Explore</h5>
                 <ul class="footer-navigation px-0">
                     <li><a class="footer-link" href="#about">About</a></li>
                     <li><a class="footer-link" href="./index.html#testimonial">Testimonials</a></li>
@@ -351,7 +364,7 @@
                 </ul>
             </div>
             <div class="footer-links">
-                <h3 class="footer-title">Help</h3>
+                <h5 class="footer-title">Help</h5>
                 <ul class="footer-navigation px-0">
                     <li><a class="footer-link" href="./products.html#faq">FAQ</a></li>
                     <li><a class="footer-link" href="#contact">Contact</a></li>
@@ -360,7 +373,7 @@
                 </ul>
             </div>
             <div class="footer-download">
-                <h3 class="footer-title">Download</h3>
+                <h5 class="footer-title">Download</h5>
                 <div class="download-buttons-footer">
                     <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unnitel.mobile">
                         <div class="download-btn">
