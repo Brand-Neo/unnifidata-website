@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries.">
+    <meta name="description" content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in 80 countries.">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Unnifi by U-Data | The Best Portable Wifi for Business Travelers" />
-    <meta property="og:description" content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in more than 100 countries." />
+    <meta property="og:description" content="Global, high-speed, secure internet access that never expires. Powering safer, smarter and more magical mobile data experiences for you whenever and wherever in 80 countries." />
     <meta property="og:url" content="https://unnifidata.com" />
     <meta property="og:site_name" content="Unnifi Data" />
     <meta property="og:image" content="assets/images/logos/Iconmark - Full Colour.png" />
@@ -29,8 +29,17 @@
 
     <!--====== SWIPER CSS ======-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
      <!-- ======== CSS ======== -->
      <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/new-style.css">
      <link rel="stylesheet" href="assets/css/hello-bar.css">
 
      <!-- Animate.css -->
@@ -73,10 +82,11 @@
                             <li><a href="#revolutionize" class="nav-item">Unnifi App</a></li>
                         </ul>
                     </li>
-                    <li class="nav-list-item"><a href="about.html" class="nav-item">About Us</a></li>
+                    <li class="nav-list-item"><a href="#countries" class="nav-item countries-text">Countries</a></li>
                     <li class="nav-list-item"><a href="#faq" class="nav-item">FAQ</a></li>
                     <li class="nav-list-item"><a href="./blogs.html" class="nav-item">Blogs</a></li>
                     <li class="nav-list-item"><a href="./guide.html" class="nav-item">User Guide</a></li>
+                    <li class="nav-list-item"><a href="about.html" class="nav-item">About Us</a></li>
                     <li class="nav-list-item shopify-nav-item">
                         <div id='product-component-1633531980465'></div>
                     </li>                
@@ -86,23 +96,26 @@
     </header>
 
     <main>
-    <!--====== TRAVELER SECTION ======-->
-    <section class="traveler section" id="traveler">
-        <div class="traveler-section container">
-            <div class="traveler-content">
-                <div class="traveler-text">
-                    <h1 class="hero-title"><span>Portable device</span> that goes anywhere with you</h1>
+
+    <!--====== HERO SECTION ======-->
+    <section class="hero section" id="hero-section">
+        <div class="hero-section container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="landing-title">Portable device that goes anywhere with you</h1>
                     <p class="hero-paragraph">
-                        Unnifi is your ultimate travel companion as it allows you to stay connected
-                        with your world seamlessly with cheap, secure and high-speed Internet access 
-                        in over 100 different countries.
-                        <br ><br >
-                        Get your device for only <strong>USD 70</strong> with 10GB of global, no expiry data including free delivery.
+                        Meet Unnifi, your perfect travel buddy! Stay connected effortlessly in 100+ countries with affordable, safe, and speedy Internet. No more data expiration worries.
                     </p>
-                    <div id='product-component-1633531980465-2'></div>
+                    <p class="hero-paragraph">
+                        Say goodbye to traditional SIMcard – our clever cloudSIM tech lets you jump onto local networks for fast and secure internet, wherever you go.
+                    </p>
+                    <a href="#ultimate-choice" class="btn btn-sm traveler-btn">LEARN MORE</a>
                 </div>
-                <div class="traveler-image-container">
-                    <img class="traveler-image" src="assets/images/products/Unnifi_from_Unnitel_-removebg-preview (1).png" alt="" loading="lazy">
+                <div class="hero-image-container">
+                    <div class="hero-image-bg"></div>
+                    <div class="hero-image">
+                        <img src="assets/images/products/66.jpg" alt="UnnifiData device" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,24 +157,129 @@
         </div>
     </section>
 
+    <!--====== ULTIMATE CHOICE SECTION ======-->
+    <section class="ultimate-choice section --green-background" id="ultimate-choice">
+        <h1 class="section-title">The Ultimate Choice for <br> Frequent Travelers</h1>
+        <div class="card-wrapper mt-4">
+            <div class="cards">
+                <div class="card">
+                    <div class="top">
+                        <img src="./assets/images/icons/mobile_phone.svg" loading="lazy" alt="Mobile Phone icon" width="80px">
+                        <h4>Other Roaming Plans</h4>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li class="--list-style-red-no">Data expires after the specified
+                                period.</li>
+                            <li class="--list-style-red-no">Requires changing roaming plans
+                                for each trip.</li>
+                            <li class="--list-style-red-no">Internet strength may vary
+                                depending on the location.</li>
+                            <li class="--list-style-red-no">Offers a level of security but may
+                                not be as robust as Unnifi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="./assets/images/logos/Iconmark - Full Colour.png" alt="Udata logo" width="80px" loading="lazy">
+                        <h4>Unnifi Device</h4>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li class="--list-style-green-tick">No expiry data, worry-free usage.</li>
+                            <li class="--list-style-green-tick">Ideal for frequent flyers, saving money and planning
+                                hassle.</li>
+                            <li class="--list-style-green-tick">Always offers the strongest internet connection.
+                            </li>
+                            <li class="--list-style-green-tick">Provides a secure network for your peace of mind.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="./assets/images/icons/wifi_signal.svg" alt="wifi signal icon" width="80px" loading="lazy">
+                        <h4>Public WiFi</h4>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li class="--list-style-red-no">Free to use, but limited to specific locations.</li>
+                            <li class="--list-style-red-no">Can be inconvenient when switching places.</li>
+                            <li class="--list-style-red-no">Internet strength varies depending on the provider.</li>
+                            <li class="--list-style-red-no">Lacks security, putting your data at risk of potential
+                                theft or hacking.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== COUNTRIES SECTION ======-->
+    <section class="countries section py-0" id="countries">
+        <div class="container">
+            <h1 class="section-title">Say Goodbye to Internet Roaming</h1>
+            <p class="text-center">With UnnifiData, you can finally say goodbye to roaming worries. Our innovative
+                data
+                plan allows you to
+                purchase data once and use it seamlessly in multiple countries, all with no expiry date.</p>
+        </div>
+        <div class="countries-section">
+            <img src="assets/images/world-map.png" alt="" loading="lazy">
+            <div>
+                <button id="countries-btn" class="btn countries-btn">VIEW ALL COUNTRIES</button>
+            </div>
+            <div class="countries-modal">
+                <div class="countries-content" id="countries-modal">
+                    <i class="fas fa-times-circle countries-close" id="countires-close"></i>
+                    <p>
+                    <h4 class="py-1"></i><span class="badge text-black --neon-text" style="background-color: #d73027;">ASIA</span> plan
+                    </h4>
+                    <strong>Asia:</strong> Australia, Bangladesh, Cambodia, China, Fiji, Hong
+                    Kong, India, Indonesia, Japan, Kazakhstan, Laos, Macao, Malaysia, Myanmar, New
+                    Zealand, Pakistan, Philippines, Singapore, South Korea, Sri Lanka, Taiwan, Thailand, Vietnam
+                    </p>
+                
+                    <p>
+                    <h4 class="py-1"><span class="badge text-black --neon-text" style="background-color: #d3dc07;">GLOBAL</span> plan
+                        <span class="fs-5 text-black-50">(includes ASIA plan)</span></h4>
+                    <strong>Europe:</strong> Aland Islands, Albania, Austria, Belgium, Bulgaria, Croatia,
+                    Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland,
+                    Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway,
+                    Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden,
+                    Switzerland, Turkey, Ukraine, United Kingdom, Vatican
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Americas:</strong> Brazil, Canada, Mexico, Panama, United States
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Middle East/Africa:</strong> Egypt, Israel, Kenya, Morocco, Nigeria,
+                        Qatar, Saudi Arabia, Seychelles, South Africa, Western Sahara, UAE
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--====== REVOLUTIONIZE SECTION ======-->
     <section class="revolutionize section" id="revolutionize">
-        <div class="revolutionize-section container">
+        <div class="revolutionize-section mx-5">
             <div class="revolutionize-content">
                 <div class="revolutionize-image-container">
                     <img class="revolutionize-image" src="assets/images/products/mobile-photo.png" alt="" loading="lazy">
                 </div>
                 <div class="revolutionize-text">
-                    <h1 class="hero-title"><span>Revolution<br class="hide-br">izing</span> the wireless experience.</h1>
+                    <h1 class="hero-title">Topping up data has never been <span>easier!</span></h1>
                     <p class="hero-paragraph">
-                        Gone are the days of a physical SIM Card. With our cloudSIM technology, 
-                        simply log in to your local network and enjoy a safe, 
-                        ultra-speed connection.
+                        Discover the all-new Unnifi App – your ultimate tool for hassle-free internet management, right at your fingertips!
                     </p>
                     <p class="hero-paragraph">
-                        At UnnifiData, we do not advocate for wastage. This is why you 
-                        can forget about subscriptions. Pay only when you need mobile data. 
-                        Do not pay when you don't.
+                        Imagine having the power to manage your internet usage whenever and wherever you want. That's what the Unnifi App is all about – putting you in control so you can enjoy your online experience without any headaches.
                     </p>
                     <div class="download-buttons">
                         <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unnitel.mobile">
@@ -207,84 +325,49 @@
         </div>
     </section>
 
-    <!--====== COUNTRIES SECTION ======-->
-    <section class="countries section" id="countries">
-        <h1 class="section-title">Connects <span>beyond</span> borders</h1>
-        <div class="countries-section container">
-            <img src="assets/images/world-map-2.png" alt="" loading="lazy">
-            <div>
-                <button id="countries-btn" class="btn countries-btn">VIEW ALL COUNTRIES</button>
-            </div>
-            <div class="countries-modal">
-                <div class="countries-content" id="countries-modal">
-                    <i class="fas fa-times-circle countries-close" id="countires-close"></i>
-                    <p>
-                        <i class="fas fa-globe-asia countries-icon"></i>
-                        <strong>Asia:</strong> Australia, Bahrain, Bangladesh, Cambodia, China, Fiji, Guam, Hong Kong, Indonesia, Japan, Kazakhstan, Korea, Macao, Malaysia, Mongolia, Myanmar, Nepal, New Zealand, Pakistan, Philippines, Saipan, Singapore, Sri Lanka, Taiwan, Thailand, Vietnam
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fas fa-globe-europe countries-icon"></i>
-                        <strong>Europe:</strong> Albania, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom, Vatican
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fas fa-globe-americas countries-icon"></i>
-                        <strong>Americas:</strong> Argentina, Bolivia, Brazil, Canada, Chile, Colombia, Costa Rica, Ecuador, El Salvador, Guatemala, Mexico, Nicaragua, Panama, Peru, Puerto Rico, The Dominican Republic, United States, Uruguay, Venezuela
-                    </p>
-                    <br>
-                    <p>
-                        <i class="fas fa-globe-africa countries-icon"></i>
-                        <strong>Middle East/Africa:</strong> Algeria, Egypt, Ghana, Israel, Jordan , Kenya, Mauritius, Morocco, Nigeria, Qatar, Saudi Arabia, Seychelles, South Africa, Tanzania, Tunisia, UAE, Zambia
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="pricing section" id="pricing">
         <h1 class="section-title">Data plan <span>pricing</span></h1>
-        <div class="pricing-section container">
+        <div class="pricing-section mx-5">
             <div class="pricing-card" id="columnOne">
-                <h2 class="pricing-card-title">Global</h2>
+                <h3 class="pricing-card-title">Global</h3>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle"><h4>1 GB</h4></div>
+                    <div class="pricing-circle"><h6 class="m-0">1 GB</h6></div>
                     <div class="pricing-description">Global 1 GB</div>
-                    <div class="pricing-cost"><h4>USD $8</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $8</h6></div>
                 </div>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle"><h4>3 GB</h4></div>
+                    <div class="pricing-circle"><h6 class="m-0">3 GB</h6></div>
                     <div class="pricing-description">Global 3 GB</div>
-                    <div class="pricing-cost"><h4>USD $24</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $24</h6></div>
                 </div>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle"><h4>5 GB</h4></div>
+                    <div class="pricing-circle"><h6 class="m-0">5 GB</h6></div>
                     <div class="pricing-description">Global 5 GB</div>
-                    <div class="pricing-cost"><h4>USD $40</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $40</h6></div>
                 </div>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle"><h4>10 GB</h4></div>
+                    <div class="pricing-circle"><h6 class="m-0">10 GB</h6></div>
                     <div class="pricing-description">Global 10 GB</div>
-                    <div class="pricing-cost"><h4>USD $80</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $80</h6></div>
                 </div>
             </div>
 
             <div class="pricing-card" id="columnTwo">
-                <h2 class="pricing-card-title">Asia</h2>
+                <h3 class="pricing-card-title">Asia</h3>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle asia"><h4>1 GB</h4></div>
+                    <div class="pricing-circle asia"><h6 class="m-0">1 GB</h6></div>
                     <div class="pricing-description">Asia 1 GB</div>
-                    <div class="pricing-cost"><h4>USD $5</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $5</h6></div>
                 </div>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle asia"><h4>3 GB</h4></div>
+                    <div class="pricing-circle asia"><h6 class="m-0">3 GB</h6></div>
                     <div class="pricing-description">Asia 3 GB</div>
-                    <div class="pricing-cost"><h4>USD $15</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $15</h6></div>
                 </div>
                 <div class="pricing-card-item">
-                    <div class="pricing-circle asia"><h4>5 GB</h4></div>
+                    <div class="pricing-circle asia"><h6 class="m-0">5 GB</h6></div>
                     <div class="pricing-description">Asia 5 GB</div>
-                    <div class="pricing-cost"><h4>USD $25</h4></div>
+                    <div class="pricing-cost"><h6 class="m-0">USD $25</h6></div>
                 </div>
             </div>
         </div>
@@ -379,7 +462,7 @@
                     <!-- FAQ 1 -->
                     <div class="faq-content faq-open">
                         <div class="faq-header">
-                            <h3 class="faq-titles">1. Is my Unnifi device under warranty?</h3>
+                            <h5 class="faq-titles">1. Is my Unnifi device under warranty?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -391,7 +474,7 @@
                     <!-- FAQ 2 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">2. Can I customize my Unnifi device SSID/ login password according to my preference?</h3>
+                            <h5 class="faq-titles">2. Can I customize my Unnifi device SSID/ login password according to my preference?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -403,7 +486,7 @@
                     <!-- FAQ 3 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">3. Do you provide rental service?</h3>
+                            <h5 class="faq-titles">3. Do you provide rental service?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -415,7 +498,7 @@
                     <!-- FAQ 4 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">4. What is the connectivity distance between my Unnifi and other devices?</h3>
+                            <h5 class="faq-titles">4. What is the connectivity distance between my Unnifi and other devices?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -427,7 +510,7 @@
                     <!-- FAQ 5 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">5. Is there a user guide to help me set up my Unnifi device?</h3>
+                            <h5 class="faq-titles">5. Is there a user guide to help me set up my Unnifi device?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -439,7 +522,7 @@
                     <!-- FAQ 6 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">6. Are non-4G mobile devices compatible with my Unnifi?</h3>
+                            <h5 class="faq-titles">6. Are non-4G mobile devices compatible with my Unnifi?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -451,7 +534,7 @@
                     <!-- FAQ 7 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">7. How can I troubleshoot if I face any issues with the Unnifi device?</h3>
+                            <h5 class="faq-titles">7. How can I troubleshoot if I face any issues with the Unnifi device?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -467,7 +550,7 @@
                     <!-- FAQ 8 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">8. Do you provide a Pick-Up service?</h3>
+                            <h5 class="faq-titles">8. Do you provide a Pick-Up service?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -479,7 +562,7 @@
                     <!-- FAQ 9 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">9. What does “Data that never expires” mean?</h3>
+                            <h5 class="faq-titles">9. What does “Data that never expires” mean?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -491,7 +574,7 @@
                     <!-- FAQ 10 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">10. How fast is the data flow on Unnifi?</h3>
+                            <h5 class="faq-titles">10. How fast is the data flow on Unnifi?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -503,7 +586,7 @@
                     <!-- FAQ 11 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">11. Do you support 5G?</h3>
+                            <h5 class="faq-titles">11. Do you support 5G?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -515,7 +598,7 @@
                     <!-- FAQ 12 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">12. Why do I need to carry a separate device to my mobile phone?</h3>
+                            <h5 class="faq-titles">12. Why do I need to carry a separate device to my mobile phone?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -527,7 +610,7 @@
                     <!-- FAQ 13 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">13. What data plans do you provide?</h3>
+                            <h5 class="faq-titles">13. What data plans do you provide?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -539,7 +622,7 @@
                     <!-- FAQ 14 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">14. How can I minimise my rate of data consumption?</h3>
+                            <h5 class="faq-titles">14. How can I minimise my rate of data consumption?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -554,7 +637,7 @@
                     <!-- FAQ 15 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">15. What is the individual price per GB in different countries?</h3>
+                            <h5 class="faq-titles">15. What is the individual price per GB in different countries?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -566,7 +649,7 @@
                     <!-- FAQ 16 -->
                     <div class="faq-content faq-close">
                         <div class="faq-header">
-                            <h3 class="faq-titles">16. How long will my order take to ship?</h3>
+                            <h5 class="faq-titles">16. How long will my order take to ship?</h5>
                             <i class="fas fa-chevron-down faq-arrow"></i>
                         </div>
 
@@ -590,7 +673,7 @@
                 </a>
                 <div class="footer-info-content">
                     <p>
-                        With fast and secure mobile data that never expires. Anytime, and anywhere you need it.
+                        Global, high-speed, secure data that never expires. Powering safer, smarter and more magical mobile data experiences for you and everyone around you whenever and wherever you are!
                     </p>
                 </div>
                 <div class="footer-socials">
@@ -605,16 +688,17 @@
             </div>
             <div class="footer-links">
                 <h3 class="footer-title">Explore</h3>
-                <ul class="footer-navigation">
+                <ul class="footer-navigation px-0">
                     <li><a class="footer-link" href="./about.html">About</a></li>
                     <li><a class="footer-link" href="./index.html#testimonial">Testimonials</a></li>
                     <li><a class="footer-link" href="#gallery">Products</a></li>
                     <li><a class="footer-link" href="./termsandconditions.html">Terms and Conditions</a></li>
+                    <li><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h3 class="footer-title">Help</h3>
-                <ul class="footer-navigation">
+                <ul class="footer-navigation px-0">
                     <li><a class="footer-link" href="#faq">FAQ</a></li>
                     <li><a class="footer-link" href="./about.html#contact">Contact</a></li>
                     <li><a class="footer-link" href="#traveler">Top</a></li>
@@ -628,7 +712,7 @@
                             <i class="fab fa-google-play"></i>
                             <div>
                                 <span>Get it on</span><br>
-                                <h3>Google Play</h3>
+                                <h5>Google Play</h5>
                             </div>
                         </div>
                     </a>
@@ -637,7 +721,7 @@
                             <i class="fab fa-apple"></i>
                             <div>
                                 <span>Download on the</span><br>
-                                <h3>Appstore</h3>
+                                <h5>Appstore</h5>
                             </div>
                         </div>
                     </a>
@@ -646,8 +730,8 @@
         </div>
     </footer>
 
-    <div id="gcaMain" class="gcaMain"><div id="gcaMainButton" class="gcaMainButton"></div>
-    <div id="gcaMainCard" class="gcaMainCard"></div>
+    <!-- <div id="gcaMain" class="gcaMain"><div id="gcaMainButton" class="gcaMainButton"></div>
+    <div id="gcaMainCard" class="gcaMainCard"></div> -->
 
     <!--====== SWIPER JS ======-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -693,9 +777,11 @@
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!--====== SHOPIFY JS ======-->
     <script src="assets/js/shopify-button.js"></script>
-    <script src="assets/js/order-now-shopify-button.js"></script>
+    <!-- <script src="assets/js/order-now-shopify-button.js"></script> -->
 </body>
 </html>

@@ -1,5 +1,7 @@
 /* ======== GOOGLE FONTS ======== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Dela+Gothic+One&family=VT323&display=swap');
+
 
 /* ======== ROOT CSS ======== */
 :root {
@@ -56,7 +58,7 @@ main {
 }
 
 .container {
-    padding: 2rem 3rem;
+    padding: 2rem 0;
 }
 
 .section {
@@ -188,7 +190,7 @@ main {
 
 .nav-menu {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -259,7 +261,7 @@ li.nav-list-item.shopify-nav-item:hover {
 /* -------------------------------- */
 /* ======== HERO SECTION ======== */
 .hero {
-    /* padding-top: 6rem; */
+    padding-top: 9rem;
     /* background-color: var(--green-color); */
 }
 
@@ -272,7 +274,7 @@ li.nav-list-item.shopify-nav-item:hover {
     left: 0;
     width: 100%;
     z-index: -99;
-    margin-top: 33em;
+    /* margin-top: 33em; */
     /* For only when there is another section above it */
 }
 
@@ -280,18 +282,18 @@ li.nav-list-item.shopify-nav-item:hover {
     /* padding-top: 3rem; For only when there is another section above it  */
     display: grid;
     width: 100%;
-    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 1em;
+    grid-template-columns: 2fr 1.5fr;
     align-items: center;
 }
 
 .hero-text {
-    padding: 1.25rem 0;
-    margin-left: 3rem;
-    width: 100%;
+    padding: 0;
+    margin-left: 2rem;
 }
 
 .hero-paragraph {
-    padding: 1.15rem 0;
+    padding: 0.5rem 0;
     line-height: 1.5;
 }
 
@@ -314,8 +316,11 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .hero-image-container {
-    margin: auto;
+    /* margin: auto; */
     position: relative;
+    align-self: baseline;
+    justify-self: right;
+    top: 20px;
 }
 
 .hero-image-bg {
@@ -323,8 +328,8 @@ li.nav-list-item.shopify-nav-item:hover {
     position: absolute;
     top: -.5rem;
     right: -.5rem;
-    height: 70vh;
-    width: 70vh;
+    height: 60vh;
+    width: 60vh;
     z-index: -99;
     border-radius: 1rem;
     transition: .3s;
@@ -336,8 +341,8 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .hero-image {
-    height: 70vh;
-    width: 70vh;
+    height: 60vh;
+    width: 60vh;
     z-index: 1;
     border-radius: 1rem;
     position: relative;
@@ -345,8 +350,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .hero-image img {
     object-fit: cover;
-    height: 70vh;
-    width: 70vh;
+    height: 60vh;
+    width: 60vh;
     position: absolute;
     border-radius: 1rem;
     transition: .3s;
@@ -385,8 +390,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .glance-circle {
     background-color: var(--green-color);
-    height: 200px;
-    width: 200px;
+    height: 210px;
+    width: 210px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -418,11 +423,12 @@ li.nav-list-item.shopify-nav-item:hover {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: url('../images/wave.png');
+    /* background-image: url('../images/wave-5.png'); */
+    background-image: url('../images/wave.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
-    -webkit-transform: translateZ(220px) perspective(100px) scale(1.5);
-    transform: translateZ(220px) perspective(100px) scale(1.5);
+    -webkit-transform: translateZ(220px) perspective(100px) scale(1.6) translateY(-25px) translateX(-15px);
+    transform: translateZ(220px) perspective(100px) scale(1.6) translateY(-25px) translateX(-15px);
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
@@ -435,7 +441,7 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .glance-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* ======== WHY SECTION ======== */
@@ -651,7 +657,6 @@ li.nav-list-item.shopify-nav-item:hover {
 .download-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .download-btn {
@@ -675,9 +680,9 @@ li.nav-list-item.shopify-nav-item:hover {
 .download-image {
     position: absolute;
     right: 0;
-    height: 470px;
+    height: 505px;
     top: -5.5rem;
-    right: -3rem;
+    right: -13rem;
     z-index: -1;
 }
 
@@ -899,10 +904,6 @@ li.nav-list-item.shopify-nav-item:hover {
     object-fit: contain;
 }
 
-.traveler-btn {
-    margin-top: 1rem;
-}
-
 /* ======== ACTIVATE SECTION ======== */
 .activate {
     position: relative;
@@ -1029,11 +1030,12 @@ li.nav-list-item.shopify-nav-item:hover {
 .revolutionize-image-container {
     position: relative;
     background-color: var(--green-color);
-    width: 370px;
-    height: 370px;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
-    margin-right: auto;
+    justify-self: center;
+    /* margin-right: auto; */
     border-radius: 50%;
     box-shadow: 0 20px 20px rgb(0 0 0 / 0.2);
 }
@@ -1049,7 +1051,7 @@ li.nav-list-item.shopify-nav-item:hover {
     width: 500px;
     z-index: 5;
     height: 550px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* ======== TOPPING SECTION ======== */
@@ -1183,7 +1185,8 @@ li.nav-list-item.shopify-nav-item:hover {
 .pricing-circle {
     height: 4rem;
     width: 4rem;
-    background-color: var(--blue-color);
+    /* background-color: var(--green-color); */
+    background-color: #d3dc07;
     color: #FFF;
     display: flex;
     align-items: center;
@@ -1192,8 +1195,13 @@ li.nav-list-item.shopify-nav-item:hover {
     padding: .5rem;
 }
 
+.pricing-circle h6 {
+    text-shadow: 1px 1px black;
+}
+
 .pricing-circle.asia {
-    background-color: var(--red-color);
+    /* background-color: var(--red-color); */
+    background-color: #d73027;
 }
 
 .pricing-cost {
@@ -1334,7 +1342,7 @@ li.nav-list-item.shopify-nav-item:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
 }
 
 .about-text,
@@ -1666,6 +1674,10 @@ li.nav-list-item.shopify-nav-item:hover {
     gap: 1rem;
 }
 
+.terms-content .privacy-items {
+    line-height: 2.5em; /* 30px; */
+}
+
 .terms-title {
     text-align: center;
     font-size: 2rem;
@@ -1680,7 +1692,7 @@ li.nav-list-item.shopify-nav-item:hover {
 /* ======== Large Monitor-ish ======== */
 @media screen and (min-width: 1041px) and (max-width: 1440px) {
     .hero::before {
-        margin-top: 20em;
+        /* margin-top: 20em; */
     }
 
     /* Slider section */
@@ -1691,8 +1703,18 @@ li.nav-list-item.shopify-nav-item:hover {
 
 /* ======== Normal Monitor-ish ======== */
 @media screen and (min-width: 875px) and (max-width: 1040px) {
+    .hero {
+        margin-top: 0;
+    }
     .hero::before {
-        margin-top: 15em;
+        margin-top: 7em;
+    }
+    .hero-content {
+        grid-template-columns: 2fr 1.5fr;
+    }
+    .hero-image-bg, .hero-image, .hero-image img {
+        height: 35vh;
+        width: 35vh;
     }
 
     /* Slider section */
@@ -2431,7 +2453,7 @@ li.nav-list-item.shopify-nav-item:hover {
 
     /* Hero Section */
     .hero {
-        padding-top: 0;
+        padding-top: 8em;
         background-color: var(--green-color);
     }
 
@@ -2443,7 +2465,7 @@ li.nav-list-item.shopify-nav-item:hover {
         left: 0;
         width: 100%;
         z-index: -99;
-        margin-top: 20em;
+        /* margin-top: 20em; */
     }
 
     .hero-content {
@@ -2565,6 +2587,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
     .download {
         height: 100%;
+        margin-bottom: 7em;
+        padding: 1em;
     }
 
     /* Download Section */
