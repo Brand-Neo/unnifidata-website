@@ -1,4 +1,23 @@
+/* NAVBAR */
+
+.countries-text {
+    /* font-weight: 500; */
+    font-family: 'Dela Gothic One', sans-serif;
+    background-image: linear-gradient(to right, grey, var(--red-color), var(--blue-color), var(--red-color), grey);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 10s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 50vh;
+    }
+}
+
 /* HEADER SECTION */
+
 .carousel-header {
     margin-top: 5em;
 }
@@ -61,11 +80,11 @@
 
 .section.ultimate-choice .card-wrapper .cards .card {
     display: grid;
-    grid-template-rows: 20% auto;
+    grid-template-rows: 31% auto;
     width: 20em;
     border-radius: 30px;
     border: 2px solid var(--red-color);
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .section.ultimate-choice .card-wrapper .cards .card .top {
@@ -73,29 +92,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 5px;
     border-bottom: 2px solid black;
 }
 
 .section.ultimate-choice .card-wrapper .cards .card ul {
-    padding-left: 0;
+    padding: 1em;
 }
 
 .section.ultimate-choice .card-wrapper .cards .card ul li {
-    height: 5em;
+    height: 4.5em;
     list-style: none;
-    padding: 10px 30px;
+    padding: 0px 35px;
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px;
+    background-position: initial;
+    background-size: 25px;
 }
 
 .section.ultimate-choice .card-wrapper .cards .card ul li.--list-style-green-tick {
     background-image: url("../images/icons/green-tick.svg");
+    background-position-y: 3px;
 }
 
 .section.ultimate-choice .card-wrapper .cards .card ul li.--list-style-red-no {
     background-image: url("../images/icons/red-no.svg");
+    background-position-y: 3px;
 }
 
 /* COUNTRIES SECTION */
@@ -170,16 +191,15 @@
 }
 
 .why-card {
-    width: 460px;
-    height: 220px;
+    width: 455px;
+    height: 205px;
     background-color: #FFF;
     color: var(--red-color);
-    padding: 1em;
+    padding: 10px 20px;
     display: flex;
     border: 2px solid var(--red-color);
     transition: .3s;
     -webkit-transition: .3s;
-    /* gap: 1rem; */
     align-items: center;
     border-radius: 0.5rem;
     line-height: 1.5;
@@ -209,7 +229,7 @@
 }
 
 .why-image-container>img {
-    height: 690px;
+    height: 600px;
     width: 100%;
     object-fit: contain;
     background-color: transparent;
@@ -223,8 +243,8 @@
 .why-image-container>div {
     position: absolute;
     background-color: var(--green-color);
-    height: 600px;
-    width: 600px;
+    height: 550px;
+    width: 550px;
     top: 50%;
     border-radius: 50%;
     z-index: -1;
@@ -246,18 +266,26 @@
 }
 
 #testimonial .review-cards .review-card {
-    width: 20em;
+    width: 22em;
     background-color: white;
     border-radius: 30px;
-    padding: 1em;
-    /* box-shadow: 0 5px 10px var(--green-color); */
-    box-shadow: 0 0 40px 2px var(--green-color);
-    border: 1px solid var(--green-color);
+    padding: 30px;
+}
+
+#testimonial .review-cards .review-card .stars {
+    position: relative;
+    top: 0px;
+    left: -12px;
+    display: flex;
 }
 
 #testimonial .review-cards .review-card .bottom {
     line-height: 2em;
     margin-top: 1em;
+}
+
+#testimonial .review-cards .review-card .bottom .more {
+    display: none;
 }
 
 /* UTILITIES */
@@ -337,6 +365,7 @@
 
     .glance-circle .glance-text {
         padding: 0 20px;
+        white-space: pre-line;
     }
 
 }
