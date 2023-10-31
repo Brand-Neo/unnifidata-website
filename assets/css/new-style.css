@@ -1,21 +1,3 @@
-/* NAVBAR */
-
-.countries-text {
-    /* font-weight: 500; */
-    font-family: 'Dela Gothic One', sans-serif;
-    background-image: linear-gradient(to right, grey, var(--red-color), var(--blue-color), var(--red-color), grey);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow-animation 10s linear infinite;
-}
-
-@keyframes rainbow-animation {
-    to {
-        background-position: 50vh;
-    }
-}
-
 /* HEADER SECTION */
 
 .carousel-header {
@@ -58,7 +40,7 @@
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     text-align: center;
     gap: 1.5rem;
 }
@@ -81,7 +63,7 @@
 .section.ultimate-choice .card-wrapper .cards .card {
     display: grid;
     grid-template-rows: 31% auto;
-    width: 20em;
+    width: 21em;
     border-radius: 30px;
     border: 2px solid var(--red-color);
     padding: 1em 0;
