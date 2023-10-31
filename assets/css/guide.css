@@ -14,6 +14,7 @@
     color: black;
     text-align: left;
     height: 160px;
+    font-size: 2.4rem;
 }
 
 .section-title::after {
@@ -27,13 +28,6 @@
     top: -80px;
     left: -29px;
     z-index: -10;
-}
-
-.section-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 1em;
 }
 
 .section-body .small-card {
@@ -84,11 +78,12 @@ section.device-functionality-section .container .section-body .hardware-indicato
     display: flex;
     gap: 1em;
     align-items: center;
+    width: 18em;
 }
 
 section.activating-device-section .container .section-body .card-wrappers {
     display: flex;
-    width: 68vw;
+    width: 95%;
     gap: 1em;
 }
 
@@ -102,12 +97,34 @@ section.activating-device-section .container .section-body .card-wrappers .image
     border: 5px solid var(--green);
     border-radius: 10px;
 }
+section.activating-device-section .container .section-body .card-wrappers .image-card .image-wrapper {
+    height: 16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15em;
+}
+section.activating-device-section .container .section-body .card-wrappers .image-card.one .image-wrapper {
+    background-image: url('../images/user-guide/button-side.jpg');
+}
+section.activating-device-section .container .section-body .card-wrappers .image-card.two .image-wrapper {
+    background-image: url('../images/user-guide/clock.jpg');
+}
+section.activating-device-section .container .section-body .card-wrappers .image-card.three .image-wrapper {
+    background-image: url('../images/user-guide/indicator-wifi.jpg');
+}
 
 section.activating-device-section .container .section-body .card-wrappers .image-card .description-wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    text-align: center;
+}
+
+section.activating-device-section .container .section-body .card-wrappers .image-card.three .description-wrapper .description {
+    inline-size: 200px;
+    overflow-wrap: break-word;
 }
 
 section .container .image-wrapper img.activating-device-image {
@@ -151,6 +168,20 @@ section.connecting-section .container .section-body .connecting-guide-wrapper .l
     display: flex;
     align-items: center;
     gap: 1em;
+}
+
+section.about-section .container .section-body, section.device-functionality-section .container .section-body { 
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 1fr;
+}
+
+section.about-section .container .section-body {
+    grid-template-columns: 1fr 1fr;
+}
+
+section.device-functionality-section .container .section-body {
+    grid-template-columns: 30% 70%;
 }
 
 section.connecting-section .container .section-body {
@@ -241,6 +272,11 @@ section .container .image-wrapper img.contact-image-mockup {
         text-align: center;
         width: 310px;
     }
+    section.device-functionality-section .container .section-body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
     section.device-functionality-section .container .section-body .hardware-indicators-wrapper ul {
         grid-gap: 0.5em;
     }
@@ -253,6 +289,7 @@ section .container .image-wrapper img.contact-image-mockup {
     }
     section.activating-device-section .container .section-body .card-wrappers {
         flex-wrap: wrap;
+        justify-content: center;
     }
     section.connecting-section .container .section-body {
         grid-template-columns: 1fr;
