@@ -390,8 +390,8 @@ li.nav-list-item.shopify-nav-item:hover {
 
 .glance-circle {
     background-color: var(--green-color);
-    height: 210px;
-    width: 210px;
+    height: 8em;
+    width: 8em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -405,11 +405,6 @@ li.nav-list-item.shopify-nav-item:hover {
     -ms-transition: opacity .5s ease-in-out;
     -o-transition: opacity .5s ease-in-out;
     perspective: none;
-    /* perspective: 220px;
-    -webkit-perspective: 220px;
-    -moz-perspective: 220px;
-    -ms-perspective: 220px;
-    -o-perspective: 220px; */
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     box-shadow: 0 2px 20px rgb(0 0 0 / 0.2);
@@ -427,8 +422,8 @@ li.nav-list-item.shopify-nav-item:hover {
     background-image: url('../images/wave.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
-    -webkit-transform: translateZ(220px) perspective(100px) scale(1.6) translateY(-25px) translateX(-15px);
-    transform: translateZ(220px) perspective(100px) scale(1.6) translateY(-25px) translateX(-15px);
+    transform: translateZ(8em) perspective(100px) scale(1.5) translateY(-10px) translateX(3px);
+    -webkit-transform: translateZ(8em) perspective(100px) scale(1.5) translateY(-10px) translateX(3px);
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
@@ -441,7 +436,7 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 .glance-title {
-    font-size: 2.5rem;
+    margin-bottom: 0;
 }
 
 /* ======== WHY SECTION ======== */
@@ -1932,6 +1927,7 @@ li.nav-list-item.shopify-nav-item:hover {
     .glance-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        background-color: red; /* TODO: remove me */
     }
 
     /* Why Section */
