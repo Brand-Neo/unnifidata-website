@@ -26,7 +26,7 @@
             ui.createComponent('product', {
                 id: '7198016930024',
                 node: document.getElementById('product-component-1633531980465'),
-                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                moneyFormat: 'US$ {{amount}}',
                 options: {
                     "product": {
                         "styles": {
