@@ -731,9 +731,6 @@
         </div>
     </footer>
 
-    <!-- <div id="gcaMain" class="gcaMain"><div id="gcaMainButton" class="gcaMainButton"></div>
-    <div id="gcaMainCard" class="gcaMainCard"></div> -->
-
     <!--====== SWIPER JS ======-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
@@ -775,6 +772,31 @@
             }
         });
       </script>
+
+     <!--====== GETCHAT JS ======-->
+     <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+         var gcaMain = new GetChatApp({
+             'mobileNumber' : '+65 8798 6824',
+             'titleMessage' : '👋 Chat with us on WhatsApp!',
+             'welcomeMessage': 'Hi there 👋 <br><br>We are here to help! Ask us any questions and we’ll reply you as soon as we can.',
+             'position' : 'right',
+             'platforms' : { 
+                 'whatsapp' : true, 
+                 'facebook' : false, 
+                 'email' : false, 
+                 'instagram' : false, 
+                 'telegram' : false, 
+             }, 
+             'facebookPageId' : '', 
+             'gcaEmailAddress' : '', 
+             'gcaEmailSubject' : '', 
+             'gcaInstagramUsername' : '', 
+             'gcaTelegramUsername' : '', 
+         });
+         });
+     </script>
 
     <!--====== MAIN JS ======-->
     <script src="assets/js/main.js"></script>
