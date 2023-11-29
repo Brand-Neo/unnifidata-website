@@ -26,7 +26,7 @@
     <script src="https://kit.fontawesome.com/bae18c500b.js" crossorigin="anonymous"></script>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="./assets/images/logos/Iconmark - Full Colour.png" type="image/png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logos/udata_icon.ico">
 
     <!--====== TITLE ======-->
     <title>Unnifi | Blogs</title>
@@ -58,6 +58,7 @@
     <style>
         .about-content a {
             padding: 1em;
+            margin-bottom: 1em;
             height: 25em;
         }
 
@@ -108,11 +109,11 @@
         /* ======== Phone-ish ======== */
         @media screen and (min-width: 320px) and (max-width: 550px) {
 
-        .about-content {
-            margin-top: 2em;
-            display: flex;
-            flex-wrap: wrap;
-        }
+            .about-content {
+                margin-top: 2em;
+                display: flex;
+                flex-wrap: wrap;
+            }
     </style>
 </head>
 
@@ -177,7 +178,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title">What is an <span>international SIM card?</span></h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -190,7 +191,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title">International <span>data roaming</span></h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -203,7 +204,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title">What is a <span>Travel router</span> and How to use</h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -216,7 +217,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title">What is <span>Cloud SIM?</span></h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -230,7 +231,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title"><span>Stay Secure</span> using Public Wi-Fi</h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -244,7 +245,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title"><span>Responsible Traveler</span> Tour Guidelines</h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -257,7 +258,7 @@
                                 </div>
                             </div>
                             <h5 class="hero-title">Benefits of U-Data <span>Unnifi vs. eSIM</span> ?</h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -271,7 +272,7 @@
                             </div>
                             <h5 class="hero-title">Best <span>Portable Wi-Fi Router</span> for <br>travels
                             </h5>
-                            <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button>
+                            <!-- <button class="btn btn-sm" id="contact-us-btn">CLICK HERE</button> -->
                         </div>
                     </a>
 
@@ -281,7 +282,7 @@
         </section>
 
         <!--====== CONTACT US SECTION ======-->
-        <section class="contact section" id="contact">
+        <section class="contact section mt-3" id="contact">
             <div class="contact container">
                 <div class="contact-content">
                     <div class="contact-image-container">
@@ -395,17 +396,39 @@
         </div>
     </footer>
 
-    <div id="gcaMain" class="gcaMain">
-        <div id="gcaMainButton" class="gcaMainButton"></div>
-        <div id="gcaMainCard" class="gcaMainCard"></div>
+    <!--====== GETCHAT JS ======-->
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var gcaMain = new GetChatApp({
+                'mobileNumber': '+65 8798 6824',
+                'titleMessage': '👋 Chat with us on WhatsApp!',
+                'welcomeMessage': 'Hi there 👋 <br><br>We are here to help! Ask us any questions and we’ll reply you as soon as we can.',
+                'position': 'right',
+                'platforms': {
+                    'whatsapp': true,
+                    'facebook': false,
+                    'email': false,
+                    'instagram': false,
+                    'telegram': false,
+                },
+                'facebookPageId': '',
+                'gcaEmailAddress': '',
+                'gcaEmailSubject': '',
+                'gcaInstagramUsername': '',
+                'gcaTelegramUsername': '',
+            });
+        });
+    </script>
 
-        <!--====== SHOPIFY JS ======-->
-        <script src="assets/js/shopify-button.js"></script>
+    <!--====== SHOPIFY JS ======-->
+    <script src="assets/js/shopify-button.js"></script>
 
-        <!--====== MAIN JS ======-->
-        <script src="assets/js/main.js"></script>
+    <!--====== MAIN JS ======-->
+    <script src="assets/js/main.js"></script>
+    <script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh-oh' }, { 'server': 'sg2plzcpnl486123' }, { 'dcenter': 'sg2' }, { 'cp_id': '8215723' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+    <script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
+
 </body>
-<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh-oh' }, { 'server': 'sg2plzcpnl486123' }, { 'dcenter': 'sg2' }, { 'cp_id': '8215723' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
-<script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
 
 </html>
