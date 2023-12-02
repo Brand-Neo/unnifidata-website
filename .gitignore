@@ -1,4 +1,9 @@
+# IDE - VSCode
+.vscode/*
 .vscode
+.vscode/settings.json
+**/.vscode/
+
 .DS_Store
 ._.DS_Store
 *.DS_Store
