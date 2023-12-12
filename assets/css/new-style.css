@@ -34,6 +34,15 @@
     background-image: url('../images/redesign/website_view/unnfidata_6_5.jpg');
 }
 
+ /* 5 years and Christmas 2023 image */
+ .carousel-item.six {
+    background-image: url('../images/redesign/website_view/unnifidata_5years_banner.jpeg');
+}
+
+.carousel-item.seven {
+    background-image: url('../images/redesign/website_view/unnifidata_christmas_2023_banner.jpeg');
+}
+
 /* GLANCE SECTION */
 .glance-content {
     display: flex;
@@ -330,6 +339,15 @@
 
     .carousel-item.five {
         background-image: url('../images/redesign/mobile_view/unnfidata_6_5.jpg');
+    }
+
+     /* 5 years and Christmas 2023 image */
+    .carousel-item.six {
+        background-image: url('../images/redesign/mobile_view/unnifidata_5years_banner.jpeg');
+    }
+
+    .carousel-item.seven {
+        background-image: url('../images/redesign/mobile_view/unnifidata_christmas_2023_banner.jpeg');
     }
 
     .why-cards {
