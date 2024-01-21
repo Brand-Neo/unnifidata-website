@@ -34,13 +34,9 @@
     background-image: url('../images/redesign/website_view/unnfidata_6_5.jpg');
 }
 
- /* 5 years and Christmas 2023 image */
- .carousel-item.six {
+/* 5 years and Christmas 2023 image */
+.carousel-item.six {
     background-image: url('../images/redesign/website_view/unnifidata_5years_banner.jpeg');
-}
-
-.carousel-item.seven {
-    background-image: url('../images/redesign/website_view/unnifidata_christmas_2023_banner.jpeg');
 }
 
 /* GLANCE SECTION */
@@ -310,7 +306,7 @@
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-  }
+}
 
 /* RESPONSIVENESS */
 
@@ -341,13 +337,9 @@
         background-image: url('../images/redesign/mobile_view/unnfidata_6_5.jpg');
     }
 
-     /* 5 years and Christmas 2023 image */
+    /* 5 years and Christmas 2023 image */
     .carousel-item.six {
         background-image: url('../images/redesign/mobile_view/unnifidata_5years_banner.jpeg');
-    }
-
-    .carousel-item.seven {
-        background-image: url('../images/redesign/mobile_view/unnifidata_christmas_2023_banner.jpeg');
     }
 
     .why-cards {
@@ -368,4 +360,25 @@
         white-space: pre-line;
     }
 
+}
+
+
+/* ======== Tablet-ish 1 ======== */
+@media screen and (min-width: 550px) and (max-width: 768px) {
+
+    .carousel-item {
+        position: relative;
+        height: auto !important;
+    }
+
+}
+
+/* ======== Tablet-ish 2 ======== */
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+
+    .carousel-item {
+        position: relative;
+        height: 60vh !important;
+        width: 95% !important;
+    }
 }
