@@ -1,7 +1,8 @@
 /* ======== pop-up related ======== */
 // check in cookies that user has not closed popup, else open the "Buy Now" popUp, then set cookie accordingly
 function checkCookie() {
-    $('#buyNowPopUp').modal();
+    $('#promoPopup').modal();
+    console.log("popup");
 
     // Enable if you want to show pop up base on cookies
     //     let popUpClosed = getCookie("popUpClosed");
