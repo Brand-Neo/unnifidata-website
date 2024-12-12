@@ -19,24 +19,15 @@
 }
 
 .carousel-item.two {
-    background-image: url('../images/redesign/website_view/unnfidata_6_2.jpg');
-}
-
-.carousel-item.three {
-    background-image: url('../images/redesign/website_view/unnfidata_6_3.jpg');
-}
-
-.carousel-item.four {
-    background-image: url('../images/redesign/website_view/unnfidata_6_4.jpg');
-}
-
-.carousel-item.five {
     background-image: url('../images/redesign/website_view/unnfidata_6_5.jpg');
 }
 
-/* 5 years and Christmas 2023 image */
-.carousel-item.six {
-    background-image: url('../images/redesign/website_view/unnifidata_5years_banner.jpeg');
+.carousel-item.three {
+    background-image: url('../images/redesign/website_view/unnfidata_6_4.jpg');
+}
+
+.carousel-item.four {
+    background-image: url('../images/redesign/website_view/unnfidata_6_2.jpg');
 }
 
 /* GLANCE SECTION */
@@ -322,25 +313,17 @@
     }
 
     .carousel-item.two {
-        background-image: url('../images/redesign/mobile_view/unnfidata_5_2.jpg');
+        background-image: url('../images/redesign/mobile_view/unnfidata_6_5.jpg');
     }
-
+    
     .carousel-item.three {
-        background-image: url('../images/redesign/mobile_view/unnfidata_5_3.jpg');
-    }
-
-    .carousel-item.four {
         background-image: url('../images/redesign/mobile_view/unnfidata_5_4.jpg');
     }
 
-    .carousel-item.five {
-        background-image: url('../images/redesign/mobile_view/unnfidata_6_5.jpg');
+    .carousel-item.four {
+        background-image: url('../images/redesign/mobile_view/unnfidata_5_2.jpg');
     }
 
-    /* 5 years and Christmas 2023 image */
-    .carousel-item.six {
-        background-image: url('../images/redesign/mobile_view/unnifidata_5years_banner.jpeg');
-    }
 
     .why-cards {
         position: relative;

@@ -1685,6 +1685,21 @@ li.nav-list-item.shopify-nav-item:hover {
     display: none;
 }
 
+
+/* MODAL */
+
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
+  
 /* ======== Large Monitor-ish ======== */
 @media screen and (min-width: 1041px) and (max-width: 1440px) {
     .hero::before {
@@ -3126,8 +3141,8 @@ li.nav-list-item.shopify-nav-item:hover {
 }
 
 /* modal related */
-.modal.buy-now-modal {
-    background-image: url('../images/popup/christmas_popup.png');
+.modal.promo-modal {
+    background-image: url('../images/popup/wise_popup.jpeg');
     height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3135,7 +3150,7 @@ li.nav-list-item.shopify-nav-item:hover {
     width: 425px;
 }
 
-.modal.buy-now-modal div {
+.modal.promo-modal div {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -3143,7 +3158,7 @@ li.nav-list-item.shopify-nav-item:hover {
     height: 475px;
 }
 
-.modal.buy-now-modal div div {
+.modal.promo-modal div div {
     grid-row-start: 7;
     margin-top: 4em;
 }
